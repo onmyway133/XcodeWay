@@ -10,7 +10,14 @@
 
 @interface NSTask (FTGAdditions)
 
-+ (NSString *)ftg_outputTaskResultWithLaunchPath:(NSString *)launchPath arguments:(NSArray *)arguments;
-+ (void)ftg_runTaskWithLaunchPath:(NSString *)launchPath arguments:(NSArray *)arguments;
++ (NSString *)ftg_outputTaskResultWithLaunchPath:(NSString *)launchPath
+                                       arguments:(NSArray *)arguments;
+
++ (NSString *)ftg_outputTaskResultWithLaunchPath:(NSString *)launchPath
+                                       arguments:(NSArray *)arguments
+                            currentDirectoryPath:(NSString *)currentDirectoryPath;
+
++ (void)ftg_runTaskWithLaunchPath:(NSString *)launchPath
+                        arguments:(NSArray *)arguments;
 
 @end

@@ -132,8 +132,7 @@ static XcodeWay *sharedPlugin;
 
         [[xcodeWayMenuItem submenu] addItem:[NSMenuItem separatorItem]];
 
-        [self addMenuItemNamed:@"Go To Github" action:@selector(goToGithub:) intoParentMenuItem:xcodeWayMenuItem];
-        [self addMenuItemNamed:@"Go To Bitbucket" action:@selector(goToBitbucket:) intoParentMenuItem:xcodeWayMenuItem];
+        [self addMenuItemNamed:@"Go To Git Repository" action:@selector(goToGitRepository:) intoParentMenuItem:xcodeWayMenuItem];
 
         [[xcodeWayMenuItem submenu] addItem:[NSMenuItem separatorItem]];
 
@@ -212,12 +211,7 @@ static XcodeWay *sharedPlugin;
     [self.navigatorManager navigateWithNavigator:[FTGiTermNavigator new]];
 }
 
-- (void)goToGithub:(id)sender
-{
-    [self.navigatorManager navigateWithNavigator:[FTGGitRepoNavigator new]];
-}
-
-- (void)goToBitbucket:(id)sender
+- (void)goToGitRepository:(id)sender
 {
     [self.navigatorManager navigateWithNavigator:[FTGGitRepoNavigator new]];
 }

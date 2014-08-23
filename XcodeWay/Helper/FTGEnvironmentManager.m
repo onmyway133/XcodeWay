@@ -7,7 +7,6 @@
 //
 
 #import "FTGEnvironmentManager.h"
-#import "IDEWorkspaceWindowController.h"
 
 id objc_getClass(const char* name);
 
@@ -49,7 +48,7 @@ id objc_getClass(const char* name);
 // http://stackoverflow.com/questions/21054699/get-the-path-of-current-project-opened-in-xcode-plugin
 - (NSString *)projectPath
 {
-    NSArray *workspaceWindowControllers = [self.IDEWorkspaceWindowControllerClass workspaceWindowControllers];
+    NSArray *workspaceWindowControllers = [self.IDEWorkspaceWindowControllerClass valueForKey:@"workspaceWindowControllers"];
 
     id workSpace;
 

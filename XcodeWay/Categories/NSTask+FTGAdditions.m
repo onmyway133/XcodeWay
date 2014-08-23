@@ -10,12 +10,21 @@
 
 @implementation NSTask (FTGAdditions)
 
-+ (NSString *)ftg_outputTaskResultWithLaunchPath:(NSString *)launchPath arguments:(NSArray *)arguments
++ (NSString *)ftg_outputTaskResultWithLaunchPath:(NSString *)launchPath
+                                       arguments:(NSArray *)arguments
+{
+    return [self ftg_outputTaskResultWithLaunchPath:launchPath arguments:arguments currentDirectoryPath:nil];
+}
+
++ (NSString *)ftg_outputTaskResultWithLaunchPath:(NSString *)launchPath
+                                       arguments:(NSArray *)arguments
+                            currentDirectoryPath:(NSString *)currentDirectoryPath
 {
     NSTask *task = [[NSTask alloc] init];
     task.launchPath = launchPath;
     task.arguments = arguments;
     task.standardOutput = [NSPipe pipe];
+    task.currentDirectoryPath = currentDirectoryPath;
     NSFileHandle *file = [task.standardOutput fileHandleForReading];
 
     [task launch];
@@ -33,7 +42,8 @@
     return output;
 }
 
-+ (void)ftg_runTaskWithLaunchPath:(NSString *)launchPath arguments:(NSArray *)arguments
++ (void)ftg_runTaskWithLaunchPath:(NSString *)launchPath
+                        arguments:(NSArray *)arguments
 {
     NSTask *task = [[NSTask alloc] init];
     task.launchPath = launchPath;
