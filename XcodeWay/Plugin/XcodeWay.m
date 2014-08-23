@@ -42,6 +42,8 @@ static XcodeWay *sharedPlugin;
 
         // Notifications
         [self registerNotifications];
+
+        [[FTGEnvironmentManager sharedManager] setup];
     }
     return self;
 }
@@ -60,6 +62,11 @@ static XcodeWay *sharedPlugin;
                            selector:@selector(applicationDidFinishLaunching:)
                                name:NSApplicationDidFinishLaunchingNotification
                              object:NSApp];
+
+    [notificationCenter addObserver:self
+                           selector:@selector(windowDidUpdate:)
+                               name:NSWindowDidUpdateNotification
+                             object:nil];
 }
 
 - (void)unregisterNotifications
@@ -76,6 +83,11 @@ static XcodeWay *sharedPlugin;
                                 object:NSApp];
 
     [self setupMenu];
+}
+
+- (void)windowDidUpdate:(NSNotification *)notification
+{
+    [[FTGEnvironmentManager sharedManager] handleWindowDidUpdate:notification];
 }
 
 #pragma mark - Setup Menu
@@ -102,6 +114,12 @@ static XcodeWay *sharedPlugin;
         [self addMenuItemNamed:@"Go To Derived Data Folder" action:@selector(goToDerivedDataFolder:) intoParentMenuItem:xcodeWayMenuItem];
         [self addMenuItemNamed:@"Go To Plug-Ins Folder" action:@selector(goToPlugInsFolder:) intoParentMenuItem:xcodeWayMenuItem];
         [self addMenuItemNamed:@"Go To Template Folder" action:@selector(goToTemplateFolder:) intoParentMenuItem:xcodeWayMenuItem];
+        [self addMenuItemNamed:@"Go To Archive Folder" action:@selector(goToArchiveFolder:) intoParentMenuItem:xcodeWayMenuItem];
+        [self addMenuItemNamed:@"Go To User Data Folder" action:@selector(goToUserDataFolder:) intoParentMenuItem:xcodeWayMenuItem];
+        [self addMenuItemNamed:@"Go To Device Logs Folder" action:@selector(goToDeviceLogFolder:) intoParentMenuItem:xcodeWayMenuItem];
+
+        [[xcodeWayMenuItem submenu] addItem:[NSMenuItem separatorItem]];
+
         [self addMenuItemNamed:@"Go To Xcode Folder" action:@selector(goToXcodeFolder:) intoParentMenuItem:xcodeWayMenuItem];
 
         [[xcodeWayMenuItem submenu] addItem:[NSMenuItem separatorItem]];
@@ -112,6 +130,10 @@ static XcodeWay *sharedPlugin;
 
         [self addMenuItemNamed:@"Go To Github" action:@selector(goToGithub:) intoParentMenuItem:xcodeWayMenuItem];
         [self addMenuItemNamed:@"Go To Bitbucket" action:@selector(goToBitbucket:) intoParentMenuItem:xcodeWayMenuItem];
+
+        [[xcodeWayMenuItem submenu] addItem:[NSMenuItem separatorItem]];
+
+        [self addMenuItemNamed:@"About" action:@selector(goToAbout:) intoParentMenuItem:xcodeWayMenuItem];
     }
 }
 
@@ -128,13 +150,12 @@ static XcodeWay *sharedPlugin;
 #pragma mark - Menu Action
 - (void)gotoProjectFolder:(id)sender
 {
-    NSAlert *alert = [NSAlert alertWithMessageText:@"Hello, World" defaultButton:nil alternateButton:nil otherButton:nil informativeTextWithFormat:@""];
-    [alert runModal];
+    [self.navigatorManager navigateWithNavigator:[FTGProjectFolderNavigator new]];
 }
 
 - (void)goToSimulatorFolder:(id)sender
 {
-    [self.navigatorManager navigateWithNavigator:[FTGProjectFolderNavigator new]];
+    [self.navigatorManager navigateWithNavigator:[FTGSimulatorFolderNavigator new]];
 }
 
 - (void)goToDerivedDataFolder:(id)sender
@@ -157,6 +178,21 @@ static XcodeWay *sharedPlugin;
     [self.navigatorManager navigateWithNavigator:[FTGXcodeFolderNavigator new]];
 }
 
+- (void)goToArchiveFolder:(id)sender
+{
+    [self.navigatorManager navigateWithNavigator:[FTGArchiveFolderNavigator new]];
+}
+
+- (void)goToUserDataFolder:(id)sender
+{
+    [self.navigatorManager navigateWithNavigator:[FTGUserDataFolderNavigator new]];
+}
+
+- (void)goToDeviceLogFolder:(id)sender
+{
+    [self.navigatorManager navigateWithNavigator:[FTGDeviceLogFolderNavigator new]];
+}
+
 - (void)goToTerminal:(id)sender
 {
     [self.navigatorManager navigateWithNavigator:[FTGTerminalNavigator new]];
@@ -170,6 +206,11 @@ static XcodeWay *sharedPlugin;
 - (void)goToBitbucket:(id)sender
 {
     [self.navigatorManager navigateWithNavigator:[FTGGitRepoNavigator new]];
+}
+
+- (void)goToAbout:(id)sender
+{
+    [self.navigatorManager navigateWithNavigator:[FTGAboutNavigator new]];
 }
 
 

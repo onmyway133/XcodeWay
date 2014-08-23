@@ -7,7 +7,12 @@
 #ifdef __OBJC__
     #import <Cocoa/Cocoa.h>
 
+
+// Category
+#import "NSAlert+FTGAdditions.h"
+
 // Helper
+#import "FTGEnvironmentManager.h"
 
 // Navigator
 #import "FTGNavigator.h"
@@ -19,5 +24,9 @@
 #import "FTGXcodeFolderNavigator.h"
 #import "FTGTerminalNavigator.h"
 #import "FTGGitRepoNavigator.h"
+#import "FTGAboutNavigator.h"
+#import "FTGArchiveFolderNavigator.h"
+#import "FTGUserDataFolderNavigator.h"
+#import "FTGDeviceLogFolderNavigator.h"
 
 #endif

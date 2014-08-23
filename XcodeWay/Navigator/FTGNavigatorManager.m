@@ -12,7 +12,7 @@
 
 - (void)navigateWithNavigator:(FTGNavigator *)navigator
 {
-    
+    [navigator navigate];
 }
 
 @end

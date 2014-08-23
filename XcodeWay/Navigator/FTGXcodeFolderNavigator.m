@@ -10,4 +10,9 @@
 
 @implementation FTGXcodeFolderNavigator
 
+- (void)navigate
+{
+    
+}
+
 @end

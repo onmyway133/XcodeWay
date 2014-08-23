@@ -12,7 +12,11 @@
 
 - (void)navigate
 {
+    NSString *applicationSupportDirectoryPath = [[FTGEnvironmentManager sharedManager] applicationSupportDirectoryPath];
+    NSString *iPhoneSimulatorDirectoryPath = [applicationSupportDirectoryPath stringByAppendingPathComponent:@"iPhone Simulator"];
 
+    NSURL *URL = [NSURL fileURLWithPath:iPhoneSimulatorDirectoryPath isDirectory:YES];
+    [[NSWorkspace sharedWorkspace] openURL:URL];
 }
 
 @end

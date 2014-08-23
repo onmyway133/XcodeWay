@@ -12,6 +12,13 @@
 
 - (void)navigate
 {
+    NSString *applicationSupportDirectoryPath = [[FTGEnvironmentManager sharedManager] applicationSupportDirectoryPath];
+    NSString *plugInsDirectoryPath = [applicationSupportDirectoryPath
+                                      stringByAppendingPathComponent:@"Developer/Shared/Xcode/Plug-ins"];
+
+    NSURL *URL = [NSURL fileURLWithPath:plugInsDirectoryPath isDirectory:YES];
+    [[NSWorkspace sharedWorkspace] openURL:URL];
+
 
 }
 
