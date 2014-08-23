@@ -2,6 +2,12 @@ XcodeWay
 ==
 Navigate to many places from Xcode
 
+How to use it
+--
+XcodeWay is available via Window -> XcodeWay menu
+
+![XcodeWay](http://i59.tinypic.com/bfmey9.png)
+
 
 Licence
 --
