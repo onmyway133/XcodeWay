@@ -111,16 +111,19 @@ static XcodeWay *sharedPlugin;
         // Sub Menu Item
         [self addMenuItemNamed:@"Go To Project Folder" action:@selector(gotoProjectFolder:) intoParentMenuItem:xcodeWayMenuItem];
         [self addMenuItemNamed:@"Go To Simulator Folder" action:@selector(goToSimulatorFolder:) intoParentMenuItem:xcodeWayMenuItem];
-        [self addMenuItemNamed:@"Go To Derived Data Folder" action:@selector(goToDerivedDataFolder:) intoParentMenuItem:xcodeWayMenuItem];
         [self addMenuItemNamed:@"Go To Plug-Ins Folder" action:@selector(goToPlugInsFolder:) intoParentMenuItem:xcodeWayMenuItem];
-        [self addMenuItemNamed:@"Go To Template Folder" action:@selector(goToTemplateFolder:) intoParentMenuItem:xcodeWayMenuItem];
+        [self addMenuItemNamed:@"Go To Templates Folder" action:@selector(goToTemplateFolder:) intoParentMenuItem:xcodeWayMenuItem];
         [self addMenuItemNamed:@"Go To Archive Folder" action:@selector(goToArchiveFolder:) intoParentMenuItem:xcodeWayMenuItem];
         [self addMenuItemNamed:@"Go To User Data Folder" action:@selector(goToUserDataFolder:) intoParentMenuItem:xcodeWayMenuItem];
-        [self addMenuItemNamed:@"Go To Device Logs Folder" action:@selector(goToDeviceLogFolder:) intoParentMenuItem:xcodeWayMenuItem];
+        [self addMenuItemNamed:@"Go To iOS Device Logs Folder" action:@selector(goToDeviceLogFolder:) intoParentMenuItem:xcodeWayMenuItem];
+        [self addMenuItemNamed:@"Go To Derived Data Folder" action:@selector(goToDerivedDataFolder:) intoParentMenuItem:xcodeWayMenuItem];
 
         [[xcodeWayMenuItem submenu] addItem:[NSMenuItem separatorItem]];
 
-        [self addMenuItemNamed:@"Go To Xcode Folder" action:@selector(goToXcodeFolder:) intoParentMenuItem:xcodeWayMenuItem];
+        [self addMenuItemNamed:@"Go To Current Xcode Folder" action:@selector(goToCurrentXcodeFolder:)
+            intoParentMenuItem:xcodeWayMenuItem];
+        [self addMenuItemNamed:@"Go To Selected Xcode Folder" action:@selector(goToSelectedXcodeFolder:)
+            intoParentMenuItem:xcodeWayMenuItem];
 
         [[xcodeWayMenuItem submenu] addItem:[NSMenuItem separatorItem]];
 
@@ -173,9 +176,14 @@ static XcodeWay *sharedPlugin;
     [self.navigatorManager navigateWithNavigator:[FTGTemplateFolderNavigator new]];
 }
 
-- (void)goToXcodeFolder:(id)sender
+- (void)goToCurrentXcodeFolder:(id)sender
 {
-    [self.navigatorManager navigateWithNavigator:[FTGXcodeFolderNavigator new]];
+    [self.navigatorManager navigateWithNavigator:[FTGCurrentXcodeFolderNavigator new]];
+}
+
+- (void)goToSelectedXcodeFolder:(id)sender
+{
+    [self.navigatorManager navigateWithNavigator:[FTGSelectedXcodeFolderNavigator new]];
 }
 
 - (void)goToArchiveFolder:(id)sender

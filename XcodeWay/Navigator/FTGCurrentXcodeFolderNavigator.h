@@ -1,5 +1,5 @@
 //
-//  FTGXcodeFolderNavigator.h
+//  FTGCurrentXcodeFolderNavigator.h
 //  XcodeWay
 //
 //  Created by Khoa Pham on 8/23/14.
@@ -8,6 +8,6 @@
 
 #import "FTGNavigator.h"
 
-@interface FTGXcodeFolderNavigator : FTGNavigator
+@interface FTGCurrentXcodeFolderNavigator : FTGNavigator
 
 @end

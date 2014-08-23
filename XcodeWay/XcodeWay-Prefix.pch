@@ -10,6 +10,7 @@
 
 // Category
 #import "NSAlert+FTGAdditions.h"
+#import "NSTask+FTGAdditions.h"
 
 // Helper
 #import "FTGEnvironmentManager.h"
@@ -21,7 +22,8 @@
 #import "FTGDerivedDataFolderNavigator.h"
 #import "FTGPlugInsFolderNavigator.h"
 #import "FTGTemplateFolderNavigator.h"
-#import "FTGXcodeFolderNavigator.h"
+#import "FTGCurrentXcodeFolderNavigator.h"
+#import "FTGSelectedXcodeFolderNavigator.h"
 #import "FTGTerminalNavigator.h"
 #import "FTGGitRepoNavigator.h"
 #import "FTGAboutNavigator.h"
