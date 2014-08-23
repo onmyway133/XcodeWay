@@ -7,34 +7,40 @@
 //
 
 #import "XcodeWay.h"
+#import "FTGNavigatorManager.h"
 
 static XcodeWay *sharedPlugin;
 
 @interface XcodeWay ()
 
 @property (nonatomic, strong) NSBundle *bundle;
+@property (nonatomic, strong) FTGNavigatorManager *navigatorManager;
 
 @end
 
 @implementation XcodeWay
 
-+ (void)pluginDidLoad:(NSBundle *)plugin
++ (void)pluginDidLoad:(NSBundle *)bundle
 {
     static dispatch_once_t onceToken;
     NSString *currentApplicationName = [[NSBundle mainBundle] infoDictionary][@"CFBundleName"];
     if ([currentApplicationName isEqual:@"Xcode"]) {
         dispatch_once(&onceToken, ^{
-            sharedPlugin = [[self alloc] initWithBundle:plugin];
+            sharedPlugin = [[self alloc] initWithBundle:bundle];
         });
     }
 }
 
-- (id)initWithBundle:(NSBundle *)plugin
+- (id)initWithBundle:(NSBundle *)bundle
 {
     if (self = [super init]) {
         // reference to plugin's bundle, for resource acccess
-        self.bundle = plugin;
+        self.bundle = bundle;
 
+        // Navigator Manager
+        self.navigatorManager = [[FTGNavigatorManager alloc] init];
+
+        // Notifications
         [self registerNotifications];
     }
     return self;
@@ -96,6 +102,7 @@ static XcodeWay *sharedPlugin;
         [self addMenuItemNamed:@"Go To Derived Data Folder" action:@selector(goToDerivedDataFolder:) intoParentMenuItem:xcodeWayMenuItem];
         [self addMenuItemNamed:@"Go To Plug-Ins Folder" action:@selector(goToPlugInsFolder:) intoParentMenuItem:xcodeWayMenuItem];
         [self addMenuItemNamed:@"Go To Template Folder" action:@selector(goToTemplateFolder:) intoParentMenuItem:xcodeWayMenuItem];
+        [self addMenuItemNamed:@"Go To Xcode Folder" action:@selector(goToXcodeFolder:) intoParentMenuItem:xcodeWayMenuItem];
 
         [[xcodeWayMenuItem submenu] addItem:[NSMenuItem separatorItem]];
 
@@ -127,37 +134,42 @@ static XcodeWay *sharedPlugin;
 
 - (void)goToSimulatorFolder:(id)sender
 {
-
+    [self.navigatorManager navigateWithNavigator:[FTGProjectFolderNavigator new]];
 }
 
 - (void)goToDerivedDataFolder:(id)sender
 {
-
+    [self.navigatorManager navigateWithNavigator:[FTGDerivedDataFolderNavigator new]];
 }
 
 - (void)goToPlugInsFolder:(id)sender
 {
-
+    [self.navigatorManager navigateWithNavigator:[FTGPlugInsFolderNavigator new]];
 }
 
 - (void)goToTemplateFolder:(id)sender
 {
+    [self.navigatorManager navigateWithNavigator:[FTGTemplateFolderNavigator new]];
+}
 
+- (void)goToXcodeFolder:(id)sender
+{
+    [self.navigatorManager navigateWithNavigator:[FTGXcodeFolderNavigator new]];
 }
 
 - (void)goToTerminal:(id)sender
 {
-
+    [self.navigatorManager navigateWithNavigator:[FTGTerminalNavigator new]];
 }
 
 - (void)goToGithub:(id)sender
 {
-
+    [self.navigatorManager navigateWithNavigator:[FTGGitRepoNavigator new]];
 }
 
 - (void)goToBitbucket:(id)sender
 {
-
+    [self.navigatorManager navigateWithNavigator:[FTGGitRepoNavigator new]];
 }
 
 

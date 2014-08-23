@@ -6,4 +6,18 @@
 
 #ifdef __OBJC__
     #import <Cocoa/Cocoa.h>
+
+// Helper
+
+// Navigator
+#import "FTGNavigator.h"
+#import "FTGProjectFolderNavigator.h"
+#import "FTGSimulatorFolderNavigator.h"
+#import "FTGDerivedDataFolderNavigator.h"
+#import "FTGPlugInsFolderNavigator.h"
+#import "FTGTemplateFolderNavigator.h"
+#import "FTGXcodeFolderNavigator.h"
+#import "FTGTerminalNavigator.h"
+#import "FTGGitRepoNavigator.h"
+
 #endif
