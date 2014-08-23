@@ -30,5 +30,6 @@
 #import "FTGArchiveFolderNavigator.h"
 #import "FTGUserDataFolderNavigator.h"
 #import "FTGDeviceLogFolderNavigator.h"
+#import "FTGiTermNavigator.h"
 
 #endif

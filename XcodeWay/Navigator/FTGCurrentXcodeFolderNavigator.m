@@ -16,8 +16,6 @@
     NSURL *bundleURL = [[NSBundle mainBundle] bundleURL];
     NSURL *URL = [bundleURL URLByAppendingPathComponent:@"Contents/Developer"];
 
-    [NSAlert ftg_showMessage:URL.absoluteString];
-
     [[NSWorkspace sharedWorkspace] openURL:URL];
 }
 

@@ -128,6 +128,7 @@ static XcodeWay *sharedPlugin;
         [[xcodeWayMenuItem submenu] addItem:[NSMenuItem separatorItem]];
 
         [self addMenuItemNamed:@"Go To Terminal" action:@selector(goToTerminal:) intoParentMenuItem:xcodeWayMenuItem];
+        [self addMenuItemNamed:@"Go To iTerm" action:@selector(goToiTerm:) intoParentMenuItem:xcodeWayMenuItem];
 
         [[xcodeWayMenuItem submenu] addItem:[NSMenuItem separatorItem]];
 
@@ -204,6 +205,11 @@ static XcodeWay *sharedPlugin;
 - (void)goToTerminal:(id)sender
 {
     [self.navigatorManager navigateWithNavigator:[FTGTerminalNavigator new]];
+}
+
+- (void)goToiTerm:(id)sender
+{
+    [self.navigatorManager navigateWithNavigator:[FTGiTermNavigator new]];
 }
 
 - (void)goToGithub:(id)sender

@@ -11,5 +11,6 @@
 @interface NSTask (FTGAdditions)
 
 + (NSString *)ftg_outputTaskResultWithLaunchPath:(NSString *)launchPath arguments:(NSArray *)arguments;
++ (void)ftg_runTaskWithLaunchPath:(NSString *)launchPath arguments:(NSArray *)arguments;
 
 @end

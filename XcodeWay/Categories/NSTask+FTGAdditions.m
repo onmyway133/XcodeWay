@@ -33,4 +33,13 @@
     return output;
 }
 
++ (void)ftg_runTaskWithLaunchPath:(NSString *)launchPath arguments:(NSArray *)arguments
+{
+    NSTask *task = [[NSTask alloc] init];
+    task.launchPath = launchPath;
+    task.arguments = arguments;
+    
+    [task launch];
+}
+
 @end

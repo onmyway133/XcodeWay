@@ -10,9 +10,14 @@
 
 @implementation FTGTerminalNavigator
 
+// http://stackoverflow.com/questions/9823395/how-to-launch-command-line-version-of-app-from-command-line-programmatically
 - (void)navigate
 {
+    NSString *projectPath = [[FTGEnvironmentManager sharedManager] projectPath];
+    NSString *projectFolderPath = [projectPath stringByDeletingLastPathComponent];
 
+    [NSTask ftg_runTaskWithLaunchPath:@"/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal"
+                            arguments:@[ projectFolderPath ]];
 }
 
 @end

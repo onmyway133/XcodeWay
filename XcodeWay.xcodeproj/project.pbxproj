@@ -26,6 +26,7 @@
 		99634B2719A8F32F00A6F94F /* NSTask+FTGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 99634B2619A8F32F00A6F94F /* NSTask+FTGAdditions.m */; };
 		998E7ADC19A89FAB006E9A2F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998E7ADB19A89FAB006E9A2F /* Cocoa.framework */; };
 		998E7AE619A89FAB006E9A2F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 998E7AE419A89FAB006E9A2F /* InfoPlist.strings */; };
+		99B22F7719A8FD4100DF4519 /* FTGiTermNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B22F7619A8FD4100DF4519 /* FTGiTermNavigator.m */; };
 		99C2FFA919A8EF1300060FB1 /* FTGSelectedXcodeFolderNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C2FFA819A8EF1300060FB1 /* FTGSelectedXcodeFolderNavigator.m */; };
 		99C2FFAC19A8EF2800060FB1 /* FTGCurrentXcodeFolderNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C2FFAB19A8EF2800060FB1 /* FTGCurrentXcodeFolderNavigator.m */; };
 /* End PBXBuildFile section */
@@ -988,6 +989,8 @@
 		99ACCBA319A8D67A00E4808C /* NSWindow-IBResizingAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSWindow-IBResizingAdditions.h"; sourceTree = "<group>"; };
 		99ACCBA419A8D67A00E4808C /* NSWindowDelegate-Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSWindowDelegate-Protocol.h"; sourceTree = "<group>"; };
 		99ACCBA519A8D67A00E4808C /* NSWindowRestoration-Protocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSWindowRestoration-Protocol.h"; sourceTree = "<group>"; };
+		99B22F7519A8FD4100DF4519 /* FTGiTermNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTGiTermNavigator.h; sourceTree = "<group>"; };
+		99B22F7619A8FD4100DF4519 /* FTGiTermNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGiTermNavigator.m; sourceTree = "<group>"; };
 		99C2FFA719A8EF1300060FB1 /* FTGSelectedXcodeFolderNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTGSelectedXcodeFolderNavigator.h; sourceTree = "<group>"; };
 		99C2FFA819A8EF1300060FB1 /* FTGSelectedXcodeFolderNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGSelectedXcodeFolderNavigator.m; sourceTree = "<group>"; };
 		99C2FFAA19A8EF2800060FB1 /* FTGCurrentXcodeFolderNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTGCurrentXcodeFolderNavigator.h; sourceTree = "<group>"; };
@@ -1039,6 +1042,8 @@
 				99C2FFA819A8EF1300060FB1 /* FTGSelectedXcodeFolderNavigator.m */,
 				99C2FFAA19A8EF2800060FB1 /* FTGCurrentXcodeFolderNavigator.h */,
 				99C2FFAB19A8EF2800060FB1 /* FTGCurrentXcodeFolderNavigator.m */,
+				99B22F7519A8FD4100DF4519 /* FTGiTermNavigator.h */,
+				99B22F7619A8FD4100DF4519 /* FTGiTermNavigator.m */,
 			);
 			path = Navigator;
 			sourceTree = "<group>";
@@ -2150,6 +2155,7 @@
 				9902EACE19A8B8FA00DC38D8 /* FTGNavigator.m in Sources */,
 				9902EADB19A8BBE000DC38D8 /* FTGDerivedDataFolderNavigator.m in Sources */,
 				990EE6E519A8E5B50080F7B3 /* FTGArchiveFolderNavigator.m in Sources */,
+				99B22F7719A8FD4100DF4519 /* FTGiTermNavigator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
