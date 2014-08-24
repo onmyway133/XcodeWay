@@ -24,7 +24,11 @@
     task.launchPath = launchPath;
     task.arguments = arguments;
     task.standardOutput = [NSPipe pipe];
-    task.currentDirectoryPath = currentDirectoryPath;
+
+    if (currentDirectoryPath.length > 0) {
+        task.currentDirectoryPath = currentDirectoryPath;
+    }
+
     NSFileHandle *file = [task.standardOutput fileHandleForReading];
 
     [task launch];
