@@ -15,8 +15,11 @@
 {
     NSString *projectPath = [[FTGEnvironmentManager sharedManager] projectPath];
 
-    NSURL *URL = [NSURL fileURLWithPath:projectPath isDirectory:NO];
+    if (!projectPath) {
+        return;
+    }
 
+    NSURL *URL = [NSURL fileURLWithPath:projectPath isDirectory:NO];
     [[NSWorkspace sharedWorkspace] activateFileViewerSelectingURLs:@[ URL ]];
 }
 

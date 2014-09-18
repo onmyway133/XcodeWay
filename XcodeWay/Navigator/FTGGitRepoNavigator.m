@@ -14,6 +14,11 @@
 - (void)navigate
 {
     NSString *projectPath = [[FTGEnvironmentManager sharedManager] projectPath];
+
+    if (!projectPath) {
+        return;
+    }
+
     NSString *projectFolderPath = [projectPath stringByDeletingLastPathComponent];
     NSURL *projectFolderURL = [NSURL fileURLWithPath:projectFolderPath];
 
