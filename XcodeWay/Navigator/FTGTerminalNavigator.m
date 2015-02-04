@@ -16,8 +16,8 @@
     NSString *projectPath = [[FTGEnvironmentManager sharedManager] projectPath];
     NSString *projectFolderPath = [projectPath stringByDeletingLastPathComponent];
 
-    [NSTask ftg_runTaskWithLaunchPath:@"/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal"
-                            arguments:@[ projectFolderPath ]];
+    [NSTask ftg_runTaskWithLaunchPath:@"/usr/bin/open"
+                            arguments:@[@"-a", @"Terminal", projectFolderPath]];
 }
 
 @end
