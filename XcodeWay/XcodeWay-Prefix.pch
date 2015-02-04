@@ -31,5 +31,6 @@
 #import "FTGUserDataFolderNavigator.h"
 #import "FTGDeviceLogFolderNavigator.h"
 #import "FTGiTermNavigator.h"
+#import "ZENGitHubApplicationNavigator.h"
 
 #endif
