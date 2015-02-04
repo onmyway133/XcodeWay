@@ -29,6 +29,7 @@
 		99B22F7719A8FD4100DF4519 /* FTGiTermNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B22F7619A8FD4100DF4519 /* FTGiTermNavigator.m */; };
 		99C2FFA919A8EF1300060FB1 /* FTGSelectedXcodeFolderNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C2FFA819A8EF1300060FB1 /* FTGSelectedXcodeFolderNavigator.m */; };
 		99C2FFAC19A8EF2800060FB1 /* FTGCurrentXcodeFolderNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C2FFAB19A8EF2800060FB1 /* FTGCurrentXcodeFolderNavigator.m */; };
+		BDB7EEC71A8200FC000DCA9A /* ZENGitHubApplicationNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB7EEC61A8200FC000DCA9A /* ZENGitHubApplicationNavigator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,8 @@
 		99C2FFA819A8EF1300060FB1 /* FTGSelectedXcodeFolderNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGSelectedXcodeFolderNavigator.m; sourceTree = "<group>"; };
 		99C2FFAA19A8EF2800060FB1 /* FTGCurrentXcodeFolderNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTGCurrentXcodeFolderNavigator.h; sourceTree = "<group>"; };
 		99C2FFAB19A8EF2800060FB1 /* FTGCurrentXcodeFolderNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGCurrentXcodeFolderNavigator.m; sourceTree = "<group>"; };
+		BDB7EEC51A8200FC000DCA9A /* ZENGitHubApplicationNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZENGitHubApplicationNavigator.h; sourceTree = "<group>"; };
+		BDB7EEC61A8200FC000DCA9A /* ZENGitHubApplicationNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZENGitHubApplicationNavigator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,38 +99,40 @@
 		9902EAC719A8B8E000DC38D8 /* Navigator */ = {
 			isa = PBXGroup;
 			children = (
-				9902EACC19A8B8FA00DC38D8 /* FTGNavigator.h */,
-				9902EACD19A8B8FA00DC38D8 /* FTGNavigator.m */,
-				9902EAD019A8BBB800DC38D8 /* FTGNavigatorManager.h */,
-				9902EAD119A8BBB800DC38D8 /* FTGNavigatorManager.m */,
-				9902EAD319A8BBCA00DC38D8 /* FTGProjectFolderNavigator.h */,
-				9902EAD419A8BBCA00DC38D8 /* FTGProjectFolderNavigator.m */,
-				9902EAD619A8BBD400DC38D8 /* FTGSimulatorFolderNavigator.h */,
-				9902EAD719A8BBD400DC38D8 /* FTGSimulatorFolderNavigator.m */,
-				9902EAD919A8BBDF00DC38D8 /* FTGDerivedDataFolderNavigator.h */,
-				9902EADA19A8BBE000DC38D8 /* FTGDerivedDataFolderNavigator.m */,
-				9902EADC19A8BBE900DC38D8 /* FTGPlugInsFolderNavigator.h */,
-				9902EADD19A8BBE900DC38D8 /* FTGPlugInsFolderNavigator.m */,
-				9902EADF19A8BBF400DC38D8 /* FTGTemplateFolderNavigator.h */,
-				9902EAE019A8BBF400DC38D8 /* FTGTemplateFolderNavigator.m */,
-				9902EAE219A8BBFF00DC38D8 /* FTGTerminalNavigator.h */,
-				9902EAE319A8BBFF00DC38D8 /* FTGTerminalNavigator.m */,
-				9902EAE519A8BC1C00DC38D8 /* FTGGitRepoNavigator.h */,
-				9902EAE619A8BC1C00DC38D8 /* FTGGitRepoNavigator.m */,
 				9902EAF219A8D30300DC38D8 /* FTGAboutNavigator.h */,
 				9902EAF319A8D30300DC38D8 /* FTGAboutNavigator.m */,
 				990EE6E319A8E5B50080F7B3 /* FTGArchiveFolderNavigator.h */,
 				990EE6E419A8E5B50080F7B3 /* FTGArchiveFolderNavigator.m */,
-				990EE6E619A8E5C20080F7B3 /* FTGDeviceLogFolderNavigator.h */,
-				990EE6E719A8E5C20080F7B3 /* FTGDeviceLogFolderNavigator.m */,
-				990EE6E919A8E5D00080F7B3 /* FTGUserDataFolderNavigator.h */,
-				990EE6EA19A8E5D00080F7B3 /* FTGUserDataFolderNavigator.m */,
-				99C2FFA719A8EF1300060FB1 /* FTGSelectedXcodeFolderNavigator.h */,
-				99C2FFA819A8EF1300060FB1 /* FTGSelectedXcodeFolderNavigator.m */,
 				99C2FFAA19A8EF2800060FB1 /* FTGCurrentXcodeFolderNavigator.h */,
 				99C2FFAB19A8EF2800060FB1 /* FTGCurrentXcodeFolderNavigator.m */,
+				9902EAD919A8BBDF00DC38D8 /* FTGDerivedDataFolderNavigator.h */,
+				9902EADA19A8BBE000DC38D8 /* FTGDerivedDataFolderNavigator.m */,
+				990EE6E619A8E5C20080F7B3 /* FTGDeviceLogFolderNavigator.h */,
+				990EE6E719A8E5C20080F7B3 /* FTGDeviceLogFolderNavigator.m */,
+				9902EAE519A8BC1C00DC38D8 /* FTGGitRepoNavigator.h */,
+				9902EAE619A8BC1C00DC38D8 /* FTGGitRepoNavigator.m */,
 				99B22F7519A8FD4100DF4519 /* FTGiTermNavigator.h */,
 				99B22F7619A8FD4100DF4519 /* FTGiTermNavigator.m */,
+				9902EACC19A8B8FA00DC38D8 /* FTGNavigator.h */,
+				9902EACD19A8B8FA00DC38D8 /* FTGNavigator.m */,
+				9902EAD019A8BBB800DC38D8 /* FTGNavigatorManager.h */,
+				9902EAD119A8BBB800DC38D8 /* FTGNavigatorManager.m */,
+				9902EADC19A8BBE900DC38D8 /* FTGPlugInsFolderNavigator.h */,
+				9902EADD19A8BBE900DC38D8 /* FTGPlugInsFolderNavigator.m */,
+				9902EAD319A8BBCA00DC38D8 /* FTGProjectFolderNavigator.h */,
+				9902EAD419A8BBCA00DC38D8 /* FTGProjectFolderNavigator.m */,
+				99C2FFA719A8EF1300060FB1 /* FTGSelectedXcodeFolderNavigator.h */,
+				99C2FFA819A8EF1300060FB1 /* FTGSelectedXcodeFolderNavigator.m */,
+				9902EAD619A8BBD400DC38D8 /* FTGSimulatorFolderNavigator.h */,
+				9902EAD719A8BBD400DC38D8 /* FTGSimulatorFolderNavigator.m */,
+				9902EADF19A8BBF400DC38D8 /* FTGTemplateFolderNavigator.h */,
+				9902EAE019A8BBF400DC38D8 /* FTGTemplateFolderNavigator.m */,
+				9902EAE219A8BBFF00DC38D8 /* FTGTerminalNavigator.h */,
+				9902EAE319A8BBFF00DC38D8 /* FTGTerminalNavigator.m */,
+				990EE6E919A8E5D00080F7B3 /* FTGUserDataFolderNavigator.h */,
+				990EE6EA19A8E5D00080F7B3 /* FTGUserDataFolderNavigator.m */,
+				BDB7EEC51A8200FC000DCA9A /* ZENGitHubApplicationNavigator.h */,
+				BDB7EEC61A8200FC000DCA9A /* ZENGitHubApplicationNavigator.m */,
 			);
 			path = Navigator;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 				9902EACE19A8B8FA00DC38D8 /* FTGNavigator.m in Sources */,
 				9902EADB19A8BBE000DC38D8 /* FTGDerivedDataFolderNavigator.m in Sources */,
 				990EE6E519A8E5B50080F7B3 /* FTGArchiveFolderNavigator.m in Sources */,
+				BDB7EEC71A8200FC000DCA9A /* ZENGitHubApplicationNavigator.m in Sources */,
 				99B22F7719A8FD4100DF4519 /* FTGiTermNavigator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
