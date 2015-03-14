@@ -111,6 +111,7 @@ static XcodeWay *sharedPlugin;
         // Sub Menu Item
         [self addMenuItemNamed:@"Go To Project Folder" action:@selector(gotoProjectFolder:) intoParentMenuItem:xcodeWayMenuItem];
         [self addMenuItemNamed:@"Go To Simulator Folder" action:@selector(goToSimulatorFolder:) intoParentMenuItem:xcodeWayMenuItem];
+        [self addMenuItemNamed:@"Go To New Simulator Folder" action:@selector(goToNewSimulatorFolder:) intoParentMenuItem:xcodeWayMenuItem];
         [self addMenuItemNamed:@"Go To Plug-Ins Folder" action:@selector(goToPlugInsFolder:) intoParentMenuItem:xcodeWayMenuItem];
         [self addMenuItemNamed:@"Go To Templates Folder" action:@selector(goToTemplateFolder:) intoParentMenuItem:xcodeWayMenuItem];
         [self addMenuItemNamed:@"Go To Archive Folder" action:@selector(goToArchiveFolder:) intoParentMenuItem:xcodeWayMenuItem];
@@ -159,6 +160,10 @@ static XcodeWay *sharedPlugin;
 - (void)goToSimulatorFolder:(id)sender
 {
     [self.navigatorManager navigateWithNavigator:[FTGSimulatorFolderNavigator new]];
+}
+
+- (void)goToNewSimulatorFolder:(id)sender {
+    [self.navigatorManager navigateWithNavigator:[FTGNewSimulatorFolderNavigator new]];
 }
 
 - (void)goToDerivedDataFolder:(id)sender
