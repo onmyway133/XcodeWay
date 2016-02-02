@@ -12,8 +12,7 @@
 
 - (void)navigate
 {
-    BOOL launchediTerm = [[NSWorkspace sharedWorkspace] launchApplication:@"iTerm"];
-    if (launchediTerm == NO) {
+    if ([[NSWorkspace sharedWorkspace] launchApplication:@"iTerm"] == NO) {
         [NSAlert ftg_showMessage:@"Could not launch iTerm"];
     }
 }
