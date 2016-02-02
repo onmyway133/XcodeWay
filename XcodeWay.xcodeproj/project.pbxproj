@@ -183,7 +183,9 @@
 				998E7ADA19A89FAB006E9A2F /* Frameworks */,
 				998E7AD919A89FAB006E9A2F /* Products */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		998E7AD919A89FAB006E9A2F /* Products */ = {
 			isa = PBXGroup;
