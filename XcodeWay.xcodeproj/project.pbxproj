@@ -34,6 +34,7 @@
 		99E42E041AB3F43F00ABD214 /* FTGDirectoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E42E031AB3F43F00ABD214 /* FTGDirectoryItem.m */; };
 		D226B74B1CD4992E00EFDFE3 /* XcodeWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B74A1CD4992E00EFDFE3 /* XcodeWay.swift */; };
 		D226B74D1CD49A1C00EFDFE3 /* PluginType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B74C1CD49A1C00EFDFE3 /* PluginType.swift */; };
+		D226B74F1CD4A7EB00EFDFE3 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B74E1CD4A7EB00EFDFE3 /* Navigator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +94,7 @@
 		D226B7491CD4992E00EFDFE3 /* XcodeWay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XcodeWay-Bridging-Header.h"; sourceTree = "<group>"; };
 		D226B74A1CD4992E00EFDFE3 /* XcodeWay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XcodeWay.swift; sourceTree = "<group>"; };
 		D226B74C1CD49A1C00EFDFE3 /* PluginType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginType.swift; sourceTree = "<group>"; };
+		D226B74E1CD4A7EB00EFDFE3 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				99B22F7619A8FD4100DF4519 /* FTGiTermNavigator.m */,
 				99E42DFC1AB3F3C900ABD214 /* FTGNewSimulatorFolderNavigator.h */,
 				99E42DFD1AB3F3C900ABD214 /* FTGNewSimulatorFolderNavigator.m */,
+				D226B74E1CD4A7EB00EFDFE3 /* Navigator.swift */,
 			);
 			path = Navigator;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				9902EADE19A8BBE900DC38D8 /* FTGPlugInsFolderNavigator.m in Sources */,
 				9902EAF419A8D30300DC38D8 /* FTGAboutNavigator.m in Sources */,
 				99C2FFAC19A8EF2800060FB1 /* FTGCurrentXcodeFolderNavigator.m in Sources */,
+				D226B74F1CD4A7EB00EFDFE3 /* Navigator.swift in Sources */,
 				990EE6E819A8E5C20080F7B3 /* FTGDeviceLogFolderNavigator.m in Sources */,
 				9902EAD219A8BBB800DC38D8 /* FTGNavigatorManager.m in Sources */,
 				99C2FFA919A8EF1300060FB1 /* FTGSelectedXcodeFolderNavigator.m in Sources */,
@@ -423,6 +427,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
 				DSTROOT = "$(HOME)";
@@ -447,6 +452,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
 				DSTROOT = "$(HOME)";
