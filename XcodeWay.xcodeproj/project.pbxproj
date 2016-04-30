@@ -30,9 +30,9 @@
 		99E42E011AB3F40300ABD214 /* FTGDirectoryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E42E001AB3F40300ABD214 /* FTGDirectoryHelper.m */; };
 		99E42E041AB3F43F00ABD214 /* FTGDirectoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E42E031AB3F43F00ABD214 /* FTGDirectoryItem.m */; };
 		D226B74B1CD4992E00EFDFE3 /* XcodeWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B74A1CD4992E00EFDFE3 /* XcodeWay.swift */; };
-		D226B74D1CD49A1C00EFDFE3 /* PluginType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B74C1CD49A1C00EFDFE3 /* PluginType.swift */; };
 		D226B74F1CD4A7EB00EFDFE3 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B74E1CD4A7EB00EFDFE3 /* Navigator.swift */; };
 		D226B7511CD4AA9E00EFDFE3 /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B7501CD4AA9E00EFDFE3 /* Separator.swift */; };
+		D2407C381CD4B9D60030BD90 /* NSObject+XcodeWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2407C371CD4B9D60030BD90 /* NSObject+XcodeWay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,9 +85,9 @@
 		99E42E031AB3F43F00ABD214 /* FTGDirectoryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGDirectoryItem.m; sourceTree = "<group>"; };
 		D226B7491CD4992E00EFDFE3 /* XcodeWay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XcodeWay-Bridging-Header.h"; sourceTree = "<group>"; };
 		D226B74A1CD4992E00EFDFE3 /* XcodeWay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XcodeWay.swift; sourceTree = "<group>"; };
-		D226B74C1CD49A1C00EFDFE3 /* PluginType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginType.swift; sourceTree = "<group>"; };
 		D226B74E1CD4A7EB00EFDFE3 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		D226B7501CD4AA9E00EFDFE3 /* Separator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
+		D2407C371CD4B9D60030BD90 /* NSObject+XcodeWay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+XcodeWay.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +146,6 @@
 			children = (
 				D226B74A1CD4992E00EFDFE3 /* XcodeWay.swift */,
 				D226B7491CD4992E00EFDFE3 /* XcodeWay-Bridging-Header.h */,
-				D226B74C1CD49A1C00EFDFE3 /* PluginType.swift */,
 			);
 			path = Plugin;
 			sourceTree = "<group>";
@@ -171,6 +170,7 @@
 				9902EAF019A8D2CE00DC38D8 /* NSAlert+FTGAdditions.m */,
 				99634B2519A8F32F00A6F94F /* NSTask+FTGAdditions.h */,
 				99634B2619A8F32F00A6F94F /* NSTask+FTGAdditions.m */,
+				D2407C371CD4B9D60030BD90 /* NSObject+XcodeWay.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -298,15 +298,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D226B74B1CD4992E00EFDFE3 /* XcodeWay.swift in Sources */,
+				D226B7511CD4AA9E00EFDFE3 /* Separator.swift in Sources */,
+				D226B74F1CD4A7EB00EFDFE3 /* Navigator.swift in Sources */,
 				9902EADE19A8BBE900DC38D8 /* FTGPlugInsFolderNavigator.m in Sources */,
 				9902EAF419A8D30300DC38D8 /* FTGAboutNavigator.m in Sources */,
 				99C2FFAC19A8EF2800060FB1 /* FTGCurrentXcodeFolderNavigator.m in Sources */,
-				D226B74F1CD4A7EB00EFDFE3 /* Navigator.swift in Sources */,
 				990EE6E819A8E5C20080F7B3 /* FTGDeviceLogFolderNavigator.m in Sources */,
 				99C2FFA919A8EF1300060FB1 /* FTGSelectedXcodeFolderNavigator.m in Sources */,
 				9902EAE719A8BC1C00DC38D8 /* FTGGitRepoNavigator.m in Sources */,
 				9902EAD519A8BBCA00DC38D8 /* FTGProjectFolderNavigator.m in Sources */,
 				9902EAE119A8BBF400DC38D8 /* FTGTemplateFolderNavigator.m in Sources */,
+				D2407C381CD4B9D60030BD90 /* NSObject+XcodeWay.swift in Sources */,
 				9902EAD819A8BBD400DC38D8 /* FTGSimulatorFolderNavigator.m in Sources */,
 				9902EAED19A8BFC700DC38D8 /* FTGEnvironmentManager.m in Sources */,
 				990EE6EB19A8E5D00080F7B3 /* FTGUserDataFolderNavigator.m in Sources */,
@@ -316,9 +318,7 @@
 				99E42E011AB3F40300ABD214 /* FTGDirectoryHelper.m in Sources */,
 				9902EAE419A8BBFF00DC38D8 /* FTGTerminalNavigator.m in Sources */,
 				9902EADB19A8BBE000DC38D8 /* FTGDerivedDataFolderNavigator.m in Sources */,
-				D226B74D1CD49A1C00EFDFE3 /* PluginType.swift in Sources */,
 				99E42E041AB3F43F00ABD214 /* FTGDirectoryItem.m in Sources */,
-				D226B7511CD4AA9E00EFDFE3 /* Separator.swift in Sources */,
 				990EE6E519A8E5B50080F7B3 /* FTGArchiveFolderNavigator.m in Sources */,
 				99B22F7719A8FD4100DF4519 /* FTGiTermNavigator.m in Sources */,
 			);

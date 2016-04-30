@@ -10,26 +10,10 @@ import Foundation
 
 var sharedPlugin: XcodeWay?
 
-public class XcodeWay: NSObject, PluginType {
-
-  struct Static {
-    static var onceToken: dispatch_once_t = 0
-  }
+public class XcodeWay: NSObject {
 
   // Reference to plugin's bundle, for resource acccess
   let bundle: NSBundle
-
-  // MARK: - PluginType
-
-  class func pluginDidLoad(bundle: NSBundle) {
-    if let currentApplicationName = NSBundle.mainBundle().infoDictionary?["CFBundleName"] as? String
-      where currentApplicationName == "Xcode" {
-
-      dispatch_once(&Static.onceToken) {
-        sharedPlugin = XcodeWay(bundle: bundle)
-      }
-    }
-  }
 
   public required init(bundle: NSBundle) {
     self.bundle = bundle
