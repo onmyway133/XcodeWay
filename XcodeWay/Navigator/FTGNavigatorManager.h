@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class FTGNavigator;
+
 @interface FTGNavigatorManager : NSObject
 
 - (void)navigateWithNavigator:(FTGNavigator *)navigator;

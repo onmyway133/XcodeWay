@@ -32,6 +32,8 @@
 		99E42DFE1AB3F3C900ABD214 /* FTGNewSimulatorFolderNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E42DFD1AB3F3C900ABD214 /* FTGNewSimulatorFolderNavigator.m */; };
 		99E42E011AB3F40300ABD214 /* FTGDirectoryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E42E001AB3F40300ABD214 /* FTGDirectoryHelper.m */; };
 		99E42E041AB3F43F00ABD214 /* FTGDirectoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E42E031AB3F43F00ABD214 /* FTGDirectoryItem.m */; };
+		D226B74B1CD4992E00EFDFE3 /* XcodeWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B74A1CD4992E00EFDFE3 /* XcodeWay.swift */; };
+		D226B74D1CD49A1C00EFDFE3 /* PluginType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B74C1CD49A1C00EFDFE3 /* PluginType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +90,9 @@
 		99E42E001AB3F40300ABD214 /* FTGDirectoryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGDirectoryHelper.m; sourceTree = "<group>"; };
 		99E42E021AB3F43F00ABD214 /* FTGDirectoryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTGDirectoryItem.h; sourceTree = "<group>"; };
 		99E42E031AB3F43F00ABD214 /* FTGDirectoryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGDirectoryItem.m; sourceTree = "<group>"; };
+		D226B7491CD4992E00EFDFE3 /* XcodeWay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XcodeWay-Bridging-Header.h"; sourceTree = "<group>"; };
+		D226B74A1CD4992E00EFDFE3 /* XcodeWay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XcodeWay.swift; sourceTree = "<group>"; };
+		D226B74C1CD49A1C00EFDFE3 /* PluginType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +153,9 @@
 			children = (
 				9902EAC919A8B8E000DC38D8 /* XcodeWay.h */,
 				9902EACA19A8B8E000DC38D8 /* XcodeWay.m */,
+				D226B74A1CD4992E00EFDFE3 /* XcodeWay.swift */,
+				D226B7491CD4992E00EFDFE3 /* XcodeWay-Bridging-Header.h */,
+				D226B74C1CD49A1C00EFDFE3 /* PluginType.swift */,
 			);
 			path = Plugin;
 			sourceTree = "<group>";
@@ -183,9 +191,9 @@
 				998E7ADA19A89FAB006E9A2F /* Frameworks */,
 				998E7AD919A89FAB006E9A2F /* Products */,
 			);
-			indentWidth = 4;
+			indentWidth = 2;
 			sourceTree = "<group>";
-			tabWidth = 4;
+			tabWidth = 2;
 		};
 		998E7AD919A89FAB006E9A2F /* Products */ = {
 			isa = PBXGroup;
@@ -261,6 +269,7 @@
 		998E7AD019A89FAB006E9A2F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Fantageek;
 			};
@@ -317,7 +326,9 @@
 				9902EACB19A8B8E000DC38D8 /* XcodeWay.m in Sources */,
 				9902EACE19A8B8FA00DC38D8 /* FTGNavigator.m in Sources */,
 				9902EADB19A8BBE000DC38D8 /* FTGDerivedDataFolderNavigator.m in Sources */,
+				D226B74D1CD49A1C00EFDFE3 /* PluginType.swift in Sources */,
 				99E42E041AB3F43F00ABD214 /* FTGDirectoryItem.m in Sources */,
+				D226B74B1CD4992E00EFDFE3 /* XcodeWay.swift in Sources */,
 				990EE6E519A8E5B50080F7B3 /* FTGArchiveFolderNavigator.m in Sources */,
 				99B22F7719A8FD4100DF4519 /* FTGiTermNavigator.m in Sources */,
 			);
@@ -410,6 +421,7 @@
 		998E7AEB19A89FAB006E9A2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
@@ -422,7 +434,10 @@
 				);
 				INFOPLIST_FILE = "XcodeWay/XcodeWay-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Application Support/Developer/Shared/Xcode/Plug-ins";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XcodeWay/Plugin/XcodeWay-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Debug;
@@ -430,6 +445,7 @@
 		998E7AEC19A89FAB006E9A2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
@@ -442,7 +458,9 @@
 				);
 				INFOPLIST_FILE = "XcodeWay/XcodeWay-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Application Support/Developer/Shared/Xcode/Plug-ins";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XcodeWay/Plugin/XcodeWay-Bridging-Header.h";
 				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Release;
