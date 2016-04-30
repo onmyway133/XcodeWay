@@ -7,8 +7,13 @@
 //
 
 #import "FTGSelectedXcodeFolderNavigator.h"
+#import "XcodeWay-Swift.h"
 
 @implementation FTGSelectedXcodeFolderNavigator
+
+- (NSString *)title {
+  return @"Go To Selected Xcode Folder";
+}
 
 - (void)navigate
 {

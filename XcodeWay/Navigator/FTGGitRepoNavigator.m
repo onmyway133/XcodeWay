@@ -7,8 +7,13 @@
 //
 
 #import "FTGGitRepoNavigator.h"
+#import "XcodeWay-Swift.h"
 
 @implementation FTGGitRepoNavigator
+
+- (NSString *)title {
+  return @"Go To Git Repository";
+}
 
 // https://github.com/larsxschneider/ShowInGitHub
 - (void)navigate

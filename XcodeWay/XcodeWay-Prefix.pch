@@ -16,7 +16,7 @@
 #import "FTGEnvironmentManager.h"
 
 // Navigator
-#import "FTGNavigator.h"
+
 #import "FTGProjectFolderNavigator.h"
 #import "FTGSimulatorFolderNavigator.h"
 #import "FTGNewSimulatorFolderNavigator.h"

@@ -7,8 +7,13 @@
 //
 
 #import "FTGTemplateFolderNavigator.h"
+#import "XcodeWay-Swift.h"
 
 @implementation FTGTemplateFolderNavigator
+
+- (NSString *)title {
+  return @"Go To Templates Folder";
+}
 
 - (void)navigate
 {

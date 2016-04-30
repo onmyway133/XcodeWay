@@ -7,8 +7,13 @@
 //
 
 #import "FTGAboutNavigator.h"
+#import "XcodeWay-Swift.h"
 
 @implementation FTGAboutNavigator
+
+- (NSString *)title {
+  return @"About";
+}
 
 - (void)navigate
 {

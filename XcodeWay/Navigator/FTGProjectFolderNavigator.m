@@ -7,8 +7,13 @@
 //
 
 #import "FTGProjectFolderNavigator.h"
+#import "XcodeWay-Swift.h"
 
 @implementation FTGProjectFolderNavigator
+
+- (NSString *)title {
+  return @"Go To Project Folder";
+}
 
 // http://stackoverflow.com/questions/7652928/launch-osx-finder-window-with-specific-files-selected
 - (void)navigate

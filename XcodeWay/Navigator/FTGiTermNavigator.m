@@ -7,8 +7,13 @@
 //
 
 #import "FTGiTermNavigator.h"
+#import "XcodeWay-Swift.h"
 
 @implementation FTGiTermNavigator
+
+- (NSString *)title {
+  return @"Go To iTerm";
+}
 
 - (void)navigate
 {

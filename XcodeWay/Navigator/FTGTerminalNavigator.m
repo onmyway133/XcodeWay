@@ -7,8 +7,13 @@
 //
 
 #import "FTGTerminalNavigator.h"
+#import "XcodeWay-Swift.h"
 
 @implementation FTGTerminalNavigator
+
+- (NSString *)title {
+  return @"Go To Terminal";
+}
 
 // http://stackoverflow.com/questions/9823395/how-to-launch-command-line-version-of-app-from-command-line-programmatically
 - (void)navigate

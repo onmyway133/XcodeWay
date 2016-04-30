@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Fantageek. All rights reserved.
 //
 
-#import "FTGNavigator.h"
+@protocol Navigator;
 
-@interface FTGProjectFolderNavigator : FTGNavigator
+@interface FTGProjectFolderNavigator : NSObject <Navigator>
 
 @end

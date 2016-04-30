@@ -10,8 +10,13 @@
 #import "FTGEnvironmentManager.h"
 #import "FTGDirectoryItem.h"
 #import "FTGDirectoryHelper.h"
+#import "XcodeWay-Swift.h"
 
 @implementation FTGNewSimulatorFolderNavigator
+
+- (NSString *)title {
+  return @"Go To New Simulator Folder";
+}
 
 - (void)navigate {
     NSString *libraryPath = [[FTGEnvironmentManager sharedManager] libraryDirectoryPath];

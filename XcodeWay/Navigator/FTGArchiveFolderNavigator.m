@@ -7,8 +7,13 @@
 //
 
 #import "FTGArchiveFolderNavigator.h"
+#import "XcodeWay-Swift.h"
 
 @implementation FTGArchiveFolderNavigator
+
+- (NSString *)title {
+  return @"Go To Archive Folder";
+}
 
 - (void)navigate
 {

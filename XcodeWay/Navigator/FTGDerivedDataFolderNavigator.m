@@ -7,8 +7,13 @@
 //
 
 #import "FTGDerivedDataFolderNavigator.h"
+#import "XcodeWay-Swift.h"
 
 @implementation FTGDerivedDataFolderNavigator
+
+- (NSString *)title {
+  return @"Go To Derived Data Folder";
+}
 
 - (void)navigate
 {

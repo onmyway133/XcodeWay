@@ -7,8 +7,13 @@
 //
 
 #import "FTGPlugInsFolderNavigator.h"
+#import "XcodeWay-Swift.h"
 
 @implementation FTGPlugInsFolderNavigator
+
+- (NSString *)title {
+  return @"Go To Plug-Ins Folder";
+}
 
 - (void)navigate
 {

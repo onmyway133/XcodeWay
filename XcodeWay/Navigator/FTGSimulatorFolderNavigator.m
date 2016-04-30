@@ -7,8 +7,13 @@
 //
 
 #import "FTGSimulatorFolderNavigator.h"
+#import "XcodeWay-Swift.h"
 
 @implementation FTGSimulatorFolderNavigator
+
+- (NSString *)title {
+  return @"Go To Simulator Folder";
+}
 
 - (void)navigate
 {

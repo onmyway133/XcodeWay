@@ -7,8 +7,13 @@
 //
 
 #import "FTGDeviceLogFolderNavigator.h"
+#import "XcodeWay-Swift.h"
 
 @implementation FTGDeviceLogFolderNavigator
+
+- (NSString *)title {
+  return @"Go To iOS Device Logs Folder";
+}
 
 - (void)navigate
 {

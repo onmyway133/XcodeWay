@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9902EACB19A8B8E000DC38D8 /* XcodeWay.m in Sources */ = {isa = PBXBuildFile; fileRef = 9902EACA19A8B8E000DC38D8 /* XcodeWay.m */; };
-		9902EACE19A8B8FA00DC38D8 /* FTGNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9902EACD19A8B8FA00DC38D8 /* FTGNavigator.m */; };
-		9902EAD219A8BBB800DC38D8 /* FTGNavigatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9902EAD119A8BBB800DC38D8 /* FTGNavigatorManager.m */; };
 		9902EAD519A8BBCA00DC38D8 /* FTGProjectFolderNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9902EAD419A8BBCA00DC38D8 /* FTGProjectFolderNavigator.m */; };
 		9902EAD819A8BBD400DC38D8 /* FTGSimulatorFolderNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9902EAD719A8BBD400DC38D8 /* FTGSimulatorFolderNavigator.m */; };
 		9902EADB19A8BBE000DC38D8 /* FTGDerivedDataFolderNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9902EADA19A8BBE000DC38D8 /* FTGDerivedDataFolderNavigator.m */; };
@@ -35,15 +32,10 @@
 		D226B74B1CD4992E00EFDFE3 /* XcodeWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B74A1CD4992E00EFDFE3 /* XcodeWay.swift */; };
 		D226B74D1CD49A1C00EFDFE3 /* PluginType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B74C1CD49A1C00EFDFE3 /* PluginType.swift */; };
 		D226B74F1CD4A7EB00EFDFE3 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B74E1CD4A7EB00EFDFE3 /* Navigator.swift */; };
+		D226B7511CD4AA9E00EFDFE3 /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B7501CD4AA9E00EFDFE3 /* Separator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9902EAC919A8B8E000DC38D8 /* XcodeWay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XcodeWay.h; sourceTree = "<group>"; };
-		9902EACA19A8B8E000DC38D8 /* XcodeWay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XcodeWay.m; sourceTree = "<group>"; };
-		9902EACC19A8B8FA00DC38D8 /* FTGNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTGNavigator.h; sourceTree = "<group>"; };
-		9902EACD19A8B8FA00DC38D8 /* FTGNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGNavigator.m; sourceTree = "<group>"; };
-		9902EAD019A8BBB800DC38D8 /* FTGNavigatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTGNavigatorManager.h; sourceTree = "<group>"; };
-		9902EAD119A8BBB800DC38D8 /* FTGNavigatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGNavigatorManager.m; sourceTree = "<group>"; };
 		9902EAD319A8BBCA00DC38D8 /* FTGProjectFolderNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTGProjectFolderNavigator.h; sourceTree = "<group>"; };
 		9902EAD419A8BBCA00DC38D8 /* FTGProjectFolderNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGProjectFolderNavigator.m; sourceTree = "<group>"; };
 		9902EAD619A8BBD400DC38D8 /* FTGSimulatorFolderNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTGSimulatorFolderNavigator.h; sourceTree = "<group>"; };
@@ -95,6 +87,7 @@
 		D226B74A1CD4992E00EFDFE3 /* XcodeWay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XcodeWay.swift; sourceTree = "<group>"; };
 		D226B74C1CD49A1C00EFDFE3 /* PluginType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginType.swift; sourceTree = "<group>"; };
 		D226B74E1CD4A7EB00EFDFE3 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		D226B7501CD4AA9E00EFDFE3 /* Separator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,10 +105,6 @@
 		9902EAC719A8B8E000DC38D8 /* Navigator */ = {
 			isa = PBXGroup;
 			children = (
-				9902EACC19A8B8FA00DC38D8 /* FTGNavigator.h */,
-				9902EACD19A8B8FA00DC38D8 /* FTGNavigator.m */,
-				9902EAD019A8BBB800DC38D8 /* FTGNavigatorManager.h */,
-				9902EAD119A8BBB800DC38D8 /* FTGNavigatorManager.m */,
 				9902EAD319A8BBCA00DC38D8 /* FTGProjectFolderNavigator.h */,
 				9902EAD419A8BBCA00DC38D8 /* FTGProjectFolderNavigator.m */,
 				9902EAD619A8BBD400DC38D8 /* FTGSimulatorFolderNavigator.h */,
@@ -147,6 +136,7 @@
 				99E42DFC1AB3F3C900ABD214 /* FTGNewSimulatorFolderNavigator.h */,
 				99E42DFD1AB3F3C900ABD214 /* FTGNewSimulatorFolderNavigator.m */,
 				D226B74E1CD4A7EB00EFDFE3 /* Navigator.swift */,
+				D226B7501CD4AA9E00EFDFE3 /* Separator.swift */,
 			);
 			path = Navigator;
 			sourceTree = "<group>";
@@ -154,8 +144,6 @@
 		9902EAC819A8B8E000DC38D8 /* Plugin */ = {
 			isa = PBXGroup;
 			children = (
-				9902EAC919A8B8E000DC38D8 /* XcodeWay.h */,
-				9902EACA19A8B8E000DC38D8 /* XcodeWay.m */,
 				D226B74A1CD4992E00EFDFE3 /* XcodeWay.swift */,
 				D226B7491CD4992E00EFDFE3 /* XcodeWay-Bridging-Header.h */,
 				D226B74C1CD49A1C00EFDFE3 /* PluginType.swift */,
@@ -309,12 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D226B74B1CD4992E00EFDFE3 /* XcodeWay.swift in Sources */,
 				9902EADE19A8BBE900DC38D8 /* FTGPlugInsFolderNavigator.m in Sources */,
 				9902EAF419A8D30300DC38D8 /* FTGAboutNavigator.m in Sources */,
 				99C2FFAC19A8EF2800060FB1 /* FTGCurrentXcodeFolderNavigator.m in Sources */,
 				D226B74F1CD4A7EB00EFDFE3 /* Navigator.swift in Sources */,
 				990EE6E819A8E5C20080F7B3 /* FTGDeviceLogFolderNavigator.m in Sources */,
-				9902EAD219A8BBB800DC38D8 /* FTGNavigatorManager.m in Sources */,
 				99C2FFA919A8EF1300060FB1 /* FTGSelectedXcodeFolderNavigator.m in Sources */,
 				9902EAE719A8BC1C00DC38D8 /* FTGGitRepoNavigator.m in Sources */,
 				9902EAD519A8BBCA00DC38D8 /* FTGProjectFolderNavigator.m in Sources */,
@@ -327,12 +315,10 @@
 				9902EAF119A8D2CE00DC38D8 /* NSAlert+FTGAdditions.m in Sources */,
 				99E42E011AB3F40300ABD214 /* FTGDirectoryHelper.m in Sources */,
 				9902EAE419A8BBFF00DC38D8 /* FTGTerminalNavigator.m in Sources */,
-				9902EACB19A8B8E000DC38D8 /* XcodeWay.m in Sources */,
-				9902EACE19A8B8FA00DC38D8 /* FTGNavigator.m in Sources */,
 				9902EADB19A8BBE000DC38D8 /* FTGDerivedDataFolderNavigator.m in Sources */,
 				D226B74D1CD49A1C00EFDFE3 /* PluginType.swift in Sources */,
 				99E42E041AB3F43F00ABD214 /* FTGDirectoryItem.m in Sources */,
-				D226B74B1CD4992E00EFDFE3 /* XcodeWay.swift in Sources */,
+				D226B7511CD4AA9E00EFDFE3 /* Separator.swift in Sources */,
 				990EE6E519A8E5B50080F7B3 /* FTGArchiveFolderNavigator.m in Sources */,
 				99B22F7719A8FD4100DF4519 /* FTGiTermNavigator.m in Sources */,
 			);
@@ -431,6 +417,7 @@
 				DEPLOYMENT_LOCATION = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
 				DSTROOT = "$(HOME)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XcodeWay/XcodeWay-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -439,7 +426,8 @@
 				);
 				INFOPLIST_FILE = "XcodeWay/XcodeWay-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Application Support/Developer/Shared/Xcode/Plug-ins";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(DT_TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "XcodeWay/Plugin/XcodeWay-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -456,6 +444,7 @@
 				DEPLOYMENT_LOCATION = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
 				DSTROOT = "$(HOME)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XcodeWay/XcodeWay-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -464,7 +453,8 @@
 				);
 				INFOPLIST_FILE = "XcodeWay/XcodeWay-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Application Support/Developer/Shared/Xcode/Plug-ins";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(DT_TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "XcodeWay/Plugin/XcodeWay-Bridging-Header.h";
 				WRAPPER_EXTENSION = xcplugin;

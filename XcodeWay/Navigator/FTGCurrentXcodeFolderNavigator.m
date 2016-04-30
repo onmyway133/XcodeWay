@@ -7,8 +7,13 @@
 //
 
 #import "FTGCurrentXcodeFolderNavigator.h"
+#import "XcodeWay-Swift.h"
 
 @implementation FTGCurrentXcodeFolderNavigator
+
+- (NSString *)title {
+  return @"Go To Current Xcode Folder";
+}
 
 // http://stackoverflow.com/questions/4087328/how-to-find-the-residing-directory-of-a-os-x-application-package-programmatica
 - (void)navigate

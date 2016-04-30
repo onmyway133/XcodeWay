@@ -7,8 +7,13 @@
 //
 
 #import "FTGUserDataFolderNavigator.h"
+#import "XcodeWay-Swift.h"
 
 @implementation FTGUserDataFolderNavigator
+
+- (NSString *)title {
+  return @"Go To User Data Folder";
+}
 
 - (void)navigate
 {
