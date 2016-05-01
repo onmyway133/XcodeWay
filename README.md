@@ -2,6 +2,8 @@ XcodeWay
 ==
 Navigate to many places from Xcode
 
+![](Screenshots/Banner.png)
+
 How to use it
 --
 XcodeWay is available via Window -> XcodeWay menu
