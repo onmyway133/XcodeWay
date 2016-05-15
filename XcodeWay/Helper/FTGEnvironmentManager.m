@@ -84,4 +84,9 @@ id objc_getClass(const char* name);
     return [libraryDirectoryPath stringByAppendingPathComponent:@"Developer/Xcode"];
 }
 
+- (NSString *)userDataPath
+{
+  return [[self XcodeDirectoryPath] stringByAppendingPathComponent:@"UserData"];
+}
+
 @end

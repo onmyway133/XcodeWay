@@ -20,7 +20,7 @@ import Foundation
       derivedDataPath = arena.valueForKeyPath("derivedDataLocation._pathString") as? String
     else { return }
 
-    let url = NSURL(fileURLWithPath: derivedDataPath)
+    let url = NSURL(fileURLWithPath: derivedDataPath, isDirectory: true)
 
     NSWorkspace.sharedWorkspace().openURL(url)
   }

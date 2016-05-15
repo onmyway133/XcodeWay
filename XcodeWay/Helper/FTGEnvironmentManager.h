@@ -22,5 +22,6 @@
 - (nonnull NSString *)applicationSupportDirectoryPath;
 - (nonnull NSString *)libraryDirectoryPath;
 - (nonnull NSString *)XcodeDirectoryPath;
+- (nonnull NSString *)userDataPath;
 
 @end

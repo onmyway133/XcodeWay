@@ -15,12 +15,9 @@
   return @"Go To User Data Folder";
 }
 
-- (void)navigate
-{
-    NSString *XcodeDirectoryPath = [[FTGEnvironmentManager sharedManager] XcodeDirectoryPath];
-    NSString *derivedDataDirectoryPath = [XcodeDirectoryPath stringByAppendingPathComponent:@"UserData"];
-
-    NSURL *URL = [NSURL fileURLWithPath:derivedDataDirectoryPath isDirectory:YES];
+- (void)navigate {
+    NSString *path = [[FTGEnvironmentManager sharedManager] userDataPath];
+    NSURL *URL = [NSURL fileURLWithPath:path isDirectory:YES];
     [[NSWorkspace sharedWorkspace] openURL:URL];
 }
 
