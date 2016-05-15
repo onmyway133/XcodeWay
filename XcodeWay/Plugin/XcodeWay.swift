@@ -104,6 +104,8 @@ public class XcodeWay: NSObject {
       FTGDeviceLogFolderNavigator(),
       FTGDerivedDataFolderNavigator(),
       Separator(),
+      ProvisioningProfileFolderNavigator(),
+      Separator(),
       FTGUserDataFolderNavigator(),
       xcdebuggerFolderNavigator(),
       ThemeFolderNavigator(),
