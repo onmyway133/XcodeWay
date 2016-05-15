@@ -29,7 +29,7 @@
 		99E42E011AB3F40300ABD214 /* FTGDirectoryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E42E001AB3F40300ABD214 /* FTGDirectoryHelper.m */; };
 		99E42E041AB3F43F00ABD214 /* FTGDirectoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E42E031AB3F43F00ABD214 /* FTGDirectoryItem.m */; };
 		D213D7EE1CE915A100A34240 /* ProjectDerivedDataFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213D7ED1CE915A100A34240 /* ProjectDerivedDataFolderNavigator.swift */; };
-		D225D3021CE92D5F004F5E5C /* TopFileNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225D3011CE92D5F004F5E5C /* TopFileNavigator.swift */; };
+		D225D3021CE92D5F004F5E5C /* TopFileCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D225D3011CE92D5F004F5E5C /* TopFileCommand.swift */; };
 		D226B74B1CD4992E00EFDFE3 /* XcodeWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B74A1CD4992E00EFDFE3 /* XcodeWay.swift */; };
 		D226B74F1CD4A7EB00EFDFE3 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B74E1CD4A7EB00EFDFE3 /* Navigator.swift */; };
 		D226B7511CD4AA9E00EFDFE3 /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B7501CD4AA9E00EFDFE3 /* Separator.swift */; };
@@ -37,6 +37,7 @@
 		D2A103211CE91A4A005DF763 /* xcdebuggerFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A103201CE91A4A005DF763 /* xcdebuggerFolderNavigator.swift */; };
 		D2A103231CE91BE4005DF763 /* ThemeFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A103221CE91BE4005DF763 /* ThemeFolderNavigator.swift */; };
 		D2AE07151CE91259007BFB41 /* iOS7SimulatorNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AE07141CE91259007BFB41 /* iOS7SimulatorNavigator.swift */; };
+		D2DD34691CE92FDC001D4AB0 /* Commander.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DD34681CE92FDC001D4AB0 /* Commander.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,7 +87,7 @@
 		99E42E021AB3F43F00ABD214 /* FTGDirectoryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTGDirectoryItem.h; sourceTree = "<group>"; };
 		99E42E031AB3F43F00ABD214 /* FTGDirectoryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGDirectoryItem.m; sourceTree = "<group>"; };
 		D213D7ED1CE915A100A34240 /* ProjectDerivedDataFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDerivedDataFolderNavigator.swift; sourceTree = "<group>"; };
-		D225D3011CE92D5F004F5E5C /* TopFileNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopFileNavigator.swift; sourceTree = "<group>"; };
+		D225D3011CE92D5F004F5E5C /* TopFileCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopFileCommand.swift; sourceTree = "<group>"; };
 		D226B7491CD4992E00EFDFE3 /* XcodeWay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XcodeWay-Bridging-Header.h"; sourceTree = "<group>"; };
 		D226B74A1CD4992E00EFDFE3 /* XcodeWay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XcodeWay.swift; sourceTree = "<group>"; };
 		D226B74E1CD4A7EB00EFDFE3 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
@@ -95,6 +96,7 @@
 		D2A103201CE91A4A005DF763 /* xcdebuggerFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = xcdebuggerFolderNavigator.swift; sourceTree = "<group>"; };
 		D2A103221CE91BE4005DF763 /* ThemeFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeFolderNavigator.swift; sourceTree = "<group>"; };
 		D2AE07141CE91259007BFB41 /* iOS7SimulatorNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOS7SimulatorNavigator.swift; sourceTree = "<group>"; };
+		D2DD34681CE92FDC001D4AB0 /* Commander.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commander.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,7 +249,8 @@
 		D225D3001CE92CE0004F5E5C /* Command */ = {
 			isa = PBXGroup;
 			children = (
-				D225D3011CE92D5F004F5E5C /* TopFileNavigator.swift */,
+				D225D3011CE92D5F004F5E5C /* TopFileCommand.swift */,
+				D2DD34681CE92FDC001D4AB0 /* Commander.swift */,
 			);
 			path = Command;
 			sourceTree = "<group>";
@@ -323,7 +326,7 @@
 				D2A103211CE91A4A005DF763 /* xcdebuggerFolderNavigator.swift in Sources */,
 				9902EAF419A8D30300DC38D8 /* FTGAboutNavigator.m in Sources */,
 				99C2FFAC19A8EF2800060FB1 /* FTGCurrentXcodeFolderNavigator.m in Sources */,
-				D225D3021CE92D5F004F5E5C /* TopFileNavigator.swift in Sources */,
+				D225D3021CE92D5F004F5E5C /* TopFileCommand.swift in Sources */,
 				990EE6E819A8E5C20080F7B3 /* FTGDeviceLogFolderNavigator.m in Sources */,
 				99C2FFA919A8EF1300060FB1 /* FTGSelectedXcodeFolderNavigator.m in Sources */,
 				9902EAE719A8BC1C00DC38D8 /* FTGGitRepoNavigator.m in Sources */,
@@ -335,6 +338,7 @@
 				99E42DFE1AB3F3C900ABD214 /* FTGSimulatorFolderNavigator.m in Sources */,
 				99634B2719A8F32F00A6F94F /* NSTask+FTGAdditions.m in Sources */,
 				9902EAF119A8D2CE00DC38D8 /* NSAlert+FTGAdditions.m in Sources */,
+				D2DD34691CE92FDC001D4AB0 /* Commander.swift in Sources */,
 				D25B5A331CE920510056C9A1 /* ProvisioningProfileFolderNavigator.swift in Sources */,
 				99E42E011AB3F40300ABD214 /* FTGDirectoryHelper.m in Sources */,
 				9902EAE419A8BBFF00DC38D8 /* FTGTerminalNavigator.m in Sources */,

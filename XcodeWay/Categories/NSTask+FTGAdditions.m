@@ -52,7 +52,8 @@
     NSTask *task = [[NSTask alloc] init];
     task.launchPath = launchPath;
     task.arguments = arguments;
-    
+    [task waitUntilExit];
+
     [task launch];
 }
 

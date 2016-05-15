@@ -18,3 +18,4 @@
 #import "FTGCurrentXcodeFolderNavigator.h"
 #import "FTGiTermNavigator.h"
 #import "FTGSimulatorFolderNavigator.h"
+#import "NSTask+FTGAdditions.h"

@@ -4,14 +4,17 @@ Navigate to many places from Xcode
 
 ![](Screenshots/Banner.png)
 
-How to use it
---
-XcodeWay is available via Window -> XcodeWay menu
+Features
+==
+
+- XcodeWay
+  - Help navigate to many places
+  - Available via `Window -> XcodeWay`
+- XcodeWay+Commands
+  - Useful commands
+  - Available via `Window -> XcodeWay+Commands`
 
 ![](Screenshots/XcodeWay.png)
-
-Features
---
 
 ### Navigators
 
@@ -35,6 +38,13 @@ Features
 - Go To Git Repositories
 
 ### Command
+
+- List top files with most lines
+- List top assets with largest sizes
+- Show FIXME, TODO warnings
+- List dynamic libraries sizes
+- Reload Xcode bundles
+- Show Xcode `DVTPlugInCompatibilityUUID` 
 
 ### Extensible
 

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class TopFileNavigator: NSObject, Navigator {
+class TopFileCommand: NSObject, Navigator {
 
   var title: String {
     return "List files with most lines"
@@ -16,5 +16,6 @@ class TopFileNavigator: NSObject, Navigator {
 
   func navigate() {
     let command = "find . -name \"*.[swift, m]\" -type f | xargs wc -l|sort -rn|grep -v ' total$'|head -10"
+    Commander.run(command)
   }
 }

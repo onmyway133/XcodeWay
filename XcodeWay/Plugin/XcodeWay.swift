@@ -131,7 +131,7 @@ public class XcodeWay: NSObject {
 
   let commands: [Navigator] = {
     return [
-      TopFileNavigator()
+      TopFileCommand()
     ]
   }()
 }
