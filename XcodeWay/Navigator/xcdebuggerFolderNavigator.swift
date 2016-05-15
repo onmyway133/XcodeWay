@@ -15,6 +15,9 @@ import Foundation
   }
 
   func navigate() {
-    
+    let path = FTGEnvironmentManager.sharedManager().userDataPath()
+    let url = NSURL(fileURLWithPath: path).URLByAppendingPathComponent("xcdebugger")
+
+    NSWorkspace.sharedWorkspace().openURL(url)
   }
 }
