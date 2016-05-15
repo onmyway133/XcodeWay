@@ -15,11 +15,12 @@
   return @"Go To iTerm";
 }
 
-- (void)navigate
-{
-    if ([[NSWorkspace sharedWorkspace] launchApplication:@"iTerm"] == NO) {
-        [NSAlert ftg_showMessage:@"Could not launch iTerm"];
-    }
+- (void)navigate {
+  NSString *projectPath = [[FTGEnvironmentManager sharedManager] projectPath];
+  NSString *projectFolderPath = [projectPath stringByDeletingLastPathComponent];
+
+  [NSTask ftg_runTaskWithLaunchPath:@"/usr/bin/open"
+                          arguments:@[@"-a", @"iTerm", projectFolderPath]];
 }
 
 @end
