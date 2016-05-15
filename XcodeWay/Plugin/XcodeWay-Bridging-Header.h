@@ -5,7 +5,6 @@
 #import <Cocoa/Cocoa.h>
 #import "FTGEnvironmentManager.h"
 #import "FTGProjectFolderNavigator.h"
-#import "FTGSimulatorFolderNavigator.h"
 #import "FTGDerivedDataFolderNavigator.h"
 #import "FTGPlugInsFolderNavigator.h"
 #import "FTGTemplateFolderNavigator.h"
@@ -18,4 +17,4 @@
 #import "FTGSelectedXcodeFolderNavigator.h"
 #import "FTGCurrentXcodeFolderNavigator.h"
 #import "FTGiTermNavigator.h"
-#import "FTGNewSimulatorFolderNavigator.h"
+#import "FTGSimulatorFolderNavigator.h"

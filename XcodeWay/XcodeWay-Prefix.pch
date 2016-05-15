@@ -19,7 +19,6 @@
 
 #import "FTGProjectFolderNavigator.h"
 #import "FTGSimulatorFolderNavigator.h"
-#import "FTGNewSimulatorFolderNavigator.h"
 #import "FTGDerivedDataFolderNavigator.h"
 #import "FTGPlugInsFolderNavigator.h"
 #import "FTGTemplateFolderNavigator.h"
