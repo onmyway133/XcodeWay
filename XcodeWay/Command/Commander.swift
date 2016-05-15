@@ -12,10 +12,10 @@ struct Commander {
 
   static func run(command: String) {
     let script =
-    "tell application \"Terminal\"\n"
-    " do script \"echo hello world\"\n"
-    "end tell"
+      "tell application \"iTerm\"\n"
+    + "   activate\n"
+    + "end tell"
 
-    NSTask.ftg_runTaskWithLaunchPath("/usr/bin/osascript", arguments: ["-e", script])
+    NSTask.ftg_runTaskWithLaunchPath("/usr/bin/osascript", arguments: ["-e \(script)"])
   }
 }
