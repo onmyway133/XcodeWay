@@ -24,6 +24,20 @@ public class XcodeWay: NSObject {
     FTGEnvironmentManager.sharedManager().setup()
   }
 
+  struct Static {
+    static var onceToken: dispatch_once_t = 0
+  }
+
+  class func pluginDidLoad(bundle: NSBundle) {
+    if let currentApplicationName = NSBundle.mainBundle().infoDictionary?["CFBundleName"] as? String
+      where currentApplicationName == "Xcode" {
+
+      dispatch_once(&Static.onceToken) {
+        sharedPlugin = XcodeWay(bundle: bundle)
+      }
+    }
+  }
+
   deinit {
     unregisterNotifications()
   }

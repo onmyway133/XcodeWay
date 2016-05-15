@@ -43,7 +43,7 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2014 Khoa Pham - Fantageek. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>XcodeWay</string>
+	<string>XcodeWay.XcodeWay</string>
 	<key>XC4Compatible</key>
 	<true/>
 	<key>XCGCReady</key>

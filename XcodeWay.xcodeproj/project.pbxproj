@@ -32,7 +32,6 @@
 		D226B74B1CD4992E00EFDFE3 /* XcodeWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B74A1CD4992E00EFDFE3 /* XcodeWay.swift */; };
 		D226B74F1CD4A7EB00EFDFE3 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B74E1CD4A7EB00EFDFE3 /* Navigator.swift */; };
 		D226B7511CD4AA9E00EFDFE3 /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B7501CD4AA9E00EFDFE3 /* Separator.swift */; };
-		D2407C381CD4B9D60030BD90 /* NSObject+XcodeWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2407C371CD4B9D60030BD90 /* NSObject+XcodeWay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,7 +86,6 @@
 		D226B74A1CD4992E00EFDFE3 /* XcodeWay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XcodeWay.swift; sourceTree = "<group>"; };
 		D226B74E1CD4A7EB00EFDFE3 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		D226B7501CD4AA9E00EFDFE3 /* Separator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
-		D2407C371CD4B9D60030BD90 /* NSObject+XcodeWay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+XcodeWay.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,7 +168,6 @@
 				9902EAF019A8D2CE00DC38D8 /* NSAlert+FTGAdditions.m */,
 				99634B2519A8F32F00A6F94F /* NSTask+FTGAdditions.h */,
 				99634B2619A8F32F00A6F94F /* NSTask+FTGAdditions.m */,
-				D2407C371CD4B9D60030BD90 /* NSObject+XcodeWay.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -308,7 +305,6 @@
 				9902EAE719A8BC1C00DC38D8 /* FTGGitRepoNavigator.m in Sources */,
 				9902EAD519A8BBCA00DC38D8 /* FTGProjectFolderNavigator.m in Sources */,
 				9902EAE119A8BBF400DC38D8 /* FTGTemplateFolderNavigator.m in Sources */,
-				D2407C381CD4B9D60030BD90 /* NSObject+XcodeWay.swift in Sources */,
 				9902EAD819A8BBD400DC38D8 /* FTGSimulatorFolderNavigator.m in Sources */,
 				9902EAED19A8BFC700DC38D8 /* FTGEnvironmentManager.m in Sources */,
 				990EE6EB19A8E5D00080F7B3 /* FTGUserDataFolderNavigator.m in Sources */,
