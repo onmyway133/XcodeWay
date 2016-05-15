@@ -13,7 +13,7 @@ XcodeWay is available via Window -> XcodeWay menu
 Features
 --
 
-## Navigators
+### Navigators
 
 - Go To Project Folder
 - Go To Project Derived Data Folder
@@ -34,9 +34,9 @@ Features
 - Go To Terminal with current project opened
 - Go To Git Repositories
 
-## Command
+### Command
 
-## Extensible
+### Extensible
 
 Add your own Navigator by conforming to `Navigator`
 
