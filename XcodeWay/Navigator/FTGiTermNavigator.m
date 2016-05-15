@@ -12,10 +12,12 @@
 @implementation FTGiTermNavigator
 
 - (NSString *)title {
+  // FIXME
   return @"Go To iTerm";
 }
 
 - (void)navigate {
+  // TODO
   NSString *projectPath = [[FTGEnvironmentManager sharedManager] projectPath];
   NSString *projectFolderPath = [projectPath stringByDeletingLastPathComponent];
 
