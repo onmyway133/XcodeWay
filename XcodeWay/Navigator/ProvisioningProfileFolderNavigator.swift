@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc class ProvisioningProfileFolderNavigator: NSObject, Navigator {
+class ProvisioningProfileFolderNavigator: NSObject, Navigator {
 
   var title: String {
     return "Go To Provisioning Profiles Folder"

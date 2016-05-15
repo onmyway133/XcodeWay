@@ -73,22 +73,29 @@ public class XcodeWay: NSObject {
 
     window.submenu?.addItem(NSMenuItem.separatorItem())
 
-    let XcodeWay = NSMenuItem(title: "XcodeWay", action: nil, keyEquivalent: "")
-    XcodeWay.enabled = true
-    XcodeWay.target = self
-    window.submenu?.addItem(XcodeWay)
-    XcodeWay.submenu = NSMenu(title: XcodeWay.title)
+    func setupSubMenu(subMenu: NSMenuItem, navigators: [Navigator]) {
+      subMenu.enabled = true
+      subMenu.target = self
+      window.submenu?.addItem(subMenu)
+      subMenu.submenu = NSMenu(title: subMenu.title)
 
-    navigators.forEach { navigator in
-      switch navigator.title {
-      case "_":
-        XcodeWay.submenu?.addItem(NSMenuItem.separatorItem())
-      default:
-        let item = NSMenuItem(title: navigator.title, action: #selector(Navigator.navigate), keyEquivalent: "")
-        item.target = navigator
-        XcodeWay.submenu?.addItem(item)
+      navigators.forEach { navigator in
+        switch navigator.title {
+        case "_":
+          subMenu.submenu?.addItem(NSMenuItem.separatorItem())
+        default:
+          let item = NSMenuItem(title: navigator.title, action: #selector(Navigator.navigate), keyEquivalent: "")
+          item.target = navigator
+          subMenu.submenu?.addItem(item)
+        }
       }
-    }    
+    }
+
+    let XcodeWay = NSMenuItem(title: "XcodeWay", action: nil, keyEquivalent: "")
+    setupSubMenu(XcodeWay, navigators: navigators)
+
+    let XcodeWayCommand = NSMenuItem(title: "XcodeWay+Commands", action: nil, keyEquivalent: "")
+    setupSubMenu(XcodeWayCommand, navigators: commands)
   }
 
   let navigators: [Navigator] = {
@@ -119,6 +126,12 @@ public class XcodeWay: NSObject {
       FTGGitRepoNavigator(),
       Separator(),
       FTGAboutNavigator(),
+    ]
+  }()
+
+  let commands: [Navigator] = {
+    return [
+      TopFileNavigator()
     ]
   }()
 }

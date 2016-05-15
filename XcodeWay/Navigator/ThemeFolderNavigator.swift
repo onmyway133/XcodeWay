@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc class ThemeFolderNavigator: NSObject, Navigator {
+class ThemeFolderNavigator: NSObject, Navigator {
 
   var title: String {
     return "Go To Themes Folder"

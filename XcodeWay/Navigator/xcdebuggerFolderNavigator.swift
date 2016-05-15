@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc class xcdebuggerFolderNavigator: NSObject, Navigator {
+class xcdebuggerFolderNavigator: NSObject, Navigator {
 
   var title: String {
     return "Go To xcdebugger Folder"

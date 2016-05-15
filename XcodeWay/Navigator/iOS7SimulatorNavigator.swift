@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc class iOS7SimulatorFolder: NSObject, Navigator {
+class iOS7SimulatorFolder: NSObject, Navigator {
 
   var title: String {
     return "Go To iOS 7 Simulator Folder"

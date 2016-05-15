@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc class ProjectDerivedDataFolderNavigator: NSObject, Navigator {
+class ProjectDerivedDataFolderNavigator: NSObject, Navigator {
 
   var title: String {
     return "Go To Project Derived Data Folder"
