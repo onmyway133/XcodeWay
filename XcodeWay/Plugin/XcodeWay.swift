@@ -105,6 +105,8 @@ public class XcodeWay: NSObject {
       FTGDerivedDataFolderNavigator(),
       Separator(),
       FTGUserDataFolderNavigator(),
+      xcdebuggerFolderNavigator(),
+      ThemeFolderNavigator(),
       Separator(),
       FTGCurrentXcodeFolderNavigator(),
       FTGSelectedXcodeFolderNavigator(),

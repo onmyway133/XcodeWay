@@ -33,6 +33,7 @@
 		D226B74F1CD4A7EB00EFDFE3 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B74E1CD4A7EB00EFDFE3 /* Navigator.swift */; };
 		D226B7511CD4AA9E00EFDFE3 /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B7501CD4AA9E00EFDFE3 /* Separator.swift */; };
 		D2A103211CE91A4A005DF763 /* xcdebuggerFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A103201CE91A4A005DF763 /* xcdebuggerFolderNavigator.swift */; };
+		D2A103231CE91BE4005DF763 /* ThemeFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A103221CE91BE4005DF763 /* ThemeFolderNavigator.swift */; };
 		D2AE07151CE91259007BFB41 /* iOS7SimulatorNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AE07141CE91259007BFB41 /* iOS7SimulatorNavigator.swift */; };
 		D2AE07171CE91269007BFB41 /* iOSSimulatorFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AE07161CE91269007BFB41 /* iOSSimulatorFolder.swift */; };
 /* End PBXBuildFile section */
@@ -89,6 +90,7 @@
 		D226B74E1CD4A7EB00EFDFE3 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		D226B7501CD4AA9E00EFDFE3 /* Separator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
 		D2A103201CE91A4A005DF763 /* xcdebuggerFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = xcdebuggerFolderNavigator.swift; sourceTree = "<group>"; };
+		D2A103221CE91BE4005DF763 /* ThemeFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeFolderNavigator.swift; sourceTree = "<group>"; };
 		D2AE07141CE91259007BFB41 /* iOS7SimulatorNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOS7SimulatorNavigator.swift; sourceTree = "<group>"; };
 		D2AE07161CE91269007BFB41 /* iOSSimulatorFolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSSimulatorFolder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +144,7 @@
 				D2AE07161CE91269007BFB41 /* iOSSimulatorFolder.swift */,
 				D213D7ED1CE915A100A34240 /* ProjectDerivedDataFolderNavigator.swift */,
 				D2A103201CE91A4A005DF763 /* xcdebuggerFolderNavigator.swift */,
+				D2A103221CE91BE4005DF763 /* ThemeFolderNavigator.swift */,
 			);
 			path = Navigator;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				99C2FFA919A8EF1300060FB1 /* FTGSelectedXcodeFolderNavigator.m in Sources */,
 				9902EAE719A8BC1C00DC38D8 /* FTGGitRepoNavigator.m in Sources */,
 				9902EAD519A8BBCA00DC38D8 /* FTGProjectFolderNavigator.m in Sources */,
+				D2A103231CE91BE4005DF763 /* ThemeFolderNavigator.swift in Sources */,
 				9902EAE119A8BBF400DC38D8 /* FTGTemplateFolderNavigator.m in Sources */,
 				9902EAED19A8BFC700DC38D8 /* FTGEnvironmentManager.m in Sources */,
 				990EE6EB19A8E5D00080F7B3 /* FTGUserDataFolderNavigator.m in Sources */,

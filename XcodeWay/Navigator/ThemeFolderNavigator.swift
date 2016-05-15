@@ -1,5 +1,5 @@
 //
-//  xcdebuggerFolderNavigator.swift
+//  ThemeFolderNavigator.swift
 //  XcodeWay
 //
 //  Created by Khoa Pham on 15/05/16.
@@ -8,15 +8,15 @@
 
 import Foundation
 
-@objc class xcdebuggerFolderNavigator: NSObject, Navigator {
+@objc class ThemeFolderNavigator: NSObject, Navigator {
 
   var title: String {
-    return "Go To xcdebugger Folder"
+    return "Go To Themes Folder"
   }
 
   func navigate() {
     let path = FTGEnvironmentManager.sharedManager().userDataPath()
-    let url = NSURL(fileURLWithPath: path).URLByAppendingPathComponent("xcdebugger")
+    let url = NSURL(fileURLWithPath: path).URLByAppendingPathComponent("FontAndColorThemes")
 
     NSWorkspace.sharedWorkspace().openURL(url)
   }
