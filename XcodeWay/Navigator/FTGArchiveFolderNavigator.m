@@ -12,7 +12,7 @@
 @implementation FTGArchiveFolderNavigator
 
 - (NSString *)title {
-  return @"Go To Archive Folder";
+  return @"Go To Archives Folder";
 }
 
 - (void)navigate
