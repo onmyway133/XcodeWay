@@ -28,6 +28,7 @@
 		99E42DFE1AB3F3C900ABD214 /* FTGSimulatorFolderNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E42DFD1AB3F3C900ABD214 /* FTGSimulatorFolderNavigator.m */; };
 		99E42E011AB3F40300ABD214 /* FTGDirectoryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E42E001AB3F40300ABD214 /* FTGDirectoryHelper.m */; };
 		99E42E041AB3F43F00ABD214 /* FTGDirectoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E42E031AB3F43F00ABD214 /* FTGDirectoryItem.m */; };
+		D213D7EE1CE915A100A34240 /* ProjectDerivedDataFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D213D7ED1CE915A100A34240 /* ProjectDerivedDataFolderNavigator.swift */; };
 		D226B74B1CD4992E00EFDFE3 /* XcodeWay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B74A1CD4992E00EFDFE3 /* XcodeWay.swift */; };
 		D226B74F1CD4A7EB00EFDFE3 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B74E1CD4A7EB00EFDFE3 /* Navigator.swift */; };
 		D226B7511CD4AA9E00EFDFE3 /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B7501CD4AA9E00EFDFE3 /* Separator.swift */; };
@@ -81,6 +82,7 @@
 		99E42E001AB3F40300ABD214 /* FTGDirectoryHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGDirectoryHelper.m; sourceTree = "<group>"; };
 		99E42E021AB3F43F00ABD214 /* FTGDirectoryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTGDirectoryItem.h; sourceTree = "<group>"; };
 		99E42E031AB3F43F00ABD214 /* FTGDirectoryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTGDirectoryItem.m; sourceTree = "<group>"; };
+		D213D7ED1CE915A100A34240 /* ProjectDerivedDataFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDerivedDataFolderNavigator.swift; sourceTree = "<group>"; };
 		D226B7491CD4992E00EFDFE3 /* XcodeWay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XcodeWay-Bridging-Header.h"; sourceTree = "<group>"; };
 		D226B74A1CD4992E00EFDFE3 /* XcodeWay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XcodeWay.swift; sourceTree = "<group>"; };
 		D226B74E1CD4A7EB00EFDFE3 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				D226B7501CD4AA9E00EFDFE3 /* Separator.swift */,
 				D2AE07141CE91259007BFB41 /* iOS7SimulatorNavigator.swift */,
 				D2AE07161CE91269007BFB41 /* iOSSimulatorFolder.swift */,
+				D213D7ED1CE915A100A34240 /* ProjectDerivedDataFolderNavigator.swift */,
 			);
 			path = Navigator;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D226B74B1CD4992E00EFDFE3 /* XcodeWay.swift in Sources */,
+				D213D7EE1CE915A100A34240 /* ProjectDerivedDataFolderNavigator.swift in Sources */,
 				D226B7511CD4AA9E00EFDFE3 /* Separator.swift in Sources */,
 				D226B74F1CD4A7EB00EFDFE3 /* Navigator.swift in Sources */,
 				9902EADE19A8BBE900DC38D8 /* FTGPlugInsFolderNavigator.m in Sources */,

@@ -10,16 +10,17 @@
 
 @interface FTGEnvironmentManager : NSObject
 
-@property (nonatomic, strong) id window;
+@property (nonatomic, strong, nullable) id window;
 
-+ (instancetype)sharedManager;
++ (nonnull instancetype)sharedManager;
 
 - (void)setup;
-- (void)handleWindowDidUpdate:(NSNotification *)notification;
+- (void)handleWindowDidUpdate:(nonnull NSNotification *)notification;
 
-- (NSString *)projectPath;
-- (NSString *)applicationSupportDirectoryPath;
-- (NSString *)libraryDirectoryPath;
-- (NSString *)XcodeDirectoryPath;
+- (nullable id)workspace;
+- (nullable NSString *)projectPath;
+- (nonnull NSString *)applicationSupportDirectoryPath;
+- (nonnull NSString *)libraryDirectoryPath;
+- (nonnull NSString *)XcodeDirectoryPath;
 
 @end

@@ -94,6 +94,8 @@ public class XcodeWay: NSObject {
   let navigators: [Navigator] = {
     return [
       FTGProjectFolderNavigator(),
+      ProjectDerivedDataFolderNavigator(),
+      Separator(),
       iOS7SimulatorFolder(),
       FTGSimulatorFolderNavigator(),
       FTGPlugInsFolderNavigator(),

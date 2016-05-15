@@ -45,22 +45,24 @@ id objc_getClass(const char* name);
 
 
 #pragma mark - Path
-// http://stackoverflow.com/questions/21054699/get-the-path-of-current-project-opened-in-xcode-plugin
-- (NSString *)projectPath
-{
-    NSArray *workspaceWindowControllers = [self.IDEWorkspaceWindowControllerClass valueForKey:@"workspaceWindowControllers"];
 
-    id workSpace;
+- (id)workspace {
+  NSArray *workspaceWindowControllers = [self.IDEWorkspaceWindowControllerClass valueForKey:@"workspaceWindowControllers"];
 
-    for (id controller in workspaceWindowControllers) {
-        if ([[controller valueForKey:@"window"] isEqual:[NSApp keyWindow]]) {
-            workSpace = [controller valueForKey:@"_workspace"];
-        }
+  id workSpace = nil;
+
+  for (id controller in workspaceWindowControllers) {
+    if ([[controller valueForKey:@"window"] isEqual:[NSApp keyWindow]]) {
+      workSpace = [controller valueForKey:@"_workspace"];
     }
+  }
 
-    NSString *workspacePath = [[workSpace valueForKey:@"representingFilePath"] valueForKey:@"_pathString"];
+  return workSpace;
+}
 
-    return workspacePath;
+// http://stackoverflow.com/questions/21054699/get-the-path-of-current-project-opened-in-xcode-plugin
+- (NSString *)projectPath {
+    return [[[self workspace] valueForKey:@"representingFilePath"] valueForKey:@"_pathString"];
 }
 
 // http://stackoverflow.com/questions/8430777/programatically-get-path-to-application-support-folder
