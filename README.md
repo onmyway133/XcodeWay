@@ -21,7 +21,7 @@ Features
 - Go To Project Folder
 - Go To Project Derived Data Folder
 - Go To iOS 7 Simulator Folder
-- Go To iOS 8 Simulator Folder
+- Go To iOS 8+ Simulator Folder
 - Go To Plugins Folder
 - Go To Templates Folder
 - Go To Archives Folder
