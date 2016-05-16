@@ -34,6 +34,7 @@
 		D226B74F1CD4A7EB00EFDFE3 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B74E1CD4A7EB00EFDFE3 /* Navigator.swift */; };
 		D226B7511CD4AA9E00EFDFE3 /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B7501CD4AA9E00EFDFE3 /* Separator.swift */; };
 		D25B5A331CE920510056C9A1 /* ProvisioningProfileFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B5A321CE920510056C9A1 /* ProvisioningProfileFolderNavigator.swift */; };
+		D28995B91CE999CB0026B5C1 /* UUIDCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28995B81CE999CB0026B5C1 /* UUIDCommand.swift */; };
 		D2A103211CE91A4A005DF763 /* xcdebuggerFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A103201CE91A4A005DF763 /* xcdebuggerFolderNavigator.swift */; };
 		D2A103231CE91BE4005DF763 /* ThemeFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A103221CE91BE4005DF763 /* ThemeFolderNavigator.swift */; };
 		D2AE07151CE91259007BFB41 /* iOS7SimulatorNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AE07141CE91259007BFB41 /* iOS7SimulatorNavigator.swift */; };
@@ -93,6 +94,7 @@
 		D226B74E1CD4A7EB00EFDFE3 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		D226B7501CD4AA9E00EFDFE3 /* Separator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
 		D25B5A321CE920510056C9A1 /* ProvisioningProfileFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvisioningProfileFolderNavigator.swift; sourceTree = "<group>"; };
+		D28995B81CE999CB0026B5C1 /* UUIDCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UUIDCommand.swift; sourceTree = "<group>"; };
 		D2A103201CE91A4A005DF763 /* xcdebuggerFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = xcdebuggerFolderNavigator.swift; sourceTree = "<group>"; };
 		D2A103221CE91BE4005DF763 /* ThemeFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeFolderNavigator.swift; sourceTree = "<group>"; };
 		D2AE07141CE91259007BFB41 /* iOS7SimulatorNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOS7SimulatorNavigator.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 			children = (
 				D225D3011CE92D5F004F5E5C /* TopFileCommand.swift */,
 				D2DD34681CE92FDC001D4AB0 /* Commander.swift */,
+				D28995B81CE999CB0026B5C1 /* UUIDCommand.swift */,
 			);
 			path = Command;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				D25B5A331CE920510056C9A1 /* ProvisioningProfileFolderNavigator.swift in Sources */,
 				99E42E011AB3F40300ABD214 /* FTGDirectoryHelper.m in Sources */,
 				9902EAE419A8BBFF00DC38D8 /* FTGTerminalNavigator.m in Sources */,
+				D28995B91CE999CB0026B5C1 /* UUIDCommand.swift in Sources */,
 				9902EADB19A8BBE000DC38D8 /* FTGDerivedDataFolderNavigator.m in Sources */,
 				D2AE07151CE91259007BFB41 /* iOS7SimulatorNavigator.swift in Sources */,
 				99E42E041AB3F43F00ABD214 /* FTGDirectoryItem.m in Sources */,

@@ -14,6 +14,7 @@ struct Commander {
     let script =
       "tell application \"iTerm\"\n"
     + "   activate\n"
+    + "   do script \"echo hello world\"\n"
     + "end tell"
 
     NSTask.ftg_runTaskWithLaunchPath("/usr/bin/osascript", arguments: ["-e \(script)"])

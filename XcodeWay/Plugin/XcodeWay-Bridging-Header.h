@@ -19,3 +19,4 @@
 #import "FTGiTermNavigator.h"
 #import "FTGSimulatorFolderNavigator.h"
 #import "NSTask+FTGAdditions.h"
+#import "NSAlert+FTGAdditions.h"
