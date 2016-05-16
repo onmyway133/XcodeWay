@@ -17,7 +17,7 @@ class ListTopFileCommand: NSObject, Navigator {
   func navigate() {
     guard let path = FTGEnvironmentManager.sharedManager().projectContainerPath() else { return }
 
-    let output = NSTask.ftg_outputTaskResultWithLaunchPath("/usr/bin/find", arguments: [".", "-name \"*.swift*\" -type f | xargs wc -l|sort -rn|grep -v ' total$'|head -10"], currentDirectoryPath: path)
+    let output = NSTask.ftg_outputTaskResultWithLaunchPath("/usr/bin/find", arguments: [".", "-name \"*.swift\" -type f | xargs wc -l|sort -rn|grep -v ' total$'|head -10"], currentDirectoryPath: path)
     NSAlert.ftg_showMessage(output)
   }
 }

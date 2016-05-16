@@ -37,7 +37,7 @@ Features
 - Go To Terminal with current project opened
 - Go To Git Repositories
 
-### Command
+### Commands
 
 - List top files with most lines
 - List top assets with largest sizes
