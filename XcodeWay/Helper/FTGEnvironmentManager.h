@@ -19,6 +19,7 @@
 
 - (nullable id)workspace;
 - (nullable NSString *)projectPath;
+- (nullable NSString *)projectContainerPath;
 - (nonnull NSString *)applicationSupportDirectoryPath;
 - (nonnull NSString *)libraryDirectoryPath;
 - (nonnull NSString *)XcodeDirectoryPath;

@@ -66,6 +66,11 @@ id objc_getClass(const char* name);
   return [[NSFileManager defaultManager] fileExistsAtPath:path] ? path : nil;
 }
 
+- (NSString *)projectContainerPath {
+  NSString *path = [self projectPath];
+  return [path stringByDeletingLastPathComponent];
+}
+
 // http://stackoverflow.com/questions/8430777/programatically-get-path-to-application-support-folder
 - (NSString *)applicationSupportDirectoryPath
 {
