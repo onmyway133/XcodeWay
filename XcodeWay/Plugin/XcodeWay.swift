@@ -131,8 +131,10 @@ public class XcodeWay: NSObject {
 
   let commands: [Navigator] = {
     return [
-      TopFileCommand(),
-      UUIDCommand(),
+      ListTopFileCommand(),
+      Separator(),
+      ShowUUIDCommand(),
+      ShowSelectedXcodePathCommand(),
     ]
   }()
 }

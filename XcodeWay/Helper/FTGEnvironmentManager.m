@@ -62,7 +62,8 @@ id objc_getClass(const char* name);
 
 // http://stackoverflow.com/questions/21054699/get-the-path-of-current-project-opened-in-xcode-plugin
 - (NSString *)projectPath {
-    return [[[self workspace] valueForKey:@"representingFilePath"] valueForKey:@"_pathString"];
+  NSString * path = [[[self workspace] valueForKey:@"representingFilePath"] valueForKey:@"_pathString"];
+  return [[NSFileManager defaultManager] fileExistsAtPath:path] ? path : nil;
 }
 
 // http://stackoverflow.com/questions/8430777/programatically-get-path-to-application-support-folder

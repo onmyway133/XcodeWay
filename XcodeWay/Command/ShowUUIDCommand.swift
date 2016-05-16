@@ -8,7 +8,7 @@
 
 import Foundation
 
-class UUIDCommand: NSObject, Navigator {
+class ShowUUIDCommand: NSObject, Navigator {
 
   var title: String {
     return "Show Xcode DVTPlugInCompatibilityUUID"
