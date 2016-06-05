@@ -44,7 +44,7 @@ Features
 - Show FIXME, TODO warnings
 - List dynamic libraries sizes
 - Reload Xcode bundles
-- Show Xcode `DVTPlugInCompatibilityUUID` 
+- Show Xcode `DVTPlugInCompatibilityUUID`
 
 ### Extensible
 
@@ -56,6 +56,17 @@ Add your own Navigator by conforming to `Navigator`
   var title: String { get }
 }
 ```
+
+## Installation
+
+### Manually
+
+- Build the project. The plugin will be in `~/Library/Application Support/Developer/Shared/Xcode/Plug-ins`
+- Restart Xcode
+
+### Alcatraz
+
+- Available via http://alcatraz.io/
 
 Licence
 --
