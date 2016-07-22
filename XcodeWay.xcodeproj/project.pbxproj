@@ -624,7 +624,7 @@
 				INFOPLIST_FILE = XcodeWay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.XcodeWay.XcodeWay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.XcodeWay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "XcodeWay_Legacy/Plugin/XcodeWay-Bridging-Header.h";
@@ -640,7 +640,7 @@
 				INFOPLIST_FILE = XcodeWay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.XcodeWay.XcodeWay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.XcodeWay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "XcodeWay_Legacy/Plugin/XcodeWay-Bridging-Header.h";
@@ -676,6 +676,7 @@
 				D210630D1D4224B80005A1A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
