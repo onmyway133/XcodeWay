@@ -74,14 +74,12 @@ id objc_getClass(const char* name);
 // http://stackoverflow.com/questions/8430777/programatically-get-path-to-application-support-folder
 - (NSString *)applicationSupportDirectoryPath
 {
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);
-    return [paths firstObject];
+  return [[self realUserPath] stringByAppendingPathComponent:@"Application Support"];
 }
 
 - (NSString *)libraryDirectoryPath
 {
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
-    return [paths firstObject];
+  return [[self realUserPath] stringByAppendingPathComponent:@"Library"];
 }
 
 - (NSString *)XcodeDirectoryPath
@@ -93,6 +91,18 @@ id objc_getClass(const char* name);
 - (NSString *)userDataPath
 {
   return [[self XcodeDirectoryPath] stringByAppendingPathComponent:@"UserData"];
+}
+
+- (NSString *)realUserPath {
+  NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+  NSString *path = [paths firstObject];
+
+  NSArray *components = [path componentsSeparatedByString:@"/"];
+  if (components.count > 2) {
+    return [NSString stringWithFormat:@"%@/%@/%@", components[0], components[1], components[2]];
+  } else {
+    return @"";
+  }
 }
 
 @end
