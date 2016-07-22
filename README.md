@@ -1,6 +1,6 @@
 XcodeWay
 ==
-Navigate to many places from Xcode
+Navigate to many places from Xcode. Available as Xcode Source Editor Extension
 
 ![](Screenshots/Banner.png)
 
@@ -9,10 +9,10 @@ Features
 
 - XcodeWay
   - Help navigate to many places
-  - Available via `Window -> XcodeWay`
+  - Available via `Editor -> XcodeWay`
 - XcodeWay+Commands
   - Useful commands
-  - Available via `Window -> XcodeWay+Commands`
+  - Available via `Editor -> XcodeWay+Commands`
 
 ![](Screenshots/XcodeWay.png)
 
@@ -59,14 +59,14 @@ Add your own Navigator by conforming to `Navigator`
 
 ## Installation
 
-### Manually
+- Run `sudo /usr/libexec/xpccachectl` and restart Mac
+- Build the project
 
-- Build the project. The plugin will be in `~/Library/Application Support/Developer/Shared/Xcode/Plug-ins`
-- Restart Xcode
+## Troubleshooting
 
-### Alcatraz
-
-- Available via http://alcatraz.io/
+- Stop `com.apple.dt.Xcode.AttachToXPCService`
+- It only works when a Swift file is selected
+- If the menu is disappeared or disabled, run again
 
 Licence
 --
