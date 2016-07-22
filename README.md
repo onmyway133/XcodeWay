@@ -60,7 +60,7 @@ Add your own Navigator by conforming to `Navigator`
 ## Installation
 
 - Run `sudo /usr/libexec/xpccachectl` and restart Mac
-- Build the project
+- Run the project
 
 ## Troubleshooting
 
