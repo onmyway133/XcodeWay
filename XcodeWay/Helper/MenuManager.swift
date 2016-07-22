@@ -38,4 +38,14 @@ struct MenuManager {
 //    Separator(),
     FTGAboutNavigator(),
   ]
+
+  static func find(commandIdentifier: String) -> Navigator? {
+    for navigator in navigators {
+      if Helper.namespacedIdentifier(identifier: navigator.title) == commandIdentifier {
+        return navigator
+      }
+    }
+
+    return nil
+  }
 }
