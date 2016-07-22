@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Fantageek. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Cocoa;
 
 @interface FTGEnvironmentManager : NSObject
 

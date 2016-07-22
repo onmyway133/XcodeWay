@@ -8,6 +8,7 @@
 
 #import "FTGProjectFolderNavigator.h"
 #import "XcodeWay-Swift.h"
+#import "FTGEnvironmentManager.h"
 
 @implementation FTGProjectFolderNavigator
 

@@ -8,6 +8,7 @@
 
 #import "FTGDerivedDataFolderNavigator.h"
 #import "XcodeWay-Swift.h"
+#import "FTGEnvironmentManager.h"
 
 @implementation FTGDerivedDataFolderNavigator
 

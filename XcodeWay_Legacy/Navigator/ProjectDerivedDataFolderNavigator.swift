@@ -15,13 +15,13 @@ class ProjectDerivedDataFolderNavigator: NSObject, Navigator {
   }
 
   func navigate() {
-    guard let workspace = FTGEnvironmentManager.sharedManager().workspace(),
-      arena = workspace.valueForKeyPath("_workspaceArena"),
-      derivedDataPath = arena.valueForKeyPath("derivedDataLocation._pathString") as? String
+    guard let workspace = FTGEnvironmentManager.shared().workspace(),
+      let arena = workspace.value(forKeyPath: "_workspaceArena"),
+      let derivedDataPath = arena.value(forKeyPath: "derivedDataLocation._pathString") as? String
     else { return }
 
-    let url = NSURL(fileURLWithPath: derivedDataPath, isDirectory: true)
+    let url = URL(fileURLWithPath: derivedDataPath, isDirectory: true)
 
-    NSWorkspace.sharedWorkspace().openURL(url)
+    NSWorkspace.shared().open(url)
   }
 }

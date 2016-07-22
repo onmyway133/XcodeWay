@@ -11,9 +11,38 @@
 		D21062EE1D4224620005A1A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D21062ED1D4224620005A1A8 /* Assets.xcassets */; };
 		D21062F11D4224620005A1A8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D21062EF1D4224620005A1A8 /* MainMenu.xib */; };
 		D21062FF1D4224B80005A1A8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21062FE1D4224B80005A1A8 /* Cocoa.framework */; };
-		D21063041D4224B80005A1A8 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21063031D4224B80005A1A8 /* SourceEditorExtension.swift */; };
-		D21063061D4224B80005A1A8 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21063051D4224B80005A1A8 /* SourceEditorCommand.swift */; };
 		D210630A1D4224B80005A1A8 /* XcodeWay.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D21062FC1D4224B80005A1A8 /* XcodeWay.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D21063AC1D422D030005A1A8 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21063A91D422D030005A1A8 /* SourceEditorCommand.swift */; };
+		D21063AD1D422D030005A1A8 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21063AA1D422D030005A1A8 /* SourceEditorExtension.swift */; };
+		D21063AF1D422D290005A1A8 /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21063AE1D422D290005A1A8 /* MenuManager.swift */; };
+		D21063B01D422D460005A1A8 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210639D1D4227180005A1A8 /* Navigator.swift */; };
+		D21063B21D422DE10005A1A8 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21063B11D422DE10005A1A8 /* Helper.swift */; };
+		D21063B31D422EB90005A1A8 /* iOS7SimulatorNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210639C1D4227180005A1A8 /* iOS7SimulatorNavigator.swift */; };
+		D21063B41D422EB90005A1A8 /* ProjectDerivedDataFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210639E1D4227180005A1A8 /* ProjectDerivedDataFolderNavigator.swift */; };
+		D21063B51D422EB90005A1A8 /* ProvisioningProfileFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210639F1D4227180005A1A8 /* ProvisioningProfileFolderNavigator.swift */; };
+		D21063B61D422EB90005A1A8 /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21063A01D4227180005A1A8 /* Separator.swift */; };
+		D21063B71D422EB90005A1A8 /* ThemeFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21063A11D4227180005A1A8 /* ThemeFolderNavigator.swift */; };
+		D21063B81D422EB90005A1A8 /* xcdebuggerFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21063A21D4227180005A1A8 /* xcdebuggerFolderNavigator.swift */; };
+		D21063B91D422FFF0005A1A8 /* FTGTemplateFolderNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = D21063971D4227180005A1A8 /* FTGTemplateFolderNavigator.m */; };
+		D21063BA1D4230010005A1A8 /* FTGTerminalNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = D21063991D4227180005A1A8 /* FTGTerminalNavigator.m */; };
+		D21063BB1D4230040005A1A8 /* FTGUserDataFolderNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = D210639B1D4227180005A1A8 /* FTGUserDataFolderNavigator.m */; };
+		D21063BC1D4230070005A1A8 /* FTGAboutNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = D21063811D4227180005A1A8 /* FTGAboutNavigator.m */; };
+		D21063BD1D42300A0005A1A8 /* FTGArchiveFolderNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = D21063831D4227180005A1A8 /* FTGArchiveFolderNavigator.m */; };
+		D21063BE1D42300D0005A1A8 /* FTGCurrentXcodeFolderNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = D21063851D4227180005A1A8 /* FTGCurrentXcodeFolderNavigator.m */; };
+		D21063BF1D4230100005A1A8 /* FTGDerivedDataFolderNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = D21063871D4227180005A1A8 /* FTGDerivedDataFolderNavigator.m */; };
+		D21063C01D4230120005A1A8 /* FTGDeviceLogFolderNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = D21063891D4227180005A1A8 /* FTGDeviceLogFolderNavigator.m */; };
+		D21063C11D4230150005A1A8 /* FTGGitRepoNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = D210638B1D4227180005A1A8 /* FTGGitRepoNavigator.m */; };
+		D21063C21D4230190005A1A8 /* FTGiTermNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = D210638D1D4227180005A1A8 /* FTGiTermNavigator.m */; };
+		D21063C31D42301C0005A1A8 /* FTGPlugInsFolderNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = D210638F1D4227180005A1A8 /* FTGPlugInsFolderNavigator.m */; };
+		D21063C41D42301F0005A1A8 /* FTGProjectFolderNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = D21063911D4227180005A1A8 /* FTGProjectFolderNavigator.m */; };
+		D21063C51D4230220005A1A8 /* FTGSelectedXcodeFolderNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = D21063931D4227180005A1A8 /* FTGSelectedXcodeFolderNavigator.m */; };
+		D21063C61D4230240005A1A8 /* FTGSimulatorFolderNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = D21063951D4227180005A1A8 /* FTGSimulatorFolderNavigator.m */; };
+		D21063C71D4230E50005A1A8 /* FTGDirectoryHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D210637A1D4227180005A1A8 /* FTGDirectoryHelper.m */; };
+		D21063C81D4230E50005A1A8 /* FTGDirectoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D210637C1D4227180005A1A8 /* FTGDirectoryItem.m */; };
+		D21063C91D4230E50005A1A8 /* FTGEnvironmentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D210637E1D4227180005A1A8 /* FTGEnvironmentManager.m */; };
+		D21063CB1D4230ED0005A1A8 /* NSTask+FTGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D21063721D4227180005A1A8 /* NSTask+FTGAdditions.m */; };
+		D21063CD1D42312B0005A1A8 /* Alert+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21063CC1D42312B0005A1A8 /* Alert+Extensions.swift */; };
+		D21063D11D42322A0005A1A8 /* Task+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21063D01D42322A0005A1A8 /* Task+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,11 +78,7 @@
 		D21062FC1D4224B80005A1A8 /* XcodeWay.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XcodeWay.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21062FE1D4224B80005A1A8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D21063021D4224B80005A1A8 /* XcodeWay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XcodeWay.entitlements; sourceTree = "<group>"; };
-		D21063031D4224B80005A1A8 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
-		D21063051D4224B80005A1A8 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
 		D21063071D4224B80005A1A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D210636F1D4227180005A1A8 /* NSAlert+FTGAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAlert+FTGAdditions.h"; sourceTree = "<group>"; };
-		D21063701D4227180005A1A8 /* NSAlert+FTGAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAlert+FTGAdditions.m"; sourceTree = "<group>"; };
 		D21063711D4227180005A1A8 /* NSTask+FTGAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTask+FTGAdditions.h"; sourceTree = "<group>"; };
 		D21063721D4227180005A1A8 /* NSTask+FTGAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTask+FTGAdditions.m"; sourceTree = "<group>"; };
 		D21063741D4227180005A1A8 /* Commander.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commander.swift; sourceTree = "<group>"; };
@@ -104,7 +129,12 @@
 		D21063A41D4227180005A1A8 /* XcodeWay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XcodeWay-Bridging-Header.h"; sourceTree = "<group>"; };
 		D21063A51D4227180005A1A8 /* XcodeWay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeWay.swift; sourceTree = "<group>"; };
 		D21063A61D4227180005A1A8 /* XcodeWay-Legacy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XcodeWay-Legacy-Info.plist"; sourceTree = "<group>"; };
-		D21063A71D4227180005A1A8 /* XcodeWay-Legacy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XcodeWay-Legacy-Prefix.pch"; sourceTree = "<group>"; };
+		D21063A91D422D030005A1A8 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		D21063AA1D422D030005A1A8 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		D21063AE1D422D290005A1A8 /* MenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
+		D21063B11D422DE10005A1A8 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		D21063CC1D42312B0005A1A8 /* Alert+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alert+Extensions.swift"; sourceTree = "<group>"; };
+		D21063D01D42322A0005A1A8 /* Task+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Task+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,8 +199,8 @@
 		D21063001D4224B80005A1A8 /* XcodeWay */ = {
 			isa = PBXGroup;
 			children = (
-				D21063031D4224B80005A1A8 /* SourceEditorExtension.swift */,
-				D21063051D4224B80005A1A8 /* SourceEditorCommand.swift */,
+				D21063A81D422D030005A1A8 /* Extensions */,
+				D21063AB1D422D030005A1A8 /* Helper */,
 				D21063071D4224B80005A1A8 /* Info.plist */,
 				D21063011D4224B80005A1A8 /* Supporting Files */,
 			);
@@ -194,7 +224,6 @@
 				D210637F1D4227180005A1A8 /* Navigator */,
 				D21063A31D4227180005A1A8 /* Plugin */,
 				D21063A61D4227180005A1A8 /* XcodeWay-Legacy-Info.plist */,
-				D21063A71D4227180005A1A8 /* XcodeWay-Legacy-Prefix.pch */,
 			);
 			path = XcodeWay_Legacy;
 			sourceTree = "<group>";
@@ -202,10 +231,10 @@
 		D210636E1D4227180005A1A8 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				D210636F1D4227180005A1A8 /* NSAlert+FTGAdditions.h */,
-				D21063701D4227180005A1A8 /* NSAlert+FTGAdditions.m */,
 				D21063711D4227180005A1A8 /* NSTask+FTGAdditions.h */,
 				D21063721D4227180005A1A8 /* NSTask+FTGAdditions.m */,
+				D21063CC1D42312B0005A1A8 /* Alert+Extensions.swift */,
+				D21063D01D42322A0005A1A8 /* Task+Extensions.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -283,6 +312,24 @@
 				D21063A51D4227180005A1A8 /* XcodeWay.swift */,
 			);
 			path = Plugin;
+			sourceTree = "<group>";
+		};
+		D21063A81D422D030005A1A8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D21063A91D422D030005A1A8 /* SourceEditorCommand.swift */,
+				D21063AA1D422D030005A1A8 /* SourceEditorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D21063AB1D422D030005A1A8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D21063AE1D422D290005A1A8 /* MenuManager.swift */,
+				D21063B11D422DE10005A1A8 /* Helper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,8 +446,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D21063041D4224B80005A1A8 /* SourceEditorExtension.swift in Sources */,
-				D21063061D4224B80005A1A8 /* SourceEditorCommand.swift in Sources */,
+				D21063BD1D42300A0005A1A8 /* FTGArchiveFolderNavigator.m in Sources */,
+				D21063C21D4230190005A1A8 /* FTGiTermNavigator.m in Sources */,
+				D21063BA1D4230010005A1A8 /* FTGTerminalNavigator.m in Sources */,
+				D21063C81D4230E50005A1A8 /* FTGDirectoryItem.m in Sources */,
+				D21063C11D4230150005A1A8 /* FTGGitRepoNavigator.m in Sources */,
+				D21063CD1D42312B0005A1A8 /* Alert+Extensions.swift in Sources */,
+				D21063AF1D422D290005A1A8 /* MenuManager.swift in Sources */,
+				D21063B71D422EB90005A1A8 /* ThemeFolderNavigator.swift in Sources */,
+				D21063B01D422D460005A1A8 /* Navigator.swift in Sources */,
+				D21063CB1D4230ED0005A1A8 /* NSTask+FTGAdditions.m in Sources */,
+				D21063B51D422EB90005A1A8 /* ProvisioningProfileFolderNavigator.swift in Sources */,
+				D21063B31D422EB90005A1A8 /* iOS7SimulatorNavigator.swift in Sources */,
+				D21063BC1D4230070005A1A8 /* FTGAboutNavigator.m in Sources */,
+				D21063B81D422EB90005A1A8 /* xcdebuggerFolderNavigator.swift in Sources */,
+				D21063C71D4230E50005A1A8 /* FTGDirectoryHelper.m in Sources */,
+				D21063BE1D42300D0005A1A8 /* FTGCurrentXcodeFolderNavigator.m in Sources */,
+				D21063C31D42301C0005A1A8 /* FTGPlugInsFolderNavigator.m in Sources */,
+				D21063C01D4230120005A1A8 /* FTGDeviceLogFolderNavigator.m in Sources */,
+				D21063B21D422DE10005A1A8 /* Helper.swift in Sources */,
+				D21063BF1D4230100005A1A8 /* FTGDerivedDataFolderNavigator.m in Sources */,
+				D21063C51D4230220005A1A8 /* FTGSelectedXcodeFolderNavigator.m in Sources */,
+				D21063C61D4230240005A1A8 /* FTGSimulatorFolderNavigator.m in Sources */,
+				D21063AC1D422D030005A1A8 /* SourceEditorCommand.swift in Sources */,
+				D21063AD1D422D030005A1A8 /* SourceEditorExtension.swift in Sources */,
+				D21063C41D42301F0005A1A8 /* FTGProjectFolderNavigator.m in Sources */,
+				D21063B41D422EB90005A1A8 /* ProjectDerivedDataFolderNavigator.swift in Sources */,
+				D21063B61D422EB90005A1A8 /* Separator.swift in Sources */,
+				D21063BB1D4230040005A1A8 /* FTGUserDataFolderNavigator.m in Sources */,
+				D21063B91D422FFF0005A1A8 /* FTGTemplateFolderNavigator.m in Sources */,
+				D21063D11D42322A0005A1A8 /* Task+Extensions.swift in Sources */,
+				D21063C91D4230E50005A1A8 /* FTGEnvironmentManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,6 +627,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.XcodeWay.XcodeWay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "XcodeWay_Legacy/Plugin/XcodeWay-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -566,6 +643,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.XcodeWay.XcodeWay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "XcodeWay_Legacy/Plugin/XcodeWay-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

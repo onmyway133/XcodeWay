@@ -15,9 +15,9 @@ class iOS7SimulatorFolder: NSObject, Navigator {
   }
 
   func navigate() {
-    let applicationSupportDirectoryPath = FTGEnvironmentManager.sharedManager().applicationSupportDirectoryPath()
-    let url = NSURL(fileURLWithPath: applicationSupportDirectoryPath, isDirectory: true).URLByAppendingPathComponent("iPhone Simulator")
+    let applicationSupportDirectoryPath = FTGEnvironmentManager.shared().applicationSupportDirectoryPath()
+    guard let url = NSURL(fileURLWithPath: applicationSupportDirectoryPath, isDirectory: true).appendingPathComponent("iPhone Simulator") else { return }
 
-    NSWorkspace.sharedWorkspace().openURL(url)
+    NSWorkspace.shared().open(url)
   }
 }

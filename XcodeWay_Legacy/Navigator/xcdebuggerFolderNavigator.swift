@@ -15,9 +15,9 @@ class xcdebuggerFolderNavigator: NSObject, Navigator {
   }
 
   func navigate() {
-    let path = FTGEnvironmentManager.sharedManager().userDataPath()
-    let url = NSURL(fileURLWithPath: path).URLByAppendingPathComponent("xcdebugger")
+    let path = FTGEnvironmentManager.shared().userDataPath()
+    guard let url = NSURL(fileURLWithPath: path).appendingPathComponent("xcdebugger") else { return }
 
-    NSWorkspace.sharedWorkspace().openURL(url)
+    NSWorkspace.shared().open(url)
   }
 }

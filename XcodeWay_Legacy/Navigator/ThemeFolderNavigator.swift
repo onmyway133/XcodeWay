@@ -15,9 +15,9 @@ class ThemeFolderNavigator: NSObject, Navigator {
   }
 
   func navigate() {
-    let path = FTGEnvironmentManager.sharedManager().userDataPath()
-    let url = NSURL(fileURLWithPath: path).URLByAppendingPathComponent("FontAndColorThemes")
+    let path = FTGEnvironmentManager.shared().userDataPath()
+    guard let url = NSURL(fileURLWithPath: path).appendingPathComponent("FontAndColorThemes") else { return }
 
-    NSWorkspace.sharedWorkspace().openURL(url)
+    NSWorkspace.shared().open(url)
   }
 }

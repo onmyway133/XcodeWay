@@ -15,9 +15,10 @@ class ProvisioningProfileFolderNavigator: NSObject, Navigator {
   }
 
   func navigate() {
-    let path = FTGEnvironmentManager.sharedManager().libraryDirectoryPath()
-    let url = NSURL(fileURLWithPath: path).URLByAppendingPathComponent("MobileDevice/Provisioning Profiles")
+    let path = FTGEnvironmentManager.shared().libraryDirectoryPath()
+    guard let url = NSURL(fileURLWithPath: path).appendingPathComponent("MobileDevice/Provisioning Profiles")
+      else { return }
 
-    NSWorkspace.sharedWorkspace().openURL(url)
+    NSWorkspace.shared().open(url)
   }
 }

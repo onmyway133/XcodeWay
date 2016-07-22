@@ -8,6 +8,7 @@
 
 #import "FTGSelectedXcodeFolderNavigator.h"
 #import "XcodeWay-Swift.h"
+#import "NSTask+FTGAdditions.h"
 
 @implementation FTGSelectedXcodeFolderNavigator
 

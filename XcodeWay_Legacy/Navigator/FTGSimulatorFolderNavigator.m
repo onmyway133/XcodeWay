@@ -11,6 +11,7 @@
 #import "FTGDirectoryItem.h"
 #import "FTGDirectoryHelper.h"
 #import "XcodeWay-Swift.h"
+#import "NSTask+FTGAdditions.h"
 
 @implementation FTGSimulatorFolderNavigator
 
@@ -59,7 +60,7 @@
 }
 
 - (void)showError {
-    [NSAlert ftg_showMessage:@"You should run the project on the simulartor"];
+  [NSAlert showWithMessage:@"You should run the project on the simulartor"];
 }
 
 - (BOOL)fileExistsAtPath:(NSString *)path {

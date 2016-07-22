@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Fantageek. All rights reserved.
 //
 
+@import Cocoa;
 @protocol Navigator;
 
 @interface FTGSimulatorFolderNavigator : NSObject <Navigator>

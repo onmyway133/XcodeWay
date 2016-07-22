@@ -8,6 +8,7 @@
 
 #import "FTGDeviceLogFolderNavigator.h"
 #import "XcodeWay-Swift.h"
+#import "FTGEnvironmentManager.h"
 
 @implementation FTGDeviceLogFolderNavigator
 

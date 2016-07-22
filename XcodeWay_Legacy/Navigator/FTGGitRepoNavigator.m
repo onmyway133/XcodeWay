@@ -8,6 +8,8 @@
 
 #import "FTGGitRepoNavigator.h"
 #import "XcodeWay-Swift.h"
+#import "NSTask+FTGAdditions.h"
+#import "FTGEnvironmentManager.h"
 
 @implementation FTGGitRepoNavigator
 
@@ -119,7 +121,7 @@
     }
 
     if (githubURLComponent.length == 0) {
-        [NSAlert ftg_showMessage:@"Unable to find github remote URL."];
+        [NSAlert showWithMessage:@"Unable to find github remote URL."];
         return nil;
     }
     

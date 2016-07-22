@@ -17,7 +17,7 @@ class SourceEditorExtension: NSObject, XCSourceEditorExtension {
    }
    */
 
-
+  
   var commandDefinitions: [[XCSourceEditorCommandDefinitionKey: AnyObject]] {
     // If your extension needs to return a collection of command definitions that differs from those in its Info.plist, implement this optional property getter.
     return []

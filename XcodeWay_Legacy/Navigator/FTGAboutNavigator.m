@@ -17,7 +17,7 @@
 
 - (void)navigate
 {
-    [NSAlert ftg_showMessage:@"https://github.com/onmyway133/XcodeWay"];
+  [NSAlert showWithMessage:@"https://github.com/onmyway133/XcodeWay"];
 }
 
 @end

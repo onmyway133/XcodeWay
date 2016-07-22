@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Fantageek. All rights reserved.
 //
 
+@import Cocoa;
 @protocol Navigator;
 
 @interface FTGDeviceLogFolderNavigator : NSObject <Navigator>

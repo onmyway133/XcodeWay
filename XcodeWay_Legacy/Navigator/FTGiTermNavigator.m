@@ -8,6 +8,8 @@
 
 #import "FTGiTermNavigator.h"
 #import "XcodeWay-Swift.h"
+#import "NSTask+FTGAdditions.h"
+#import "FTGEnvironmentManager.h"
 
 @implementation FTGiTermNavigator
 
