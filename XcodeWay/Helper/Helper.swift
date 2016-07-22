@@ -11,6 +11,7 @@ import Foundation
 struct Helper {
 
   static func namespacedIdentifier(identifier: String) -> String {
-    return (Bundle.main.bundleIdentifier ?? "") + identifier
+    let bundleID = Bundle.main.bundleIdentifier ?? ""
+    return "\(bundleID).\(identifier)"
   }
 }

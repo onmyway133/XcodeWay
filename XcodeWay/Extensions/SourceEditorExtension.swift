@@ -19,7 +19,12 @@ class SourceEditorExtension: NSObject, XCSourceEditorExtension {
 
   
   var commandDefinitions: [[XCSourceEditorCommandDefinitionKey: AnyObject]] {
-    // If your extension needs to return a collection of command definitions that differs from those in its Info.plist, implement this optional property getter.
-    return []
+    return MenuManager.navigators.map { navigator in
+      return [
+        XCSourceEditorCommandDefinitionKey.nameKey: navigator.title,
+        XCSourceEditorCommandDefinitionKey.classNameKey: SourceEditorCommand.className(),
+        XCSourceEditorCommandDefinitionKey.identifierKey: Helper.namespacedIdentifier(identifier: navigator.title)
+      ]
+    }
   }
 }
