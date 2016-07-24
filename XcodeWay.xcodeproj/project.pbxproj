@@ -43,6 +43,7 @@
 		D21063CB1D4230ED0005A1A8 /* NSTask+FTGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D21063721D4227180005A1A8 /* NSTask+FTGAdditions.m */; };
 		D21063CD1D42312B0005A1A8 /* Alert+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21063CC1D42312B0005A1A8 /* Alert+Extensions.swift */; };
 		D21063D11D42322A0005A1A8 /* Task+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21063D01D42322A0005A1A8 /* Task+Extensions.swift */; };
+		D2BA1AB71D4556BB00BE0094 /* ShowUUIDCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21063771D4227180005A1A8 /* ShowUUIDCommand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -453,6 +454,7 @@
 				D21063C11D4230150005A1A8 /* FTGGitRepoNavigator.m in Sources */,
 				D21063CD1D42312B0005A1A8 /* Alert+Extensions.swift in Sources */,
 				D21063AF1D422D290005A1A8 /* MenuManager.swift in Sources */,
+				D2BA1AB71D4556BB00BE0094 /* ShowUUIDCommand.swift in Sources */,
 				D21063B71D422EB90005A1A8 /* ThemeFolderNavigator.swift in Sources */,
 				D21063B01D422D460005A1A8 /* Navigator.swift in Sources */,
 				D21063CB1D4230ED0005A1A8 /* NSTask+FTGAdditions.m in Sources */,

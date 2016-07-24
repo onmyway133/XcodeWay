@@ -11,7 +11,7 @@ import Foundation
 struct MenuManager {
 
   static let navigators: [Navigator] = [
-    FTGProjectFolderNavigator(),
+//    FTGProjectFolderNavigator(),
     ProjectDerivedDataFolderNavigator(),
 //    Separator(),
     iOS7SimulatorFolder(),
@@ -19,7 +19,7 @@ struct MenuManager {
     FTGPlugInsFolderNavigator(),
     FTGTemplateFolderNavigator(),
     FTGArchiveFolderNavigator(),
-    FTGDeviceLogFolderNavigator(),
+//    FTGDeviceLogFolderNavigator(),
     FTGDerivedDataFolderNavigator(),
 //    Separator(),
     ProvisioningProfileFolderNavigator(),
@@ -31,11 +31,12 @@ struct MenuManager {
     FTGCurrentXcodeFolderNavigator(),
     FTGSelectedXcodeFolderNavigator(),
 //    Separator(),
-    FTGTerminalNavigator(),
-    FTGiTermNavigator(),
+//    FTGTerminalNavigator(),
+//    FTGiTermNavigator(),
 //    Separator(),
-    FTGGitRepoNavigator(),
+//    FTGGitRepoNavigator(),
 //    Separator(),
+    ShowUUIDCommand(),
     FTGAboutNavigator(),
   ]
 

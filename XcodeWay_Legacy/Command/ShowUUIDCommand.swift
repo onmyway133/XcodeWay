@@ -15,7 +15,7 @@ class ShowUUIDCommand: NSObject, Navigator {
   }
 
   func navigate() {
-    let uuid = NSTask.ftg_outputTaskResultWithLaunchPath("/usr/bin/defaults", arguments: ["read", "/Applications/Xcode.app/Contents/Info", "DVTPlugInCompatibilityUUID"])
-    NSAlert.ftg_showMessage(uuid)
+    let uuid = Task.ftg_outputTaskResult(withLaunchPath: "/usr/bin/defaults", arguments: ["read", "/Applications/Xcode.app/Contents/Info", "DVTPlugInCompatibilityUUID"])
+    NSAlert.show(message: uuid ?? "")
   }
 }
