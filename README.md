@@ -1,50 +1,41 @@
 XcodeWay
 ==
-Navigate to many places from Xcode. Available as Xcode Source Editor Extension
+Navigate to many places from Xcode
 
 ![](Screenshots/Banner.png)
 
 Features
 ==
 
-- XcodeWay
-  - Help navigate to many places
-  - Available via `Editor -> XcodeWay`
-- XcodeWay+Commands
-  - Useful commands
-  - Available via `Editor -> XcodeWay+Commands`
+- Available as Xcode Source Editor Extension
+- Via `Editor -> XcodeWay`
 
 ![](Screenshots/XcodeWay.png)
 
-### Navigators
-
-- Go To Project Folder
-- Go To Project Derived Data Folder
-- Go To iOS 7 Simulator Folder
-- Go To iOS 8+ Simulator Folder
-- Go To Plugins Folder
-- Go To Templates Folder
-- Go To Archives Folder
-- Go To iOS Device Logs Folder
-- Go To Derived Data Folder
-- Go To Provisioning Profile Folder
-- Go To User Data Folder
+- [ ] Go To Project Folder
+- [ ] Go To Project Derived Data Folder
+- [x] Go To iOS 7 Simulator Folder
+- [x] Go To iOS 8+ Simulator Folder
+- [x] Go To Plugins Folder
+- [x] Go To Templates Folder
+- [x] Go To Archives Folder
+- [x] Go To iOS Device Logs Folder
+- [ ] Go To Derived Data Folder
+- [x] Go To Provisioning Profile Folder
+- [x] Go To User Data Folder
   - Go To Themes Folder
   - Go to xcdebugger Folder
-- Go To Current Xcode Folder
-- Go To Selected Xcode Folder
-- Go To iTerm with current project opened
-- Go To Terminal with current project opened
-- Go To Git Repositories
-
-### Commands
-
-- List top files with most lines
-- List top assets with largest sizes
-- Show FIXME, TODO warnings
-- List dynamic libraries sizes
-- Reload Xcode bundles
-- Show Xcode `DVTPlugInCompatibilityUUID`
+- [ ] Go To Current Xcode Folder
+- [x] Go To Selected Xcode Folder
+- [ ] Go To iTerm with current project opened
+- [ ] Go To Terminal with current project opened
+- [ ] Go To Git Repositories
+- [ ] List top files with most lines
+- [ ] List top assets with largest sizes
+- [ ] Show FIXME, TODO warnings
+- [ ] List dynamic libraries sizes
+- [ ] Reload Xcode bundles
+- [x] Show Xcode `DVTPlugInCompatibilityUUID`
 
 ### Extensible
 
