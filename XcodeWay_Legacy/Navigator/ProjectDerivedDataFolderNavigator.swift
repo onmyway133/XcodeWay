@@ -16,8 +16,8 @@ class ProjectDerivedDataFolderNavigator: NSObject, Navigator {
 
   func navigate() {
     guard let workspace = FTGEnvironmentManager.shared().workspace(),
-      let arena = workspace.value(forKeyPath: "_workspaceArena"),
-      let derivedDataPath = arena.value(forKeyPath: "derivedDataLocation._pathString") as? String
+      let arena = (workspace as AnyObject).value(forKeyPath: "_workspaceArena"),
+      let derivedDataPath = (arena as AnyObject).value(forKeyPath: "derivedDataLocation._pathString") as? String
     else { return }
 
     let url = URL(fileURLWithPath: derivedDataPath, isDirectory: true)

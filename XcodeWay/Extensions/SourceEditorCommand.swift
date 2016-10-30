@@ -11,7 +11,7 @@ import XcodeKit
 
 class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 
-  func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: (NSError?) -> Void ) -> Void {
+  func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Swift.Void) {
     if let navigator = MenuManager.find(commandIdentifier: invocation.commandIdentifier) {
       DispatchQueue.main.async {
         navigator.navigate()

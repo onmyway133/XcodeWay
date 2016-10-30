@@ -18,7 +18,7 @@ class SourceEditorExtension: NSObject, XCSourceEditorExtension {
    */
 
   
-  var commandDefinitions: [[XCSourceEditorCommandDefinitionKey: AnyObject]] {
+  var commandDefinitions: [[XCSourceEditorCommandDefinitionKey : Any]] {
     return MenuManager.navigators.map { navigator in
       return [
         XCSourceEditorCommandDefinitionKey.nameKey: navigator.title,

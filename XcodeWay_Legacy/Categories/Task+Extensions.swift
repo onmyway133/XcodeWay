@@ -8,6 +8,6 @@
 
 import Cocoa
 
-public extension Task {
+public extension Process {
 
 }

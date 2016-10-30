@@ -50,6 +50,7 @@ Add your own Navigator by conforming to `Navigator`
 
 ## Installation
 
+- How to install https://medium.com/@onmyway133/install-xcode-8-source-editor-extension-10c9849e33b0
 - Run `sudo /usr/libexec/xpccachectl` and restart Mac
 - Run the project
 
