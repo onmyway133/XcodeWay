@@ -12,6 +12,6 @@ struct Helper {
 
   static func namespacedIdentifier(identifier: String) -> String {
     let bundleID = Bundle.main.bundleIdentifier ?? ""
-    return "\(bundleID).\(identifier)"
+    return "\(bundleID).\(identifier)".replacingOccurrences(of: " ", with: "-")
   }
 }
