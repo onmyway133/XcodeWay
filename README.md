@@ -8,6 +8,8 @@ XcodeWay
 - An Xcode Source Editor Extension that help navigating to many places easier
 - Available via `Editor -> XcodeWay`
 
+![](Screenshots/demo.gif)
+
 ## Features
 
 - [x] Go To Project Folder: Open the selected Xcode project folder in Finder
