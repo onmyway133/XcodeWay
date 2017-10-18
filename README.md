@@ -1,65 +1,56 @@
 XcodeWay
 ==
-Navigate to many places from Xcode
 
 ![](Screenshots/Banner.png)
 
-Features
-==
+## Description
 
-- Available as Xcode Source Editor Extension
-- Via `Editor -> XcodeWay`
+- An Xcode Source Editor Extension that help navigating to many places easier
+- Available via `Editor -> XcodeWay`
 
-![](Screenshots/XcodeWay.png)
+## Features
 
-- [ ] Go To Project Folder
-- [ ] Go To Project Derived Data Folder
-- [x] Go To iOS 7 Simulator Folder
-- [x] Go To iOS 8+ Simulator Folder
-- [x] Go To Plugins Folder
-- [x] Go To Templates Folder
-- [x] Go To Archives Folder
-- [x] Go To iOS Device Logs Folder
-- [ ] Go To Derived Data Folder
-- [x] Go To Provisioning Profile Folder
-- [x] Go To User Data Folder
-  - Go To Themes Folder
-  - Go to xcdebugger Folder
-- [ ] Go To Current Xcode Folder
-- [x] Go To Selected Xcode Folder
-- [ ] Go To iTerm with current project opened
-- [ ] Go To Terminal with current project opened
-- [ ] Go To Git Repositories
-- [ ] List top files with most lines
-- [ ] List top assets with largest sizes
-- [ ] Show FIXME, TODO warnings
-- [ ] List dynamic libraries sizes
-- [ ] Reload Xcode bundles
-- [x] Show Xcode `DVTPlugInCompatibilityUUID`
+- [x] Go To Project Folder: Open the selected Xcode project folder in Finder
+- [x] Go To iTerm: Open the selected Xcode project folder in iTerm
+- [x] Go To DerivedData Folder: Check and open relative DerivedData if any, otherwise open global DerivedData
+- [x] Open GitHub: Check and open `git remote` in your default browser
+- [x] Go To Provisioning Profiles Folder: Open in Finder
+- [x] Go To Themes Folder: Open in Finder
+- [x] Go To Archives Folder: Open in Finder
+- [x] Go To DeviceSupport Folder: Open in Finder
+- [x] Go To CodeSnippets Folder: Open in Finder
 
-### Extensible
+## Extensible
 
-Add your own Navigator by conforming to `Navigator`
+Although all common scenarios are covered, there's some more that you want to navigate to. Then just add your own by conforming to `Navigator`. Pull requests are welcome.
 
 ```swift
-@objc protocol Navigator: NSObjectProtocol {
+protocol Navigator {
   func navigate()
   var title: String { get }
 }
 ```
 
-## Installation
+## How to install
 
 - How to install https://medium.com/@onmyway133/install-xcode-8-source-editor-extension-10c9849e33b0
-- Run `sudo /usr/libexec/xpccachectl` and restart Mac
-- Run the project
+- **Install scripts**: To fully use `XcodeWay`, you need to allow scripting, run this
 
-## Troubleshooting
+```sh
+curl -fsSL https://raw.githubusercontent.com/onmyway133/XcodeWay/master/install.sh | sh
+```
+
+#### Troubleshooting
 
 - Stop `com.apple.dt.Xcode.AttachToXPCService`
+- Run `sudo /usr/libexec/xpccachectl` and restart Mac
 - It only works when a Swift file is selected
 - If the menu is disappeared or disabled, run again
 
-Licence
---
+## Credit
+
+- Icon https://www.emojione.com/
+
+## Licence
+
 This project is released under the MIT license. See LICENSE.md.
