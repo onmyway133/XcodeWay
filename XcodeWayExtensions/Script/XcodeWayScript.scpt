@@ -20,6 +20,13 @@ end if
 end tell
 end myFolderExists
 
+on myGetRemote(myText)
+set myString to NSString's stringWithString:myText
+set myParts to myString's componentsSeparatedByString:"  "
+set myFirstParts to item 1 of myParts
+myFirstParts as text
+end myGetRemote
+
 -- Path
 
 on myHomePath()
@@ -112,6 +119,8 @@ end myOpenDerivedDataFolder
 
 on myOpenGitHub()
 set myPath to myProjectPath()
-set myUrl to (do shell script "cd " & quoted form of myPath & "; git config --get remote.origin.url")
+set myConsoleOutput to (do shell script "cd " & quoted form of myPath & "; git remote -v")
+set myRemote to myGetRemote(myConsoleOutput)
+set myUrl to (do shell script "cd " & quoted form of myPath & "; git config --get remote." & quoted form of myRemote & ".url")
 open location myUrl
 end myOpenGitHub
