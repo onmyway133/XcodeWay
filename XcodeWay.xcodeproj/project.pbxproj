@@ -201,6 +201,7 @@
 				D2D07D791F9746AF00416315 /* Sources */,
 				D2D07D7A1F9746AF00416315 /* Frameworks */,
 				D2D07D7B1F9746AF00416315 /* Resources */,
+				D2B221991F976DF500C45949 /* Copy AppleScript */,
 			);
 			buildRules = (
 			);
@@ -270,6 +271,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D2B221991F976DF500C45949 /* Copy AppleScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy AppleScript";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp \"${SRCROOT}/XcodeWayExtensions/Script/XcodeWayScript.scpt\" \"/Users/khoa/Library/Application Scripts/com.fantageek.XcodeWayApp.XcodeWayExtensions\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2D07D651F97460400416315 /* Sources */ = {
