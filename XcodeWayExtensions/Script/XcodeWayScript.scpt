@@ -39,7 +39,7 @@ end tell
 myRemoveLastPath(myPath)
 end myProjectPath
 
--- Open
+-- Generic Open
 
 on myOpenFolder(myPath)
 tell application "Finder"
@@ -47,6 +47,14 @@ activate
 open myPath as POSIX file
 end tell
 end myOpenFolder
+
+on myOpeniTerm(myPath)
+tell application "Finder"
+do shell script "open -a iTerm " & quoted form of myPath
+end tell
+end myOpeniTerm
+
+-- Open
 
 on myOpenThemesFolder()
 set myPath to myUserDataPath() & "/FontAndColorThemes/"
@@ -77,4 +85,9 @@ on myOpenProjectFolder()
 set myPath to myProjectPath()
 myOpenFolder(myPath)
 end myOpenProjectFolder
+
+on myOpeniTermForCurrentProject()
+set myPath to myProjectPath()
+myOpeniTerm(myPath)
+end myOpeniTermForCurrentProject
 

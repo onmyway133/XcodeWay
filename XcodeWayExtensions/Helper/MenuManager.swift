@@ -12,6 +12,7 @@ struct MenuManager {
 
   static let navigators: [Navigator] = [
     ProjectFolderNavigator(),
+    iTermNavigator(),
     ProvisioningProfileFolderNavigator(),
     ThemeFolderNavigator(),
     ArchivesFolderNavigator(),
