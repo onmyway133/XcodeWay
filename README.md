@@ -35,6 +35,7 @@ protocol Navigator {
 
 ## How to install
 
+- Download the latest binary from https://github.com/onmyway133/XcodeWay/releases
 - How to install https://medium.com/@onmyway133/install-xcode-8-source-editor-extension-10c9849e33b0
 - **Install scripts**: To fully use `XcodeWay`, you need to allow scripting, run this
 
