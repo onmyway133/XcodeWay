@@ -11,4 +11,3 @@ class CodeSnippetFolderNavigator: Navigator {
     ScriptRunner().run(functionName: "myOpenCodeSnippetsFolder")
   }
 }
-

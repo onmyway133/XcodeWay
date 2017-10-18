@@ -19,7 +19,8 @@ struct MenuManager {
     ThemeFolderNavigator(),
     ArchivesFolderNavigator(),
     DeviceSupportFolderNavigator(),
-    CodeSnippetFolderNavigator()
+    CodeSnippetFolderNavigator(),
+    AboutNavigator()
   ]
 
   static func find(commandIdentifier: String) -> Navigator? {

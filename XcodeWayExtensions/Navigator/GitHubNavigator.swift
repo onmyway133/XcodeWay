@@ -11,6 +11,3 @@ class GitHubNavigator: Navigator {
     ScriptRunner().run(functionName: "myOpenGitHub")
   }
 }
-
-
-

@@ -10,6 +10,7 @@
 		D21658CD1F97908200F3506F /* DerivedDataNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21658CC1F97908200F3506F /* DerivedDataNavigator.swift */; };
 		D21658CF1F97918800F3506F /* GitHubNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21658CE1F97918800F3506F /* GitHubNavigator.swift */; };
 		D220F3501F97841F00F460CC /* ProjectFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D220F34F1F97841F00F460CC /* ProjectFolderNavigator.swift */; };
+		D29D398B1F97DA7B0093FFAA /* AboutNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29D398A1F97DA7B0093FFAA /* AboutNavigator.swift */; };
 		D2B2218F1F974D9F00C45949 /* ArchivesFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B2218E1F974D9F00C45949 /* ArchivesFolderNavigator.swift */; };
 		D2B221911F974DFB00C45949 /* DeviceSupportFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221901F974DFB00C45949 /* DeviceSupportFolderNavigator.swift */; };
 		D2B221941F97528200C45949 /* ScriptRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221931F97528200C45949 /* ScriptRunner.swift */; };
@@ -59,6 +60,7 @@
 		D21658CC1F97908200F3506F /* DerivedDataNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivedDataNavigator.swift; sourceTree = "<group>"; };
 		D21658CE1F97918800F3506F /* GitHubNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubNavigator.swift; sourceTree = "<group>"; };
 		D220F34F1F97841F00F460CC /* ProjectFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFolderNavigator.swift; sourceTree = "<group>"; };
+		D29D398A1F97DA7B0093FFAA /* AboutNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutNavigator.swift; sourceTree = "<group>"; };
 		D2B2218E1F974D9F00C45949 /* ArchivesFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivesFolderNavigator.swift; sourceTree = "<group>"; };
 		D2B221901F974DFB00C45949 /* DeviceSupportFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSupportFolderNavigator.swift; sourceTree = "<group>"; };
 		D2B221931F97528200C45949 /* ScriptRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRunner.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				D2F0B1141F978C36007A1945 /* iTermNavigator.swift */,
 				D21658CC1F97908200F3506F /* DerivedDataNavigator.swift */,
 				D21658CE1F97918800F3506F /* GitHubNavigator.swift */,
+				D29D398A1F97DA7B0093FFAA /* AboutNavigator.swift */,
 			);
 			path = Navigator;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				D2D07D991F9746E500416315 /* Helper.swift in Sources */,
 				D2D07D971F9746E500416315 /* Navigator.swift in Sources */,
 				D2B221911F974DFB00C45949 /* DeviceSupportFolderNavigator.swift in Sources */,
+				D29D398B1F97DA7B0093FFAA /* AboutNavigator.swift in Sources */,
 				D21658CF1F97918800F3506F /* GitHubNavigator.swift in Sources */,
 				D2B221981F976DA200C45949 /* CodeSnippetFolderNavigator.swift in Sources */,
 				D2F0B1151F978C36007A1945 /* iTermNavigator.swift in Sources */,

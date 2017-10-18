@@ -11,5 +11,3 @@ class iTermNavigator: Navigator {
     ScriptRunner().run(functionName: "myOpeniTermForCurrentProject")
   }
 }
-
-

@@ -11,4 +11,3 @@ class ProjectFolderNavigator: Navigator {
     ScriptRunner().run(functionName: "myOpenProjectFolder")
   }
 }
-

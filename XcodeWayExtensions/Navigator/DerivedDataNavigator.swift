@@ -11,5 +11,3 @@ class DerivedDataFolderNavigator: Navigator {
     ScriptRunner().run(functionName: "myOpenDerivedDataFolder")
   }
 }
-
-

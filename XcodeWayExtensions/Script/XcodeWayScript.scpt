@@ -124,3 +124,7 @@ set myRemote to myGetRemote(myConsoleOutput)
 set myUrl to (do shell script "cd " & quoted form of myPath & "; git config --get remote." & quoted form of myRemote & ".url")
 open location myUrl
 end myOpenGitHub
+
+on myOpenAbout()
+open location "https://github.com/onmyway133/XcodeWay"
+end myOpenAbout
