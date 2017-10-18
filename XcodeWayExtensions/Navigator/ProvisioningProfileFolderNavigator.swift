@@ -9,7 +9,7 @@
 import Foundation
 import AppKit
 
-class ProvisioningProfileFolderNavigator: NSObject, Navigator {
+class ProvisioningProfileFolderNavigator: Navigator {
 
   var title: String {
     return "Go To Provisioning Profiles Folder"

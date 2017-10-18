@@ -9,7 +9,7 @@
 import Foundation
 import AppKit
 
-class ThemeFolderNavigator: NSObject, Navigator {
+class ThemeFolderNavigator: Navigator {
 
   var title: String {
     return "Go To Themes Folder"
