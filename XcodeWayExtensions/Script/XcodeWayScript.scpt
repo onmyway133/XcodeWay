@@ -110,4 +110,6 @@ myOpenFolder(myXcodePath() & "/DerivedData/")
 end if
 end myOpenDerivedDataFolder
 
-myOpenDerivedDataFolder()
+on myOpenGitHub()
+set myUrl to (do shell script "cd /Users/khoa/XcodeProject2/XcodeWay; git config --get remote.origin.url")
+end myOpenGitHub
