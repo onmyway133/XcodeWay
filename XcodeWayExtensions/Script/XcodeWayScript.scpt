@@ -22,7 +22,7 @@ end myFolderExists
 
 on myGetRemote(myText)
 set myString to NSString's stringWithString:myText
-set myParts to myString's componentsSeparatedByString:"  "
+set myParts to myString's componentsSeparatedByString:"\t"
 set myFirstParts to item 1 of myParts
 myFirstParts as text
 end myGetRemote
