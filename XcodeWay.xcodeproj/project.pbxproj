@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D220F3501F97841F00F460CC /* ProjectFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D220F34F1F97841F00F460CC /* ProjectFolderNavigator.swift */; };
 		D2B2218F1F974D9F00C45949 /* ArchivesFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B2218E1F974D9F00C45949 /* ArchivesFolderNavigator.swift */; };
 		D2B221911F974DFB00C45949 /* DeviceSupportFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221901F974DFB00C45949 /* DeviceSupportFolderNavigator.swift */; };
 		D2B221941F97528200C45949 /* ScriptRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221931F97528200C45949 /* ScriptRunner.swift */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		D21062FE1D4224B80005A1A8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D220F34F1F97841F00F460CC /* ProjectFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFolderNavigator.swift; sourceTree = "<group>"; };
 		D2B2218E1F974D9F00C45949 /* ArchivesFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivesFolderNavigator.swift; sourceTree = "<group>"; };
 		D2B221901F974DFB00C45949 /* DeviceSupportFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSupportFolderNavigator.swift; sourceTree = "<group>"; };
 		D2B221931F97528200C45949 /* ScriptRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRunner.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				D2B2218E1F974D9F00C45949 /* ArchivesFolderNavigator.swift */,
 				D2B221901F974DFB00C45949 /* DeviceSupportFolderNavigator.swift */,
 				D2B221971F976DA200C45949 /* CodeSnippetFolderNavigator.swift */,
+				D220F34F1F97841F00F460CC /* ProjectFolderNavigator.swift */,
 			);
 			path = Navigator;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				D2D07D971F9746E500416315 /* Navigator.swift in Sources */,
 				D2B221911F974DFB00C45949 /* DeviceSupportFolderNavigator.swift in Sources */,
 				D2B221981F976DA200C45949 /* CodeSnippetFolderNavigator.swift in Sources */,
+				D220F3501F97841F00F460CC /* ProjectFolderNavigator.swift in Sources */,
 				D2B221941F97528200C45949 /* ScriptRunner.swift in Sources */,
 				D2D07D831F9746AF00416315 /* SourceEditorCommand.swift in Sources */,
 				D2D07D9A1F9746E500416315 /* MenuManager.swift in Sources */,

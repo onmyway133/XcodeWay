@@ -1,3 +1,17 @@
+use scripting additions
+use framework "Foundation"
+property NSString : a reference to current application's NSString
+
+-- Helper
+
+on myRemoveLastPath(myPath)
+set myString to NSString's stringWithString:myPath
+set removedLastPathString to myString's stringByDeletingLastPathComponent
+removedLastPathString as text
+end myRemoveLastPath
+
+-- Path
+
 on myHomePath()
 tell application "System Events"
 "/Users/" & (name of current user)
@@ -15,6 +29,17 @@ end myXcodePath
 on myUserDataPath()
 myXcodePath() & "/UserData"
 end myUserDataPath
+
+on myProjectPath()
+tell application "Xcode"
+tell active workspace document
+set myPath to path
+end tell
+end tell
+myRemoveLastPath(myPath)
+end myProjectPath
+
+-- Open
 
 on myOpenFolder(myPath)
 tell application "Finder"
@@ -47,4 +72,9 @@ on myOpenProvisioningProfileFolder()
 set myPath to myLibraryPath() & "/MobileDevice/Provisioning Profiles"
 myOpenFolder(myPath)
 end myOpenProvisioningProfileFolder
+
+on myOpenProjectFolder()
+set myPath to myProjectPath()
+myOpenFolder(myPath)
+end myOpenProjectFolder
 

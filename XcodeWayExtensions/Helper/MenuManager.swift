@@ -11,6 +11,7 @@ import Foundation
 struct MenuManager {
 
   static let navigators: [Navigator] = [
+    ProjectFolderNavigator(),
     ProvisioningProfileFolderNavigator(),
     ThemeFolderNavigator(),
     ArchivesFolderNavigator(),
