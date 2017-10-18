@@ -53,6 +53,7 @@
 		D21062FE1D4224B80005A1A8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D2B2218E1F974D9F00C45949 /* ArchivesFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivesFolderNavigator.swift; sourceTree = "<group>"; };
 		D2B221901F974DFB00C45949 /* DeviceSupportFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSupportFolderNavigator.swift; sourceTree = "<group>"; };
+		D2B221921F97522600C45949 /* com.fantageek.XcodeWayApp.XcodeWayExtensions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = com.fantageek.XcodeWayApp.XcodeWayExtensions; path = "../../Library/Application Scripts/com.fantageek.XcodeWayApp.XcodeWayExtensions"; sourceTree = "<group>"; };
 		D2D07D691F97460400416315 /* XcodeWayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeWayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D07D6B1F97460400416315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2D07D6D1F97460400416315 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +96,7 @@
 		D21062DF1D4224620005A1A8 = {
 			isa = PBXGroup;
 			children = (
+				D2B221921F97522600C45949 /* com.fantageek.XcodeWayApp.XcodeWayExtensions */,
 				D2D07D6A1F97460400416315 /* XcodeWayApp */,
 				D2D07D7F1F9746AF00416315 /* XcodeWayExtensions */,
 				D21062FD1D4224B80005A1A8 /* Frameworks */,
