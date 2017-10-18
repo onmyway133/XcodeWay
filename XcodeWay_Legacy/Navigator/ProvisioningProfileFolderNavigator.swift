@@ -19,6 +19,6 @@ class ProvisioningProfileFolderNavigator: NSObject, Navigator {
     guard let url = NSURL(fileURLWithPath: path).appendingPathComponent("MobileDevice/Provisioning Profiles")
       else { return }
 
-    NSWorkspace.shared().open(url)
+    NSWorkspace.shared.open(url)
   }
 }

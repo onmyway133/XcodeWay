@@ -22,6 +22,6 @@ class ProjectDerivedDataFolderNavigator: NSObject, Navigator {
 
     let url = URL(fileURLWithPath: derivedDataPath, isDirectory: true)
 
-    NSWorkspace.shared().open(url)
+    NSWorkspace.shared.open(url)
   }
 }

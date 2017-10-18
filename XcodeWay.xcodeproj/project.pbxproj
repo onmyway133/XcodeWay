@@ -17,10 +17,8 @@
 		D21063AF1D422D290005A1A8 /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21063AE1D422D290005A1A8 /* MenuManager.swift */; };
 		D21063B01D422D460005A1A8 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210639D1D4227180005A1A8 /* Navigator.swift */; };
 		D21063B21D422DE10005A1A8 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21063B11D422DE10005A1A8 /* Helper.swift */; };
-		D21063B31D422EB90005A1A8 /* iOS7SimulatorNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210639C1D4227180005A1A8 /* iOS7SimulatorNavigator.swift */; };
 		D21063B41D422EB90005A1A8 /* ProjectDerivedDataFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210639E1D4227180005A1A8 /* ProjectDerivedDataFolderNavigator.swift */; };
 		D21063B51D422EB90005A1A8 /* ProvisioningProfileFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D210639F1D4227180005A1A8 /* ProvisioningProfileFolderNavigator.swift */; };
-		D21063B61D422EB90005A1A8 /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21063A01D4227180005A1A8 /* Separator.swift */; };
 		D21063B71D422EB90005A1A8 /* ThemeFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21063A11D4227180005A1A8 /* ThemeFolderNavigator.swift */; };
 		D21063B81D422EB90005A1A8 /* xcdebuggerFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21063A21D4227180005A1A8 /* xcdebuggerFolderNavigator.swift */; };
 		D21063B91D422FFF0005A1A8 /* FTGTemplateFolderNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = D21063971D4227180005A1A8 /* FTGTemplateFolderNavigator.m */; };
@@ -120,11 +118,9 @@
 		D21063991D4227180005A1A8 /* FTGTerminalNavigator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTGTerminalNavigator.m; sourceTree = "<group>"; };
 		D210639A1D4227180005A1A8 /* FTGUserDataFolderNavigator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTGUserDataFolderNavigator.h; sourceTree = "<group>"; };
 		D210639B1D4227180005A1A8 /* FTGUserDataFolderNavigator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTGUserDataFolderNavigator.m; sourceTree = "<group>"; };
-		D210639C1D4227180005A1A8 /* iOS7SimulatorNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS7SimulatorNavigator.swift; sourceTree = "<group>"; };
 		D210639D1D4227180005A1A8 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		D210639E1D4227180005A1A8 /* ProjectDerivedDataFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDerivedDataFolderNavigator.swift; sourceTree = "<group>"; };
 		D210639F1D4227180005A1A8 /* ProvisioningProfileFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvisioningProfileFolderNavigator.swift; sourceTree = "<group>"; };
-		D21063A01D4227180005A1A8 /* Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
 		D21063A11D4227180005A1A8 /* ThemeFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFolderNavigator.swift; sourceTree = "<group>"; };
 		D21063A21D4227180005A1A8 /* xcdebuggerFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcdebuggerFolderNavigator.swift; sourceTree = "<group>"; };
 		D21063A41D4227180005A1A8 /* XcodeWay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XcodeWay-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -295,11 +291,9 @@
 				D21063991D4227180005A1A8 /* FTGTerminalNavigator.m */,
 				D210639A1D4227180005A1A8 /* FTGUserDataFolderNavigator.h */,
 				D210639B1D4227180005A1A8 /* FTGUserDataFolderNavigator.m */,
-				D210639C1D4227180005A1A8 /* iOS7SimulatorNavigator.swift */,
 				D210639D1D4227180005A1A8 /* Navigator.swift */,
 				D210639E1D4227180005A1A8 /* ProjectDerivedDataFolderNavigator.swift */,
 				D210639F1D4227180005A1A8 /* ProvisioningProfileFolderNavigator.swift */,
-				D21063A01D4227180005A1A8 /* Separator.swift */,
 				D21063A11D4227180005A1A8 /* ThemeFolderNavigator.swift */,
 				D21063A21D4227180005A1A8 /* xcdebuggerFolderNavigator.swift */,
 			);
@@ -379,7 +373,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Fantageek;
 				TargetAttributes = {
 					D21062E71D4224620005A1A8 = {
@@ -459,7 +453,6 @@
 				D21063B01D422D460005A1A8 /* Navigator.swift in Sources */,
 				D21063CB1D4230ED0005A1A8 /* NSTask+FTGAdditions.m in Sources */,
 				D21063B51D422EB90005A1A8 /* ProvisioningProfileFolderNavigator.swift in Sources */,
-				D21063B31D422EB90005A1A8 /* iOS7SimulatorNavigator.swift in Sources */,
 				D21063BC1D4230070005A1A8 /* FTGAboutNavigator.m in Sources */,
 				D21063B81D422EB90005A1A8 /* xcdebuggerFolderNavigator.swift in Sources */,
 				D21063C71D4230E50005A1A8 /* FTGDirectoryHelper.m in Sources */,
@@ -474,7 +467,6 @@
 				D21063AD1D422D030005A1A8 /* SourceEditorExtension.swift in Sources */,
 				D21063C41D42301F0005A1A8 /* FTGProjectFolderNavigator.m in Sources */,
 				D21063B41D422EB90005A1A8 /* ProjectDerivedDataFolderNavigator.swift in Sources */,
-				D21063B61D422EB90005A1A8 /* Separator.swift in Sources */,
 				D21063BB1D4230040005A1A8 /* FTGUserDataFolderNavigator.m in Sources */,
 				D21063B91D422FFF0005A1A8 /* FTGTemplateFolderNavigator.m in Sources */,
 				D21063D11D42322A0005A1A8 /* Task+Extensions.swift in Sources */,
@@ -513,14 +505,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -542,12 +542,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -560,14 +561,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -583,10 +592,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -601,7 +611,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.XcodeWay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -616,7 +625,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.XcodeWay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -633,7 +641,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "XcodeWay_Legacy/Plugin/XcodeWay-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -650,7 +657,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "XcodeWay_Legacy/Plugin/XcodeWay-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
