@@ -5,7 +5,7 @@ XcodeWay
 
 ## Description
 
-- An Xcode Source Editor Extension that help navigating to many places easier
+- An Xcode Source Editor Extension that helps navigating to many places easier
 - Available via `Editor -> XcodeWay`
 
 ![](Screenshots/demo.gif)
