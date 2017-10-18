@@ -8,6 +8,6 @@ class ProvisioningProfileFolderNavigator: Navigator {
   }
 
   func navigate() {
-    
+    ScriptRunner().run(functionName: "myOpenProvisioningProfileFolder")
   }
 }

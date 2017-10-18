@@ -4,10 +4,10 @@ import AppKit
 class DeviceSupportFolderNavigator: Navigator {
 
   var title: String {
-    return "Go To iOS DeviceSupport Folder"
+    return "Go To DeviceSupport Folder"
   }
 
   func navigate() {
-
+    ScriptRunner().run(functionName: "myOpenDeviceSupportFolder")
   }
 }

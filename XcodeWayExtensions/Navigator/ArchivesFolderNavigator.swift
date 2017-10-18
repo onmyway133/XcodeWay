@@ -8,6 +8,6 @@ class ArchivesFolderNavigator: Navigator {
   }
 
   func navigate() {
-    
+    ScriptRunner().run(functionName: "myOpenArchivesFolder")
   }
 }
