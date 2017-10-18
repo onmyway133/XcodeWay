@@ -16,7 +16,6 @@ class ThemeFolderNavigator: Navigator {
   }
 
   func navigate() {
-    let path = FileService.userDataPath.appendingPathComponent("FontAndColorThemes")
-    NSWorkspace.shared.open(path)
+    ScriptRunner().run(fileName: "ThemesFolder")
   }
 }

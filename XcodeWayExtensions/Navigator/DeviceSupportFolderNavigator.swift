@@ -16,7 +16,6 @@ class DeviceSupportFolderNavigator: Navigator {
   }
 
   func navigate() {
-    let path = FileService.xcodePath.appendingPathComponent("iOS DeviceSupport")
-    NSWorkspace.shared.open(path)
+
   }
 }

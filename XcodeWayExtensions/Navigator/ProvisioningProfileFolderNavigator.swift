@@ -16,7 +16,6 @@ class ProvisioningProfileFolderNavigator: Navigator {
   }
 
   func navigate() {
-    let path = FileService.libraryPath.appendingPathComponent("MobileDevice/Provisioning Profiles")
-    NSWorkspace.shared.open(path)
+    
   }
 }

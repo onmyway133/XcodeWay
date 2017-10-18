@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D2B2218F1F974D9F00C45949 /* ArchivesFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B2218E1F974D9F00C45949 /* ArchivesFolderNavigator.swift */; };
 		D2B221911F974DFB00C45949 /* DeviceSupportFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221901F974DFB00C45949 /* DeviceSupportFolderNavigator.swift */; };
+		D2B221941F97528200C45949 /* ScriptRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221931F97528200C45949 /* ScriptRunner.swift */; };
 		D2D07D6C1F97460400416315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D6B1F97460400416315 /* AppDelegate.swift */; };
 		D2D07D6E1F97460400416315 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D6D1F97460400416315 /* ViewController.swift */; };
 		D2D07D701F97460400416315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D07D6F1F97460400416315 /* Assets.xcassets */; };
@@ -20,7 +21,6 @@
 		D2D07D951F9746E500416315 /* ProvisioningProfileFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D8E1F9746E500416315 /* ProvisioningProfileFolderNavigator.swift */; };
 		D2D07D961F9746E500416315 /* ThemeFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D8F1F9746E500416315 /* ThemeFolderNavigator.swift */; };
 		D2D07D971F9746E500416315 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D901F9746E500416315 /* Navigator.swift */; };
-		D2D07D981F9746E500416315 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D921F9746E500416315 /* FileService.swift */; };
 		D2D07D991F9746E500416315 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D931F9746E500416315 /* Helper.swift */; };
 		D2D07D9A1F9746E500416315 /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D941F9746E500416315 /* MenuManager.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +54,7 @@
 		D2B2218E1F974D9F00C45949 /* ArchivesFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivesFolderNavigator.swift; sourceTree = "<group>"; };
 		D2B221901F974DFB00C45949 /* DeviceSupportFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSupportFolderNavigator.swift; sourceTree = "<group>"; };
 		D2B221921F97522600C45949 /* com.fantageek.XcodeWayApp.XcodeWayExtensions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = com.fantageek.XcodeWayApp.XcodeWayExtensions; path = "../../Library/Application Scripts/com.fantageek.XcodeWayApp.XcodeWayExtensions"; sourceTree = "<group>"; };
+		D2B221931F97528200C45949 /* ScriptRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRunner.swift; sourceTree = "<group>"; };
 		D2D07D691F97460400416315 /* XcodeWayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeWayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D07D6B1F97460400416315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2D07D6D1F97460400416315 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +70,6 @@
 		D2D07D8E1F9746E500416315 /* ProvisioningProfileFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvisioningProfileFolderNavigator.swift; sourceTree = "<group>"; };
 		D2D07D8F1F9746E500416315 /* ThemeFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeFolderNavigator.swift; sourceTree = "<group>"; };
 		D2D07D901F9746E500416315 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
-		D2D07D921F9746E500416315 /* FileService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
 		D2D07D931F9746E500416315 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		D2D07D941F9746E500416315 /* MenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,9 +162,9 @@
 		D2D07D911F9746E500416315 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				D2D07D921F9746E500416315 /* FileService.swift */,
 				D2D07D931F9746E500416315 /* Helper.swift */,
 				D2D07D941F9746E500416315 /* MenuManager.swift */,
+				D2B221931F97528200C45949 /* ScriptRunner.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -286,12 +286,12 @@
 				D2D07D991F9746E500416315 /* Helper.swift in Sources */,
 				D2D07D971F9746E500416315 /* Navigator.swift in Sources */,
 				D2B221911F974DFB00C45949 /* DeviceSupportFolderNavigator.swift in Sources */,
+				D2B221941F97528200C45949 /* ScriptRunner.swift in Sources */,
 				D2D07D831F9746AF00416315 /* SourceEditorCommand.swift in Sources */,
 				D2D07D9A1F9746E500416315 /* MenuManager.swift in Sources */,
 				D2B2218F1F974D9F00C45949 /* ArchivesFolderNavigator.swift in Sources */,
 				D2D07D951F9746E500416315 /* ProvisioningProfileFolderNavigator.swift in Sources */,
 				D2D07D961F9746E500416315 /* ThemeFolderNavigator.swift in Sources */,
-				D2D07D981F9746E500416315 /* FileService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

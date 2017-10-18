@@ -16,7 +16,6 @@ class ArchivesFolderNavigator: Navigator {
   }
 
   func navigate() {
-    let path = FileService.xcodePath.appendingPathComponent("Archives")
-    NSWorkspace.shared.open(path)
+    
   }
 }
