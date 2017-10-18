@@ -21,7 +21,7 @@
 		D2D07D7E1F9746AF00416315 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21062FE1D4224B80005A1A8 /* Cocoa.framework */; };
 		D2D07D811F9746AF00416315 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D801F9746AF00416315 /* SourceEditorExtension.swift */; };
 		D2D07D831F9746AF00416315 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D821F9746AF00416315 /* SourceEditorCommand.swift */; };
-		D2D07D881F9746AF00416315 /* XcodeWayExtensions.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D2D07D7D1F9746AF00416315 /* XcodeWayExtensions.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D2D07D881F9746AF00416315 /* XcodeWay.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D2D07D7D1F9746AF00416315 /* XcodeWay.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D2D07D951F9746E500416315 /* ProvisioningProfileFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D8E1F9746E500416315 /* ProvisioningProfileFolderNavigator.swift */; };
 		D2D07D961F9746E500416315 /* ThemeFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D8F1F9746E500416315 /* ThemeFolderNavigator.swift */; };
 		D2D07D971F9746E500416315 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D901F9746E500416315 /* Navigator.swift */; };
@@ -47,7 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				D2D07D881F9746AF00416315 /* XcodeWayExtensions.appex in Embed App Extensions */,
+				D2D07D881F9746AF00416315 /* XcodeWay.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,7 +71,7 @@
 		D2D07D721F97460400416315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2D07D741F97460400416315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2D07D751F97460400416315 /* XcodeWayApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XcodeWayApp.entitlements; sourceTree = "<group>"; };
-		D2D07D7D1F9746AF00416315 /* XcodeWayExtensions.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XcodeWayExtensions.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D07D7D1F9746AF00416315 /* XcodeWay.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XcodeWay.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D07D801F9746AF00416315 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
 		D2D07D821F9746AF00416315 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
 		D2D07D841F9746AF00416315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				D2D07D691F97460400416315 /* XcodeWayApp.app */,
-				D2D07D7D1F9746AF00416315 /* XcodeWayExtensions.appex */,
+				D2D07D7D1F9746AF00416315 /* XcodeWay.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -221,7 +221,7 @@
 			);
 			name = XcodeWayExtensions;
 			productName = XcodeWayExtensions;
-			productReference = D2D07D7D1F9746AF00416315 /* XcodeWayExtensions.appex */;
+			productReference = D2D07D7D1F9746AF00416315 /* XcodeWay.appex */;
 			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
@@ -523,7 +523,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.XcodeWayApp.XcodeWayExtensions;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = XcodeWay;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -546,7 +546,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.XcodeWayApp.XcodeWayExtensions;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = XcodeWay;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
