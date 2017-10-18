@@ -10,6 +10,16 @@ set removedLastPathString to myString's stringByDeletingLastPathComponent
 removedLastPathString as text
 end myRemoveLastPath
 
+on myFolderExists(myFolder) -- (String) as Boolean
+tell application "System Events"
+if exists folder myFolder then
+return true
+else
+return false
+end if
+end tell
+end myFolderExists
+
 -- Path
 
 on myHomePath()
@@ -91,3 +101,13 @@ set myPath to myProjectPath()
 myOpeniTerm(myPath)
 end myOpeniTermForCurrentProject
 
+on myOpenDerivedDataFolder()
+set myRelativePath to myProjectPath() & "/DerivedData/"
+if myFolderExists(myRelativePath) then
+myOpenFolder(myRelativePath)
+else
+myOpenFolder(myXcodePath() & "/DerivedData/")
+end if
+end myOpenDerivedDataFolder
+
+myOpenDerivedDataFolder()
