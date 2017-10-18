@@ -10,7 +10,6 @@ import Foundation
 import XcodeKit
 
 class SourceEditorCommand: NSObject, XCSourceEditorCommand {
-
   func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Swift.Void) {
     if let navigator = MenuManager.find(commandIdentifier: invocation.commandIdentifier) {
       DispatchQueue.main.async {
@@ -20,5 +19,4 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
 
     completionHandler(nil)
   }
-
 }

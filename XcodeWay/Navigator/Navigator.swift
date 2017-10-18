@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc protocol Navigator: NSObjectProtocol {
+protocol Navigator: NSObjectProtocol {
   func navigate()
   var title: String { get }
 }

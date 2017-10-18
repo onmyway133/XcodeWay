@@ -11,26 +11,8 @@ import Foundation
 struct MenuManager {
 
   static let navigators: [Navigator] = [
-//    FTGProjectFolderNavigator(),
-//    ProjectDerivedDataFolderNavigator(),
-    FTGSimulatorFolderNavigator(),
-    FTGPlugInsFolderNavigator(),
-    FTGTemplateFolderNavigator(),
-    FTGArchiveFolderNavigator(),
-//    FTGDeviceLogFolderNavigator(),
-    FTGDerivedDataFolderNavigator(),
     ProvisioningProfileFolderNavigator(),
-//    Separator(),
-    FTGUserDataFolderNavigator(),
-    xcdebuggerFolderNavigator(),
-    ThemeFolderNavigator(),
-//    FTGCurrentXcodeFolderNavigator(),
-    FTGSelectedXcodeFolderNavigator(),
-//    FTGTerminalNavigator(),
-//    FTGiTermNavigator(),
-//    FTGGitRepoNavigator(),
-    ShowUUIDCommand(),
-    FTGAboutNavigator(),
+    ThemeFolderNavigator()
   ]
 
   static func find(commandIdentifier: String) -> Navigator? {
