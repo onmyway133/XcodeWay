@@ -12,7 +12,9 @@ struct MenuManager {
 
   static let navigators: [Navigator] = [
     ProvisioningProfileFolderNavigator(),
-    ThemeFolderNavigator()
+    ThemeFolderNavigator(),
+    ArchivesFolderNavigator(),
+    DeviceSupportFolderNavigator()
   ]
 
   static func find(commandIdentifier: String) -> Navigator? {
