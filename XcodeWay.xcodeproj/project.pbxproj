@@ -10,6 +10,7 @@
 		D2B2218F1F974D9F00C45949 /* ArchivesFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B2218E1F974D9F00C45949 /* ArchivesFolderNavigator.swift */; };
 		D2B221911F974DFB00C45949 /* DeviceSupportFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221901F974DFB00C45949 /* DeviceSupportFolderNavigator.swift */; };
 		D2B221941F97528200C45949 /* ScriptRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221931F97528200C45949 /* ScriptRunner.swift */; };
+		D2B221981F976DA200C45949 /* CodeSnippetFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221971F976DA200C45949 /* CodeSnippetFolderNavigator.swift */; };
 		D2D07D6C1F97460400416315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D6B1F97460400416315 /* AppDelegate.swift */; };
 		D2D07D6E1F97460400416315 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D6D1F97460400416315 /* ViewController.swift */; };
 		D2D07D701F97460400416315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D07D6F1F97460400416315 /* Assets.xcassets */; };
@@ -53,8 +54,9 @@
 		D21062FE1D4224B80005A1A8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D2B2218E1F974D9F00C45949 /* ArchivesFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivesFolderNavigator.swift; sourceTree = "<group>"; };
 		D2B221901F974DFB00C45949 /* DeviceSupportFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSupportFolderNavigator.swift; sourceTree = "<group>"; };
-		D2B221921F97522600C45949 /* com.fantageek.XcodeWayApp.XcodeWayExtensions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = com.fantageek.XcodeWayApp.XcodeWayExtensions; path = "../../Library/Application Scripts/com.fantageek.XcodeWayApp.XcodeWayExtensions"; sourceTree = "<group>"; };
 		D2B221931F97528200C45949 /* ScriptRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRunner.swift; sourceTree = "<group>"; };
+		D2B221961F976D7B00C45949 /* Script */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Script; sourceTree = "<group>"; };
+		D2B221971F976DA200C45949 /* CodeSnippetFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnippetFolderNavigator.swift; sourceTree = "<group>"; };
 		D2D07D691F97460400416315 /* XcodeWayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeWayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D07D6B1F97460400416315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2D07D6D1F97460400416315 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +98,6 @@
 		D21062DF1D4224620005A1A8 = {
 			isa = PBXGroup;
 			children = (
-				D2B221921F97522600C45949 /* com.fantageek.XcodeWayApp.XcodeWayExtensions */,
 				D2D07D6A1F97460400416315 /* XcodeWayApp */,
 				D2D07D7F1F9746AF00416315 /* XcodeWayExtensions */,
 				D21062FD1D4224B80005A1A8 /* Frameworks */,
@@ -137,6 +138,7 @@
 		D2D07D7F1F9746AF00416315 /* XcodeWayExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				D2B221961F976D7B00C45949 /* Script */,
 				D2D07D911F9746E500416315 /* Helper */,
 				D2D07D8D1F9746E500416315 /* Navigator */,
 				D2D07D801F9746AF00416315 /* SourceEditorExtension.swift */,
@@ -155,6 +157,7 @@
 				D2D07D901F9746E500416315 /* Navigator.swift */,
 				D2B2218E1F974D9F00C45949 /* ArchivesFolderNavigator.swift */,
 				D2B221901F974DFB00C45949 /* DeviceSupportFolderNavigator.swift */,
+				D2B221971F976DA200C45949 /* CodeSnippetFolderNavigator.swift */,
 			);
 			path = Navigator;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				D2D07D991F9746E500416315 /* Helper.swift in Sources */,
 				D2D07D971F9746E500416315 /* Navigator.swift in Sources */,
 				D2B221911F974DFB00C45949 /* DeviceSupportFolderNavigator.swift in Sources */,
+				D2B221981F976DA200C45949 /* CodeSnippetFolderNavigator.swift in Sources */,
 				D2B221941F97528200C45949 /* ScriptRunner.swift in Sources */,
 				D2D07D831F9746AF00416315 /* SourceEditorCommand.swift in Sources */,
 				D2D07D9A1F9746E500416315 /* MenuManager.swift in Sources */,

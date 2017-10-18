@@ -7,6 +7,7 @@
 //
 
 import AppKit
+import Carbon
 
 class ScriptRunner {
   var scriptPath: URL? {
@@ -24,8 +25,30 @@ class ScriptRunner {
       .appendingPathExtension("scpt")
   }
 
-  func run(fileName: String) {
-    guard let filePath = fileScriptPath(fileName: fileName) else {
+  func eventDescriptior(functionName: String) -> NSAppleEventDescriptor {
+    var psn = ProcessSerialNumber(highLongOfPSN: 0, lowLongOfPSN: UInt32(kCurrentProcess))
+    let target = NSAppleEventDescriptor(
+      descriptorType: typeProcessSerialNumber,
+      bytes: &psn,
+      length: MemoryLayout<ProcessSerialNumber>.size
+    )
+
+    let event = NSAppleEventDescriptor(
+      eventClass: UInt32(kASAppleScriptSuite),
+      eventID: UInt32(kASSubroutineEvent),
+      targetDescriptor: target,
+      returnID: Int16(kAutoGenerateReturnID),
+      transactionID: Int32(kAnyTransactionID)
+    )
+
+    let function = NSAppleEventDescriptor(string: functionName)
+    event.setParam(function, forKeyword: AEKeyword(keyASSubroutineName))
+
+    return event
+  }
+
+  func run(functionName: String) {
+    guard let filePath = fileScriptPath(fileName: "XcodeWayScript") else {
       return
     }
 
@@ -37,6 +60,11 @@ class ScriptRunner {
       return
     }
 
-    script.execute(completionHandler: nil)
+    let event = eventDescriptior(functionName: functionName)
+    script.execute(withAppleEvent: event, completionHandler: { _, error in
+      if let error = error {
+        print(error)
+      }
+    })
   }
 }
