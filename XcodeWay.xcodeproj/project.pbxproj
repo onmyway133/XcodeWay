@@ -7,43 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D21062EC1D4224620005A1A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21062EB1D4224620005A1A8 /* AppDelegate.swift */; };
-		D21062EE1D4224620005A1A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D21062ED1D4224620005A1A8 /* Assets.xcassets */; };
-		D21062F11D4224620005A1A8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D21062EF1D4224620005A1A8 /* MainMenu.xib */; };
-		D21062FF1D4224B80005A1A8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21062FE1D4224B80005A1A8 /* Cocoa.framework */; };
-		D210630A1D4224B80005A1A8 /* XcodeWay.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D21062FC1D4224B80005A1A8 /* XcodeWay.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		D21063AC1D422D030005A1A8 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21063A91D422D030005A1A8 /* SourceEditorCommand.swift */; };
-		D21063AD1D422D030005A1A8 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21063AA1D422D030005A1A8 /* SourceEditorExtension.swift */; };
-		D21063AF1D422D290005A1A8 /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21063AE1D422D290005A1A8 /* MenuManager.swift */; };
-		D21063B21D422DE10005A1A8 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21063B11D422DE10005A1A8 /* Helper.swift */; };
-		D2A38A3D1F9741C1005E8650 /* ProvisioningProfileFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A38A381F9741C1005E8650 /* ProvisioningProfileFolderNavigator.swift */; };
-		D2A38A3E1F9741C1005E8650 /* ProvisioningProfileFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A38A381F9741C1005E8650 /* ProvisioningProfileFolderNavigator.swift */; };
-		D2A38A431F9741C1005E8650 /* ThemeFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A38A3B1F9741C1005E8650 /* ThemeFolderNavigator.swift */; };
-		D2A38A441F9741C1005E8650 /* ThemeFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A38A3B1F9741C1005E8650 /* ThemeFolderNavigator.swift */; };
-		D2A38A451F9741C1005E8650 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A38A3C1F9741C1005E8650 /* Navigator.swift */; };
-		D2A38A461F9741C1005E8650 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A38A3C1F9741C1005E8650 /* Navigator.swift */; };
-		D2A38A4B1F974277005E8650 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A38A4A1F974277005E8650 /* FileService.swift */; };
-		D2A38A4C1F974277005E8650 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A38A4A1F974277005E8650 /* FileService.swift */; };
+		D2D07D6C1F97460400416315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D6B1F97460400416315 /* AppDelegate.swift */; };
+		D2D07D6E1F97460400416315 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D6D1F97460400416315 /* ViewController.swift */; };
+		D2D07D701F97460400416315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D07D6F1F97460400416315 /* Assets.xcassets */; };
+		D2D07D731F97460400416315 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D07D711F97460400416315 /* Main.storyboard */; };
+		D2D07D7E1F9746AF00416315 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21062FE1D4224B80005A1A8 /* Cocoa.framework */; };
+		D2D07D811F9746AF00416315 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D801F9746AF00416315 /* SourceEditorExtension.swift */; };
+		D2D07D831F9746AF00416315 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D821F9746AF00416315 /* SourceEditorCommand.swift */; };
+		D2D07D881F9746AF00416315 /* XcodeWayExtensions.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D2D07D7D1F9746AF00416315 /* XcodeWayExtensions.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D2D07D951F9746E500416315 /* ProvisioningProfileFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D8E1F9746E500416315 /* ProvisioningProfileFolderNavigator.swift */; };
+		D2D07D961F9746E500416315 /* ThemeFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D8F1F9746E500416315 /* ThemeFolderNavigator.swift */; };
+		D2D07D971F9746E500416315 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D901F9746E500416315 /* Navigator.swift */; };
+		D2D07D981F9746E500416315 /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D921F9746E500416315 /* FileService.swift */; };
+		D2D07D991F9746E500416315 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D931F9746E500416315 /* Helper.swift */; };
+		D2D07D9A1F9746E500416315 /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D941F9746E500416315 /* MenuManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D21063081D4224B80005A1A8 /* PBXContainerItemProxy */ = {
+		D2D07D861F9746AF00416315 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D21062E01D4224620005A1A8 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D21062FB1D4224B80005A1A8;
-			remoteInfo = XcodeWay;
+			remoteGlobalIDString = D2D07D7C1F9746AF00416315;
+			remoteInfo = XcodeWayExtensions;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D210630E1D4224B80005A1A8 /* Embed App Extensions */ = {
+		D2D07D8C1F9746AF00416315 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				D210630A1D4224B80005A1A8 /* XcodeWay.appex in Embed App Extensions */,
+				D2D07D881F9746AF00416315 /* XcodeWayExtensions.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,38 +48,40 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D21062E81D4224620005A1A8 /* XcodeWayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeWayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D21062EB1D4224620005A1A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D21062ED1D4224620005A1A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D21062F01D4224620005A1A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		D21062F21D4224620005A1A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D21062FC1D4224B80005A1A8 /* XcodeWay.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XcodeWay.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21062FE1D4224B80005A1A8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		D21063021D4224B80005A1A8 /* XcodeWay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XcodeWay.entitlements; sourceTree = "<group>"; };
-		D21063071D4224B80005A1A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D21063A91D422D030005A1A8 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
-		D21063AA1D422D030005A1A8 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
-		D21063AE1D422D290005A1A8 /* MenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
-		D21063B11D422DE10005A1A8 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
-		D2A38A381F9741C1005E8650 /* ProvisioningProfileFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvisioningProfileFolderNavigator.swift; sourceTree = "<group>"; };
-		D2A38A3B1F9741C1005E8650 /* ThemeFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeFolderNavigator.swift; sourceTree = "<group>"; };
-		D2A38A3C1F9741C1005E8650 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
-		D2A38A4A1F974277005E8650 /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
+		D2D07D691F97460400416315 /* XcodeWayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeWayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D07D6B1F97460400416315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2D07D6D1F97460400416315 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D2D07D6F1F97460400416315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2D07D721F97460400416315 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2D07D741F97460400416315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2D07D751F97460400416315 /* XcodeWayApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XcodeWayApp.entitlements; sourceTree = "<group>"; };
+		D2D07D7D1F9746AF00416315 /* XcodeWayExtensions.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = XcodeWayExtensions.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D07D801F9746AF00416315 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		D2D07D821F9746AF00416315 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		D2D07D841F9746AF00416315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2D07D851F9746AF00416315 /* XcodeWayExtensions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XcodeWayExtensions.entitlements; sourceTree = "<group>"; };
+		D2D07D8E1F9746E500416315 /* ProvisioningProfileFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvisioningProfileFolderNavigator.swift; sourceTree = "<group>"; };
+		D2D07D8F1F9746E500416315 /* ThemeFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeFolderNavigator.swift; sourceTree = "<group>"; };
+		D2D07D901F9746E500416315 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		D2D07D921F9746E500416315 /* FileService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
+		D2D07D931F9746E500416315 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		D2D07D941F9746E500416315 /* MenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D21062E51D4224620005A1A8 /* Frameworks */ = {
+		D2D07D661F97460400416315 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D21062F91D4224B80005A1A8 /* Frameworks */ = {
+		D2D07D7A1F9746AF00416315 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D21062FF1D4224B80005A1A8 /* Cocoa.framework in Frameworks */,
+				D2D07D7E1F9746AF00416315 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,8 +91,8 @@
 		D21062DF1D4224620005A1A8 = {
 			isa = PBXGroup;
 			children = (
-				D21062EA1D4224620005A1A8 /* XcodeWayApp */,
-				D21063001D4224B80005A1A8 /* XcodeWay */,
+				D2D07D6A1F97460400416315 /* XcodeWayApp */,
+				D2D07D7F1F9746AF00416315 /* XcodeWayExtensions */,
 				D21062FD1D4224B80005A1A8 /* Frameworks */,
 				D21062E91D4224620005A1A8 /* Products */,
 			);
@@ -102,22 +101,10 @@
 		D21062E91D4224620005A1A8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D21062E81D4224620005A1A8 /* XcodeWayApp.app */,
-				D21062FC1D4224B80005A1A8 /* XcodeWay.appex */,
+				D2D07D691F97460400416315 /* XcodeWayApp.app */,
+				D2D07D7D1F9746AF00416315 /* XcodeWayExtensions.appex */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D21062EA1D4224620005A1A8 /* XcodeWayApp */ = {
-			isa = PBXGroup;
-			children = (
-				D21062EB1D4224620005A1A8 /* AppDelegate.swift */,
-				D21062ED1D4224620005A1A8 /* Assets.xcassets */,
-				D21062EF1D4224620005A1A8 /* MainMenu.xib */,
-				D21062F21D4224620005A1A8 /* Info.plist */,
-			);
-			name = XcodeWayApp;
-			path = XcodeWay;
 			sourceTree = "<group>";
 		};
 		D21062FD1D4224B80005A1A8 /* Frameworks */ = {
@@ -128,92 +115,89 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D21063001D4224B80005A1A8 /* XcodeWay */ = {
+		D2D07D6A1F97460400416315 /* XcodeWayApp */ = {
 			isa = PBXGroup;
 			children = (
-				D2A38A371F9741C1005E8650 /* Navigator */,
-				D21063A81D422D030005A1A8 /* Extensions */,
-				D21063AB1D422D030005A1A8 /* Helper */,
-				D21063071D4224B80005A1A8 /* Info.plist */,
-				D21063011D4224B80005A1A8 /* Supporting Files */,
+				D2D07D6B1F97460400416315 /* AppDelegate.swift */,
+				D2D07D6D1F97460400416315 /* ViewController.swift */,
+				D2D07D6F1F97460400416315 /* Assets.xcassets */,
+				D2D07D711F97460400416315 /* Main.storyboard */,
+				D2D07D741F97460400416315 /* Info.plist */,
+				D2D07D751F97460400416315 /* XcodeWayApp.entitlements */,
 			);
-			path = XcodeWay;
+			path = XcodeWayApp;
 			sourceTree = "<group>";
 		};
-		D21063011D4224B80005A1A8 /* Supporting Files */ = {
+		D2D07D7F1F9746AF00416315 /* XcodeWayExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				D21063021D4224B80005A1A8 /* XcodeWay.entitlements */,
+				D2D07D911F9746E500416315 /* Helper */,
+				D2D07D8D1F9746E500416315 /* Navigator */,
+				D2D07D801F9746AF00416315 /* SourceEditorExtension.swift */,
+				D2D07D821F9746AF00416315 /* SourceEditorCommand.swift */,
+				D2D07D841F9746AF00416315 /* Info.plist */,
+				D2D07D851F9746AF00416315 /* XcodeWayExtensions.entitlements */,
 			);
-			name = "Supporting Files";
+			path = XcodeWayExtensions;
 			sourceTree = "<group>";
 		};
-		D21063A81D422D030005A1A8 /* Extensions */ = {
+		D2D07D8D1F9746E500416315 /* Navigator */ = {
 			isa = PBXGroup;
 			children = (
-				D21063A91D422D030005A1A8 /* SourceEditorCommand.swift */,
-				D21063AA1D422D030005A1A8 /* SourceEditorExtension.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		D21063AB1D422D030005A1A8 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				D21063AE1D422D290005A1A8 /* MenuManager.swift */,
-				D21063B11D422DE10005A1A8 /* Helper.swift */,
-				D2A38A4A1F974277005E8650 /* FileService.swift */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		D2A38A371F9741C1005E8650 /* Navigator */ = {
-			isa = PBXGroup;
-			children = (
-				D2A38A381F9741C1005E8650 /* ProvisioningProfileFolderNavigator.swift */,
-				D2A38A3B1F9741C1005E8650 /* ThemeFolderNavigator.swift */,
-				D2A38A3C1F9741C1005E8650 /* Navigator.swift */,
+				D2D07D8E1F9746E500416315 /* ProvisioningProfileFolderNavigator.swift */,
+				D2D07D8F1F9746E500416315 /* ThemeFolderNavigator.swift */,
+				D2D07D901F9746E500416315 /* Navigator.swift */,
 			);
 			path = Navigator;
+			sourceTree = "<group>";
+		};
+		D2D07D911F9746E500416315 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D2D07D921F9746E500416315 /* FileService.swift */,
+				D2D07D931F9746E500416315 /* Helper.swift */,
+				D2D07D941F9746E500416315 /* MenuManager.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D21062E71D4224620005A1A8 /* XcodeWayApp */ = {
+		D2D07D681F97460400416315 /* XcodeWayApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D21062F51D4224620005A1A8 /* Build configuration list for PBXNativeTarget "XcodeWayApp" */;
+			buildConfigurationList = D2D07D761F97460400416315 /* Build configuration list for PBXNativeTarget "XcodeWayApp" */;
 			buildPhases = (
-				D21062E41D4224620005A1A8 /* Sources */,
-				D21062E51D4224620005A1A8 /* Frameworks */,
-				D21062E61D4224620005A1A8 /* Resources */,
-				D210630E1D4224B80005A1A8 /* Embed App Extensions */,
+				D2D07D651F97460400416315 /* Sources */,
+				D2D07D661F97460400416315 /* Frameworks */,
+				D2D07D671F97460400416315 /* Resources */,
+				D2D07D8C1F9746AF00416315 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D21063091D4224B80005A1A8 /* PBXTargetDependency */,
+				D2D07D871F9746AF00416315 /* PBXTargetDependency */,
 			);
 			name = XcodeWayApp;
-			productName = XcodeWay;
-			productReference = D21062E81D4224620005A1A8 /* XcodeWayApp.app */;
+			productName = XcodeWayApp;
+			productReference = D2D07D691F97460400416315 /* XcodeWayApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D21062FB1D4224B80005A1A8 /* XcodeWay */ = {
+		D2D07D7C1F9746AF00416315 /* XcodeWayExtensions */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D210630B1D4224B80005A1A8 /* Build configuration list for PBXNativeTarget "XcodeWay" */;
+			buildConfigurationList = D2D07D891F9746AF00416315 /* Build configuration list for PBXNativeTarget "XcodeWayExtensions" */;
 			buildPhases = (
-				D21062F81D4224B80005A1A8 /* Sources */,
-				D21062F91D4224B80005A1A8 /* Frameworks */,
-				D21062FA1D4224B80005A1A8 /* Resources */,
+				D2D07D791F9746AF00416315 /* Sources */,
+				D2D07D7A1F9746AF00416315 /* Frameworks */,
+				D2D07D7B1F9746AF00416315 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = XcodeWay;
-			productName = XcodeWay;
-			productReference = D21062FC1D4224B80005A1A8 /* XcodeWay.appex */;
+			name = XcodeWayExtensions;
+			productName = XcodeWayExtensions;
+			productReference = D2D07D7D1F9746AF00416315 /* XcodeWayExtensions.appex */;
 			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
@@ -222,20 +206,16 @@
 		D21062E01D4224620005A1A8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
+				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Fantageek;
 				TargetAttributes = {
-					D21062E71D4224620005A1A8 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = T78DK947F2;
-						DevelopmentTeamName = "Khoa Pham";
+					D2D07D681F97460400416315 = {
+						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
-					D21062FB1D4224B80005A1A8 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = T78DK947F2;
-						DevelopmentTeamName = "Khoa Pham";
+					D2D07D7C1F9746AF00416315 = {
+						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -253,23 +233,23 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D21062E71D4224620005A1A8 /* XcodeWayApp */,
-				D21062FB1D4224B80005A1A8 /* XcodeWay */,
+				D2D07D681F97460400416315 /* XcodeWayApp */,
+				D2D07D7C1F9746AF00416315 /* XcodeWayExtensions */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D21062E61D4224620005A1A8 /* Resources */ = {
+		D2D07D671F97460400416315 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D21062EE1D4224620005A1A8 /* Assets.xcassets in Resources */,
-				D21062F11D4224620005A1A8 /* MainMenu.xib in Resources */,
+				D2D07D701F97460400416315 /* Assets.xcassets in Resources */,
+				D2D07D731F97460400416315 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D21062FA1D4224B80005A1A8 /* Resources */ = {
+		D2D07D7B1F9746AF00416315 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,50 +259,47 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D21062E41D4224620005A1A8 /* Sources */ = {
+		D2D07D651F97460400416315 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2A38A3D1F9741C1005E8650 /* ProvisioningProfileFolderNavigator.swift in Sources */,
-				D2A38A431F9741C1005E8650 /* ThemeFolderNavigator.swift in Sources */,
-				D21062EC1D4224620005A1A8 /* AppDelegate.swift in Sources */,
-				D2A38A451F9741C1005E8650 /* Navigator.swift in Sources */,
-				D2A38A4B1F974277005E8650 /* FileService.swift in Sources */,
+				D2D07D6E1F97460400416315 /* ViewController.swift in Sources */,
+				D2D07D6C1F97460400416315 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D21062F81D4224B80005A1A8 /* Sources */ = {
+		D2D07D791F9746AF00416315 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2A38A461F9741C1005E8650 /* Navigator.swift in Sources */,
-				D2A38A3E1F9741C1005E8650 /* ProvisioningProfileFolderNavigator.swift in Sources */,
-				D21063AF1D422D290005A1A8 /* MenuManager.swift in Sources */,
-				D21063B21D422DE10005A1A8 /* Helper.swift in Sources */,
-				D21063AC1D422D030005A1A8 /* SourceEditorCommand.swift in Sources */,
-				D2A38A441F9741C1005E8650 /* ThemeFolderNavigator.swift in Sources */,
-				D21063AD1D422D030005A1A8 /* SourceEditorExtension.swift in Sources */,
-				D2A38A4C1F974277005E8650 /* FileService.swift in Sources */,
+				D2D07D811F9746AF00416315 /* SourceEditorExtension.swift in Sources */,
+				D2D07D991F9746E500416315 /* Helper.swift in Sources */,
+				D2D07D971F9746E500416315 /* Navigator.swift in Sources */,
+				D2D07D831F9746AF00416315 /* SourceEditorCommand.swift in Sources */,
+				D2D07D9A1F9746E500416315 /* MenuManager.swift in Sources */,
+				D2D07D951F9746E500416315 /* ProvisioningProfileFolderNavigator.swift in Sources */,
+				D2D07D961F9746E500416315 /* ThemeFolderNavigator.swift in Sources */,
+				D2D07D981F9746E500416315 /* FileService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D21063091D4224B80005A1A8 /* PBXTargetDependency */ = {
+		D2D07D871F9746AF00416315 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D21062FB1D4224B80005A1A8 /* XcodeWay */;
-			targetProxy = D21063081D4224B80005A1A8 /* PBXContainerItemProxy */;
+			target = D2D07D7C1F9746AF00416315 /* XcodeWayExtensions */;
+			targetProxy = D2D07D861F9746AF00416315 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D21062EF1D4224620005A1A8 /* MainMenu.xib */ = {
+		D2D07D711F97460400416315 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D21062F01D4224620005A1A8 /* Base */,
+				D2D07D721F97460400416315 /* Base */,
 			);
-			name = MainMenu.xib;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -432,63 +409,85 @@
 			};
 			name = Release;
 		};
-		D21062F61D4224620005A1A8 /* Debug */ = {
+		D2D07D771F97460400416315 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = XcodeWayApp/XcodeWayApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = XcodeWay/Info.plist;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = XcodeWayApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.XcodeWay;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.XcodeWayApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
-		D21062F71D4224620005A1A8 /* Release */ = {
+		D2D07D781F97460400416315 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = XcodeWayApp/XcodeWayApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = XcodeWay/Info.plist;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = XcodeWayApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.XcodeWay;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.XcodeWayApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
-		D210630C1D4224B80005A1A8 /* Debug */ = {
+		D2D07D8A1F9746AF00416315 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = XcodeWay/XcodeWay.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = XcodeWayExtensions/XcodeWayExtensions.entitlements;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = XcodeWay/Info.plist;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = XcodeWayExtensions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.XcodeWay;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.XcodeWayApp.XcodeWayExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
-		D210630D1D4224B80005A1A8 /* Release */ = {
+		D2D07D8B1F9746AF00416315 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = XcodeWay/XcodeWay.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = XcodeWayExtensions/XcodeWayExtensions.entitlements;
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = XcodeWay/Info.plist;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = XcodeWayExtensions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.XcodeWay;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.XcodeWayApp.XcodeWayExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -504,20 +503,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D21062F51D4224620005A1A8 /* Build configuration list for PBXNativeTarget "XcodeWayApp" */ = {
+		D2D07D761F97460400416315 /* Build configuration list for PBXNativeTarget "XcodeWayApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D21062F61D4224620005A1A8 /* Debug */,
-				D21062F71D4224620005A1A8 /* Release */,
+				D2D07D771F97460400416315 /* Debug */,
+				D2D07D781F97460400416315 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D210630B1D4224B80005A1A8 /* Build configuration list for PBXNativeTarget "XcodeWay" */ = {
+		D2D07D891F9746AF00416315 /* Build configuration list for PBXNativeTarget "XcodeWayExtensions" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D210630C1D4224B80005A1A8 /* Debug */,
-				D210630D1D4224B80005A1A8 /* Release */,
+				D2D07D8A1F9746AF00416315 /* Debug */,
+				D2D07D8B1F9746AF00416315 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

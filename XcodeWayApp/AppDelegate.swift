@@ -1,19 +1,15 @@
 //
 //  AppDelegate.swift
-//  XcodeWay
+//  XcodeWayApp
 //
-//  Created by Khoa Pham on 22/07/16.
-//  Copyright © 2016 Fantageek. All rights reserved.
+//  Created by Khoa Pham on 18.10.2017.
+//  Copyright © 2017 Fantageek. All rights reserved.
 //
 
 import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-  @IBOutlet weak var window: NSWindow!
-
-
   func applicationDidFinishLaunching(_ aNotification: Notification) {
     // Insert code here to initialize your application
   }
@@ -21,7 +17,5 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   func applicationWillTerminate(_ aNotification: Notification) {
     // Insert code here to tear down your application
   }
-
-
 }
 

@@ -1,9 +1,9 @@
 //
 //  SourceEditorExtension.swift
-//  XcodeWay
+//  XcodeWayExtensions
 //
-//  Created by Khoa Pham on 22/07/16.
-//  Copyright © 2016 Fantageek. All rights reserved.
+//  Created by Khoa Pham on 18.10.2017.
+//  Copyright © 2017 Fantageek. All rights reserved.
 //
 
 import Foundation

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D21062E71D4224620005A1A8"
+               BlueprintIdentifier = "D2D07D681F97460400416315"
                BuildableName = "XcodeWayApp.app"
                BlueprintName = "XcodeWayApp"
                ReferencedContainer = "container:XcodeWay.xcodeproj">
@@ -33,7 +33,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D21062E71D4224620005A1A8"
+            BlueprintIdentifier = "D2D07D681F97460400416315"
             BuildableName = "XcodeWayApp.app"
             BlueprintName = "XcodeWayApp"
             ReferencedContainer = "container:XcodeWay.xcodeproj">
@@ -57,7 +57,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D21062E71D4224620005A1A8"
+            BlueprintIdentifier = "D2D07D681F97460400416315"
             BuildableName = "XcodeWayApp.app"
             BlueprintName = "XcodeWayApp"
             ReferencedContainer = "container:XcodeWay.xcodeproj">
@@ -76,7 +76,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D21062E71D4224620005A1A8"
+            BlueprintIdentifier = "D2D07D681F97460400416315"
             BuildableName = "XcodeWayApp.app"
             BlueprintName = "XcodeWayApp"
             ReferencedContainer = "container:XcodeWay.xcodeproj">
