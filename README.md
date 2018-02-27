@@ -22,7 +22,7 @@ XcodeWay
 - [x] Go To Archives Folder: Open in Finder
 - [x] Go To DeviceSupport Folder: Open in Finder
 - [x] Go To CodeSnippets Folder: Open in Finder
-- [ ] Go To Document Folder: Go to current app Document folder on current simulator
+- [ ] Go To Document Folder: Go to current app Document folder for current simulator
 
 ## Extensible
 
