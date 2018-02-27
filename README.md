@@ -16,11 +16,13 @@ XcodeWay
 - [x] Go To iTerm: Open the selected Xcode project folder in iTerm
 - [x] Go To DerivedData Folder: Check and open relative DerivedData if any, otherwise open global DerivedData
 - [x] Open GitHub: Check and open `git remote` in your default browser
+- [ ] Open Current File in Github: Open the current file in GitHub
 - [x] Go To Provisioning Profiles Folder: Open in Finder
 - [x] Go To Themes Folder: Open in Finder
 - [x] Go To Archives Folder: Open in Finder
 - [x] Go To DeviceSupport Folder: Open in Finder
 - [x] Go To CodeSnippets Folder: Open in Finder
+- [ ] Go To Document Folder: Go to current app Document folder on current simulator
 
 ## Extensible
 
