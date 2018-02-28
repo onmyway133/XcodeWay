@@ -1,10 +1,10 @@
 import Foundation
 import AppKit
 
-class OpenDocumentNavigator: Navigator {
+class DocumentNavigator: Navigator {
 
   var title: String {
-    return "Open Document"
+    return "Go To Document"
   }
 
   func navigate() {

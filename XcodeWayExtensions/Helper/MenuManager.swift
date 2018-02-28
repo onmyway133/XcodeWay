@@ -15,11 +15,13 @@ struct MenuManager {
     iTermNavigator(),
     DerivedDataFolderNavigator(),
     GitHubNavigator(),
+    OpenFileInGitHubNavigator(),
     ProvisioningProfileFolderNavigator(),
     ThemeFolderNavigator(),
     ArchivesFolderNavigator(),
     DeviceSupportFolderNavigator(),
     CodeSnippetFolderNavigator(),
+    DocumentNavigator(),
     AboutNavigator()
   ]
 
