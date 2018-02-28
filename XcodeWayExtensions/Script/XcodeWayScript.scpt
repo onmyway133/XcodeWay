@@ -20,6 +20,12 @@ end if
 end tell
 end myFolderExists
 
+on myRemoveSubString(oldString, subString)
+set myString to NSString's stringWithString:oldString
+set newString to myString's stringByReplacingOccurrencesOfString:subString withString:""
+newString as text
+end myRemoveSubString
+
 on myGetRemote(myText)
 set myString to NSString's stringWithString:myText
 set myParts to myString's componentsSeparatedByString:"\t"
@@ -55,6 +61,13 @@ end tell
 end tell
 myRemoveLastPath(myPath)
 end myProjectPath
+
+on myCurrentFilePath()
+tell application "Xcode"
+set activeDocument to document 1 whose name ends with (word -1 of (get name of window 1))
+path of activeDocument
+end tell
+end myCurrentFilePath
 
 -- Generic Open
 
@@ -117,13 +130,32 @@ myOpenFolder(myXcodePath() & "/DerivedData/")
 end if
 end myOpenDerivedDataFolder
 
-on myOpenGitHub()
+on myGitHubURL()
 set myPath to myProjectPath()
 set myConsoleOutput to (do shell script "cd " & quoted form of myPath & "; git remote -v")
 set myRemote to myGetRemote(myConsoleOutput)
 set myUrl to (do shell script "cd " & quoted form of myPath & "; git config --get remote." & quoted form of myRemote & ".url")
+set myUrlWithOutDotGit to myRemoveSubString(myUrl, ".git")
+end myGitHubURL
+
+on myOpenGitHub()
+set myUrl to myGitHubUrlOnMaster()
 open location myUrl
 end myOpenGitHub
+
+on myGitHubUrlOnMaster()
+set gitHubPath to myGitHubURL()
+set myUrl to gitHubPath & "/blob/master"
+end myGitHubUrlOnMaster
+
+on myOpenFileInGitHub()
+set currentFilePath to myCurrentFilePath()
+set projectPath to myProjectPath()
+set gitHubPath to myGitHubUrlOnMaster()
+set relativePath to myRemoveSubString(currentFilePath, projectPath)
+set fullUrl to gitHubPath & relativePath
+open location fullUrl
+end myOpenFileInGitHub
 
 on myOpenDocument()
 set command1 to "cd ~/Library/Developer/CoreSimulator/Devices/;"
