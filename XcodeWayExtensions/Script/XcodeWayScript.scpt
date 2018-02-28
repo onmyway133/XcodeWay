@@ -125,6 +125,14 @@ set myUrl to (do shell script "cd " & quoted form of myPath & "; git config --ge
 open location myUrl
 end myOpenGitHub
 
+on myOpenDocument()
+set command1 to "cd ~/Library/Developer/CoreSimulator/Devices/;"
+set command2 to "cd `ls -t | head -n 1`/data/Containers/Data/Application;"
+set command3 to "cd `ls -t | head -n 1`/Documents;"
+set command4 to "open ."
+do shell script command1 & command2 & command3 & command4
+end myOpenDocument
+
 on myOpenAbout()
 open location "https://github.com/onmyway133/XcodeWay"
 end myOpenAbout
