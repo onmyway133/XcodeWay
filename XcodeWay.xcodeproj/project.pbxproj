@@ -15,6 +15,8 @@
 		D2B221911F974DFB00C45949 /* DeviceSupportFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221901F974DFB00C45949 /* DeviceSupportFolderNavigator.swift */; };
 		D2B221941F97528200C45949 /* ScriptRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221931F97528200C45949 /* ScriptRunner.swift */; };
 		D2B221981F976DA200C45949 /* CodeSnippetFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221971F976DA200C45949 /* CodeSnippetFolderNavigator.swift */; };
+		D2C329232046EA0A00DB04F0 /* OpenFileInGitHubNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C329222046EA0A00DB04F0 /* OpenFileInGitHubNavigator.swift */; };
+		D2C329252046EA1C00DB04F0 /* Open Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C329242046EA1C00DB04F0 /* Open Document.swift */; };
 		D2D07D6C1F97460400416315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D6B1F97460400416315 /* AppDelegate.swift */; };
 		D2D07D6E1F97460400416315 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D6D1F97460400416315 /* ViewController.swift */; };
 		D2D07D701F97460400416315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D07D6F1F97460400416315 /* Assets.xcassets */; };
@@ -66,6 +68,8 @@
 		D2B221931F97528200C45949 /* ScriptRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRunner.swift; sourceTree = "<group>"; };
 		D2B221961F976D7B00C45949 /* Script */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Script; sourceTree = "<group>"; };
 		D2B221971F976DA200C45949 /* CodeSnippetFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnippetFolderNavigator.swift; sourceTree = "<group>"; };
+		D2C329222046EA0A00DB04F0 /* OpenFileInGitHubNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenFileInGitHubNavigator.swift; sourceTree = "<group>"; };
+		D2C329242046EA1C00DB04F0 /* Open Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Open Document.swift"; sourceTree = "<group>"; };
 		D2D07D691F97460400416315 /* XcodeWayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeWayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D07D6B1F97460400416315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2D07D6D1F97460400416315 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +177,8 @@
 				D21658CC1F97908200F3506F /* DerivedDataNavigator.swift */,
 				D21658CE1F97918800F3506F /* GitHubNavigator.swift */,
 				D29D398A1F97DA7B0093FFAA /* AboutNavigator.swift */,
+				D2C329222046EA0A00DB04F0 /* OpenFileInGitHubNavigator.swift */,
+				D2C329242046EA1C00DB04F0 /* Open Document.swift */,
 			);
 			path = Navigator;
 			sourceTree = "<group>";
@@ -321,6 +327,7 @@
 				D2D07D811F9746AF00416315 /* SourceEditorExtension.swift in Sources */,
 				D21658CD1F97908200F3506F /* DerivedDataNavigator.swift in Sources */,
 				D2D07D991F9746E500416315 /* Helper.swift in Sources */,
+				D2C329252046EA1C00DB04F0 /* Open Document.swift in Sources */,
 				D2D07D971F9746E500416315 /* Navigator.swift in Sources */,
 				D2B221911F974DFB00C45949 /* DeviceSupportFolderNavigator.swift in Sources */,
 				D29D398B1F97DA7B0093FFAA /* AboutNavigator.swift in Sources */,
@@ -331,6 +338,7 @@
 				D2B221941F97528200C45949 /* ScriptRunner.swift in Sources */,
 				D2D07D831F9746AF00416315 /* SourceEditorCommand.swift in Sources */,
 				D2D07D9A1F9746E500416315 /* MenuManager.swift in Sources */,
+				D2C329232046EA0A00DB04F0 /* OpenFileInGitHubNavigator.swift in Sources */,
 				D2B2218F1F974D9F00C45949 /* ArchivesFolderNavigator.swift in Sources */,
 				D2D07D951F9746E500416315 /* ProvisioningProfileFolderNavigator.swift in Sources */,
 				D2D07D961F9746E500416315 /* ThemeFolderNavigator.swift in Sources */,
