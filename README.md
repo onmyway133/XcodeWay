@@ -8,6 +8,7 @@ XcodeWay
 - An Xcode Source Editor Extension that helps navigating to many places easier
 - Available via `Editor -> XcodeWay`
 
+![](https://user-images.githubusercontent.com/2284279/47280109-101ebb80-d5d5-11e8-854f-b2fb19452769.png)
 ![](Screenshots/demo.gif)
 
 ## Features
