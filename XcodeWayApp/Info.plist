@@ -28,5 +28,7 @@
 	<string>Main</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+  <key>NSAppleEventsUsageDescription</key>
+  <string>Use AppleScript to open folders</string>
 </dict>
 </plist>
