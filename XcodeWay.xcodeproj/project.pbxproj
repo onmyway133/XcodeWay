@@ -62,6 +62,8 @@
 		D21658CC1F97908200F3506F /* DerivedDataNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivedDataNavigator.swift; sourceTree = "<group>"; };
 		D21658CE1F97918800F3506F /* GitHubNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubNavigator.swift; sourceTree = "<group>"; };
 		D220F34F1F97841F00F460CC /* ProjectFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFolderNavigator.swift; sourceTree = "<group>"; };
+		D28070BD2259FF0600E50019 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D28070BE2259FF1300E50019 /* install.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		D29D398A1F97DA7B0093FFAA /* AboutNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutNavigator.swift; sourceTree = "<group>"; };
 		D2B2218E1F974D9F00C45949 /* ArchivesFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivesFolderNavigator.swift; sourceTree = "<group>"; };
 		D2B221901F974DFB00C45949 /* DeviceSupportFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSupportFolderNavigator.swift; sourceTree = "<group>"; };
@@ -112,6 +114,8 @@
 		D21062DF1D4224620005A1A8 = {
 			isa = PBXGroup;
 			children = (
+				D28070BE2259FF1300E50019 /* install.sh */,
+				D28070BD2259FF0600E50019 /* README.md */,
 				D2D07D6A1F97460400416315 /* XcodeWayApp */,
 				D2D07D7F1F9746AF00416315 /* XcodeWayExtensions */,
 				D21062FD1D4224B80005A1A8 /* Frameworks */,
@@ -495,7 +499,7 @@
 				INFOPLIST_FILE = XcodeWayApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.XcodeWayApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onmyway133.XcodeWayApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -518,7 +522,7 @@
 				INFOPLIST_FILE = XcodeWayApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.XcodeWayApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onmyway133.XcodeWayApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -539,7 +543,7 @@
 				INFOPLIST_FILE = XcodeWayExtensions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.XcodeWayApp.XcodeWayExtensions;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onmyway133.XcodeWayApp.XcodeWayExtensions;
 				PRODUCT_NAME = XcodeWay;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -561,7 +565,7 @@
 				INFOPLIST_FILE = XcodeWayExtensions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fantageek.XcodeWayApp.XcodeWayExtensions;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onmyway133.XcodeWayApp.XcodeWayExtensions;
 				PRODUCT_NAME = XcodeWay;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
