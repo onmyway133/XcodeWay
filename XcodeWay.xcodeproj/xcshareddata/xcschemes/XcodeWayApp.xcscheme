@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D2D07D681F97460400416315"
-               BuildableName = "XcodeWayApp.app"
+               BuildableName = "XcodeWay.app"
                BlueprintName = "XcodeWayApp"
                ReferencedContainer = "container:XcodeWay.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D2D07D681F97460400416315"
-            BuildableName = "XcodeWayApp.app"
+            BuildableName = "XcodeWay.app"
             BlueprintName = "XcodeWayApp"
             ReferencedContainer = "container:XcodeWay.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D2D07D681F97460400416315"
-            BuildableName = "XcodeWayApp.app"
+            BuildableName = "XcodeWay.app"
             BlueprintName = "XcodeWayApp"
             ReferencedContainer = "container:XcodeWay.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D2D07D681F97460400416315"
-            BuildableName = "XcodeWayApp.app"
+            BuildableName = "XcodeWay.app"
             BlueprintName = "XcodeWayApp"
             ReferencedContainer = "container:XcodeWay.xcodeproj">
          </BuildableReference>

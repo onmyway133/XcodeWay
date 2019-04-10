@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D21658CD1F97908200F3506F /* DerivedDataNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21658CC1F97908200F3506F /* DerivedDataNavigator.swift */; };
-		D21658CF1F97918800F3506F /* GitHubNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21658CE1F97918800F3506F /* GitHubNavigator.swift */; };
-		D220F3501F97841F00F460CC /* ProjectFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D220F34F1F97841F00F460CC /* ProjectFolderNavigator.swift */; };
-		D29D398B1F97DA7B0093FFAA /* AboutNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29D398A1F97DA7B0093FFAA /* AboutNavigator.swift */; };
-		D2B2218F1F974D9F00C45949 /* ArchivesFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B2218E1F974D9F00C45949 /* ArchivesFolderNavigator.swift */; };
-		D2B221911F974DFB00C45949 /* DeviceSupportFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221901F974DFB00C45949 /* DeviceSupportFolderNavigator.swift */; };
+		D274B1F5225E8AE600ECBB3F /* ArchivesFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274B1E7225E8AE500ECBB3F /* ArchivesFolderNavigator.swift */; };
+		D274B1F6225E8AE600ECBB3F /* ProjectFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274B1E8225E8AE500ECBB3F /* ProjectFolderNavigator.swift */; };
+		D274B1F7225E8AE600ECBB3F /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274B1E9225E8AE500ECBB3F /* Navigator.swift */; };
+		D274B1F8225E8AE600ECBB3F /* GitHubNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274B1EA225E8AE500ECBB3F /* GitHubNavigator.swift */; };
+		D274B1F9225E8AE600ECBB3F /* DocumentNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274B1EB225E8AE500ECBB3F /* DocumentNavigator.swift */; };
+		D274B1FA225E8AE600ECBB3F /* CodeSnippetFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274B1EC225E8AE600ECBB3F /* CodeSnippetFolderNavigator.swift */; };
+		D274B1FB225E8AE600ECBB3F /* AboutNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274B1ED225E8AE600ECBB3F /* AboutNavigator.swift */; };
+		D274B1FD225E8AE600ECBB3F /* DeviceSupportFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274B1EF225E8AE600ECBB3F /* DeviceSupportFolderNavigator.swift */; };
+		D274B1FE225E8AE600ECBB3F /* ProvisioningProfileFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274B1F0225E8AE600ECBB3F /* ProvisioningProfileFolderNavigator.swift */; };
+		D274B1FF225E8AE600ECBB3F /* OpenFileInGitHubNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274B1F1225E8AE600ECBB3F /* OpenFileInGitHubNavigator.swift */; };
+		D274B200225E8AE600ECBB3F /* ThemeFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274B1F2225E8AE600ECBB3F /* ThemeFolderNavigator.swift */; };
+		D274B201225E8AE600ECBB3F /* DerivedDataNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274B1F3225E8AE600ECBB3F /* DerivedDataNavigator.swift */; };
+		D274B202225E8AE600ECBB3F /* TerminalNavigatorNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D274B1F4225E8AE600ECBB3F /* TerminalNavigatorNavigator.swift */; };
 		D2B221941F97528200C45949 /* ScriptRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221931F97528200C45949 /* ScriptRunner.swift */; };
-		D2B221981F976DA200C45949 /* CodeSnippetFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B221971F976DA200C45949 /* CodeSnippetFolderNavigator.swift */; };
-		D2C329232046EA0A00DB04F0 /* OpenFileInGitHubNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C329222046EA0A00DB04F0 /* OpenFileInGitHubNavigator.swift */; };
-		D2C329252046EA1C00DB04F0 /* Open Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C329242046EA1C00DB04F0 /* Open Document.swift */; };
 		D2D07D6C1F97460400416315 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D6B1F97460400416315 /* AppDelegate.swift */; };
 		D2D07D6E1F97460400416315 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D6D1F97460400416315 /* ViewController.swift */; };
 		D2D07D701F97460400416315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D07D6F1F97460400416315 /* Assets.xcassets */; };
@@ -25,12 +29,8 @@
 		D2D07D811F9746AF00416315 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D801F9746AF00416315 /* SourceEditorExtension.swift */; };
 		D2D07D831F9746AF00416315 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D821F9746AF00416315 /* SourceEditorCommand.swift */; };
 		D2D07D881F9746AF00416315 /* XcodeWay.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D2D07D7D1F9746AF00416315 /* XcodeWay.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		D2D07D951F9746E500416315 /* ProvisioningProfileFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D8E1F9746E500416315 /* ProvisioningProfileFolderNavigator.swift */; };
-		D2D07D961F9746E500416315 /* ThemeFolderNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D8F1F9746E500416315 /* ThemeFolderNavigator.swift */; };
-		D2D07D971F9746E500416315 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D901F9746E500416315 /* Navigator.swift */; };
 		D2D07D991F9746E500416315 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D931F9746E500416315 /* Helper.swift */; };
 		D2D07D9A1F9746E500416315 /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D941F9746E500416315 /* MenuManager.swift */; };
-		D2F0B1151F978C36007A1945 /* TerminalNavigatorNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0B1141F978C36007A1945 /* TerminalNavigatorNavigator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,19 +59,23 @@
 
 /* Begin PBXFileReference section */
 		D21062FE1D4224B80005A1A8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		D21658CC1F97908200F3506F /* DerivedDataNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivedDataNavigator.swift; sourceTree = "<group>"; };
-		D21658CE1F97918800F3506F /* GitHubNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubNavigator.swift; sourceTree = "<group>"; };
-		D220F34F1F97841F00F460CC /* ProjectFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectFolderNavigator.swift; sourceTree = "<group>"; };
+		D274B1E7225E8AE500ECBB3F /* ArchivesFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchivesFolderNavigator.swift; sourceTree = "<group>"; };
+		D274B1E8225E8AE500ECBB3F /* ProjectFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectFolderNavigator.swift; sourceTree = "<group>"; };
+		D274B1E9225E8AE500ECBB3F /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		D274B1EA225E8AE500ECBB3F /* GitHubNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubNavigator.swift; sourceTree = "<group>"; };
+		D274B1EB225E8AE500ECBB3F /* DocumentNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentNavigator.swift; sourceTree = "<group>"; };
+		D274B1EC225E8AE600ECBB3F /* CodeSnippetFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeSnippetFolderNavigator.swift; sourceTree = "<group>"; };
+		D274B1ED225E8AE600ECBB3F /* AboutNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutNavigator.swift; sourceTree = "<group>"; };
+		D274B1EF225E8AE600ECBB3F /* DeviceSupportFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceSupportFolderNavigator.swift; sourceTree = "<group>"; };
+		D274B1F0225E8AE600ECBB3F /* ProvisioningProfileFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvisioningProfileFolderNavigator.swift; sourceTree = "<group>"; };
+		D274B1F1225E8AE600ECBB3F /* OpenFileInGitHubNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenFileInGitHubNavigator.swift; sourceTree = "<group>"; };
+		D274B1F2225E8AE600ECBB3F /* ThemeFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeFolderNavigator.swift; sourceTree = "<group>"; };
+		D274B1F3225E8AE600ECBB3F /* DerivedDataNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DerivedDataNavigator.swift; sourceTree = "<group>"; };
+		D274B1F4225E8AE600ECBB3F /* TerminalNavigatorNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TerminalNavigatorNavigator.swift; sourceTree = "<group>"; };
 		D28070BD2259FF0600E50019 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D28070BE2259FF1300E50019 /* install.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
-		D29D398A1F97DA7B0093FFAA /* AboutNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutNavigator.swift; sourceTree = "<group>"; };
-		D2B2218E1F974D9F00C45949 /* ArchivesFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivesFolderNavigator.swift; sourceTree = "<group>"; };
-		D2B221901F974DFB00C45949 /* DeviceSupportFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSupportFolderNavigator.swift; sourceTree = "<group>"; };
 		D2B221931F97528200C45949 /* ScriptRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRunner.swift; sourceTree = "<group>"; };
 		D2B221961F976D7B00C45949 /* Script */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Script; sourceTree = "<group>"; };
-		D2B221971F976DA200C45949 /* CodeSnippetFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnippetFolderNavigator.swift; sourceTree = "<group>"; };
-		D2C329222046EA0A00DB04F0 /* OpenFileInGitHubNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenFileInGitHubNavigator.swift; sourceTree = "<group>"; };
-		D2C329242046EA1C00DB04F0 /* Open Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Open Document.swift"; sourceTree = "<group>"; };
 		D2D07D691F97460400416315 /* XcodeWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D07D6B1F97460400416315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2D07D6D1F97460400416315 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,12 +88,8 @@
 		D2D07D821F9746AF00416315 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
 		D2D07D841F9746AF00416315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2D07D851F9746AF00416315 /* XcodeWayExtensions.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XcodeWayExtensions.entitlements; sourceTree = "<group>"; };
-		D2D07D8E1F9746E500416315 /* ProvisioningProfileFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvisioningProfileFolderNavigator.swift; sourceTree = "<group>"; };
-		D2D07D8F1F9746E500416315 /* ThemeFolderNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeFolderNavigator.swift; sourceTree = "<group>"; };
-		D2D07D901F9746E500416315 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		D2D07D931F9746E500416315 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		D2D07D941F9746E500416315 /* MenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
-		D2F0B1141F978C36007A1945 /* TerminalNavigatorNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalNavigatorNavigator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,19 +170,19 @@
 		D2D07D8D1F9746E500416315 /* Navigator */ = {
 			isa = PBXGroup;
 			children = (
-				D2D07D8E1F9746E500416315 /* ProvisioningProfileFolderNavigator.swift */,
-				D2D07D8F1F9746E500416315 /* ThemeFolderNavigator.swift */,
-				D2D07D901F9746E500416315 /* Navigator.swift */,
-				D2B2218E1F974D9F00C45949 /* ArchivesFolderNavigator.swift */,
-				D2B221901F974DFB00C45949 /* DeviceSupportFolderNavigator.swift */,
-				D2B221971F976DA200C45949 /* CodeSnippetFolderNavigator.swift */,
-				D220F34F1F97841F00F460CC /* ProjectFolderNavigator.swift */,
-				D2F0B1141F978C36007A1945 /* TerminalNavigatorNavigator.swift */,
-				D21658CC1F97908200F3506F /* DerivedDataNavigator.swift */,
-				D21658CE1F97918800F3506F /* GitHubNavigator.swift */,
-				D29D398A1F97DA7B0093FFAA /* AboutNavigator.swift */,
-				D2C329222046EA0A00DB04F0 /* OpenFileInGitHubNavigator.swift */,
-				D2C329242046EA1C00DB04F0 /* Open Document.swift */,
+				D274B1ED225E8AE600ECBB3F /* AboutNavigator.swift */,
+				D274B1E7225E8AE500ECBB3F /* ArchivesFolderNavigator.swift */,
+				D274B1EC225E8AE600ECBB3F /* CodeSnippetFolderNavigator.swift */,
+				D274B1F3225E8AE600ECBB3F /* DerivedDataNavigator.swift */,
+				D274B1EF225E8AE600ECBB3F /* DeviceSupportFolderNavigator.swift */,
+				D274B1EB225E8AE500ECBB3F /* DocumentNavigator.swift */,
+				D274B1EA225E8AE500ECBB3F /* GitHubNavigator.swift */,
+				D274B1E9225E8AE500ECBB3F /* Navigator.swift */,
+				D274B1F1225E8AE600ECBB3F /* OpenFileInGitHubNavigator.swift */,
+				D274B1E8225E8AE500ECBB3F /* ProjectFolderNavigator.swift */,
+				D274B1F0225E8AE600ECBB3F /* ProvisioningProfileFolderNavigator.swift */,
+				D274B1F4225E8AE600ECBB3F /* TerminalNavigatorNavigator.swift */,
+				D274B1F2225E8AE600ECBB3F /* ThemeFolderNavigator.swift */,
 			);
 			path = Navigator;
 			sourceTree = "<group>";
@@ -339,24 +339,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D274B1F9225E8AE600ECBB3F /* DocumentNavigator.swift in Sources */,
+				D274B1FF225E8AE600ECBB3F /* OpenFileInGitHubNavigator.swift in Sources */,
 				D2D07D811F9746AF00416315 /* SourceEditorExtension.swift in Sources */,
-				D21658CD1F97908200F3506F /* DerivedDataNavigator.swift in Sources */,
+				D274B200225E8AE600ECBB3F /* ThemeFolderNavigator.swift in Sources */,
 				D2D07D991F9746E500416315 /* Helper.swift in Sources */,
-				D2C329252046EA1C00DB04F0 /* Open Document.swift in Sources */,
-				D2D07D971F9746E500416315 /* Navigator.swift in Sources */,
-				D2B221911F974DFB00C45949 /* DeviceSupportFolderNavigator.swift in Sources */,
-				D29D398B1F97DA7B0093FFAA /* AboutNavigator.swift in Sources */,
-				D21658CF1F97918800F3506F /* GitHubNavigator.swift in Sources */,
-				D2B221981F976DA200C45949 /* CodeSnippetFolderNavigator.swift in Sources */,
-				D2F0B1151F978C36007A1945 /* TerminalNavigatorNavigator.swift in Sources */,
-				D220F3501F97841F00F460CC /* ProjectFolderNavigator.swift in Sources */,
 				D2B221941F97528200C45949 /* ScriptRunner.swift in Sources */,
+				D274B201225E8AE600ECBB3F /* DerivedDataNavigator.swift in Sources */,
+				D274B202225E8AE600ECBB3F /* TerminalNavigatorNavigator.swift in Sources */,
+				D274B1FA225E8AE600ECBB3F /* CodeSnippetFolderNavigator.swift in Sources */,
 				D2D07D831F9746AF00416315 /* SourceEditorCommand.swift in Sources */,
+				D274B1FD225E8AE600ECBB3F /* DeviceSupportFolderNavigator.swift in Sources */,
+				D274B1F6225E8AE600ECBB3F /* ProjectFolderNavigator.swift in Sources */,
+				D274B1F7225E8AE600ECBB3F /* Navigator.swift in Sources */,
+				D274B1F5225E8AE600ECBB3F /* ArchivesFolderNavigator.swift in Sources */,
+				D274B1FE225E8AE600ECBB3F /* ProvisioningProfileFolderNavigator.swift in Sources */,
+				D274B1FB225E8AE600ECBB3F /* AboutNavigator.swift in Sources */,
 				D2D07D9A1F9746E500416315 /* MenuManager.swift in Sources */,
-				D2C329232046EA0A00DB04F0 /* OpenFileInGitHubNavigator.swift in Sources */,
-				D2B2218F1F974D9F00C45949 /* ArchivesFolderNavigator.swift in Sources */,
-				D2D07D951F9746E500416315 /* ProvisioningProfileFolderNavigator.swift in Sources */,
-				D2D07D961F9746E500416315 /* ThemeFolderNavigator.swift in Sources */,
+				D274B1F8225E8AE600ECBB3F /* GitHubNavigator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

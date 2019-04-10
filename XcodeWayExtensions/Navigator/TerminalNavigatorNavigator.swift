@@ -10,7 +10,7 @@ class TerminalNavigator: Navigator {
   }
 
   func navigate() {
-    let terminal = defaults?.value(forKey: "whichTerminal") ?? "Terminal"
+    let terminal = defaults?.string(forKey: "whichTerminal") ?? "Terminal"
     
     switch terminal {
     case "iTerm":
