@@ -30,7 +30,7 @@
 		D2D07D971F9746E500416315 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D901F9746E500416315 /* Navigator.swift */; };
 		D2D07D991F9746E500416315 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D931F9746E500416315 /* Helper.swift */; };
 		D2D07D9A1F9746E500416315 /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D07D941F9746E500416315 /* MenuManager.swift */; };
-		D2F0B1151F978C36007A1945 /* iTermNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0B1141F978C36007A1945 /* iTermNavigator.swift */; };
+		D2F0B1151F978C36007A1945 /* TerminalNavigatorNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0B1141F978C36007A1945 /* TerminalNavigatorNavigator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,7 +89,7 @@
 		D2D07D901F9746E500416315 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		D2D07D931F9746E500416315 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		D2D07D941F9746E500416315 /* MenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
-		D2F0B1141F978C36007A1945 /* iTermNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTermNavigator.swift; sourceTree = "<group>"; };
+		D2F0B1141F978C36007A1945 /* TerminalNavigatorNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalNavigatorNavigator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +177,7 @@
 				D2B221901F974DFB00C45949 /* DeviceSupportFolderNavigator.swift */,
 				D2B221971F976DA200C45949 /* CodeSnippetFolderNavigator.swift */,
 				D220F34F1F97841F00F460CC /* ProjectFolderNavigator.swift */,
-				D2F0B1141F978C36007A1945 /* iTermNavigator.swift */,
+				D2F0B1141F978C36007A1945 /* TerminalNavigatorNavigator.swift */,
 				D21658CC1F97908200F3506F /* DerivedDataNavigator.swift */,
 				D21658CE1F97918800F3506F /* GitHubNavigator.swift */,
 				D29D398A1F97DA7B0093FFAA /* AboutNavigator.swift */,
@@ -251,11 +251,21 @@
 						CreatedOnToolsVersion = 9.0;
 						DevelopmentTeam = T78DK947F2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+						};
 					};
 					D2D07D7C1F9746AF00416315 = {
 						CreatedOnToolsVersion = 9.0;
 						DevelopmentTeam = T78DK947F2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -338,7 +348,7 @@
 				D29D398B1F97DA7B0093FFAA /* AboutNavigator.swift in Sources */,
 				D21658CF1F97918800F3506F /* GitHubNavigator.swift in Sources */,
 				D2B221981F976DA200C45949 /* CodeSnippetFolderNavigator.swift in Sources */,
-				D2F0B1151F978C36007A1945 /* iTermNavigator.swift in Sources */,
+				D2F0B1151F978C36007A1945 /* TerminalNavigatorNavigator.swift in Sources */,
 				D220F3501F97841F00F460CC /* ProjectFolderNavigator.swift in Sources */,
 				D2B221941F97528200C45949 /* ScriptRunner.swift in Sources */,
 				D2D07D831F9746AF00416315 /* SourceEditorCommand.swift in Sources */,

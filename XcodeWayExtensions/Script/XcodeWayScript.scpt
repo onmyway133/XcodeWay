@@ -84,6 +84,12 @@ do shell script "open -a iTerm " & quoted form of myPath
 end tell
 end myOpeniTerm
 
+on myOpenTerminal(myPath)
+tell application "Finder"
+do shell script "open -a Terminal " & quoted form of myPath
+end tell
+end myOpenTerminal
+
 -- Open
 
 on myOpenThemesFolder()

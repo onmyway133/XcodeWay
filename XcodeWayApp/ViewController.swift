@@ -9,16 +9,13 @@
 import Cocoa
 
 class ViewController: NSViewController {
+    let defaults = UserDefaults(suiteName: "T78DK947F2.group.com.onmyway133.XcodeWay")
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-    }
-    
-    override var representedObject: Any? {
-        didSet {
-            // Update the view, if already loaded.
-        }
+        defaults?.set("iTerm", forKey: "whichTerminal")
+        defaults?.synchronize()
     }
     
     @IBAction func onButtonTouch(_ sender: NSButton) {

@@ -12,7 +12,7 @@ struct MenuManager {
 
   static let navigators: [Navigator] = [
     ProjectFolderNavigator(),
-    iTermNavigator(),
+    TerminalNavigator(),
     DerivedDataFolderNavigator(),
     GitHubNavigator(),
     OpenFileInGitHubNavigator(),
