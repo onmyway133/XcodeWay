@@ -641,7 +641,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="XcodeWay" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -664,7 +664,7 @@
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="XcodeWay" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" misplaced="YES" id="m2S-Jp-Qdl">
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="599" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -701,11 +701,23 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zXH-Rd-aJf">
+                                <rect key="frame" x="20" y="87" width="81" height="17"/>
+                                <buttonCell key="cell" type="inline" title="Visit project" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="4BI-Z2-FE9">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="smallSystemBold"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="onButtonTouch:" target="XfG-lQ-9wD" id="zcl-2Y-Tel"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="zXH-Rd-aJf" firstAttribute="top" secondItem="SmD-5n-J70" secondAttribute="bottom" constant="15" id="1aU-EV-Nuh"/>
                             <constraint firstItem="jBM-9M-jHf" firstAttribute="top" secondItem="2rA-qn-whu" secondAttribute="bottom" constant="8" id="5eg-Sm-QUl"/>
                             <constraint firstItem="2rA-qn-whu" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="61n-Ru-wgq"/>
                             <constraint firstItem="jAm-jF-xVK" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="15" id="7zE-9Q-AYJ"/>
+                            <constraint firstItem="zXH-Rd-aJf" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="CzC-pU-Z9Q"/>
                             <constraint firstAttribute="trailing" secondItem="2rA-qn-whu" secondAttribute="trailing" constant="20" id="EQy-Hw-jP8"/>
                             <constraint firstItem="SmD-5n-J70" firstAttribute="top" secondItem="jBM-9M-jHf" secondAttribute="bottom" constant="8" id="GDb-8n-QgR"/>
                             <constraint firstAttribute="trailing" secondItem="SmD-5n-J70" secondAttribute="trailing" constant="20" id="Gbj-nj-RLI"/>
