@@ -25,7 +25,8 @@ class ViewController: NSViewController {
     }
     
     @IBAction func onCheckTouch(_ sender: NSButton) {
-        let path = NSHomeDirectory().appending("Library/Application Scripts/com.onmyway133.XcodeWayApp.XcodeWayExtensions/XcodeWayScript.scpt")
+        let home = NSSearchPathForDirectoriesInDomains(.applicationScriptsDirectory, .userDomainMask, true).first!
+        let path = home.appending(".XcodeWayExtensions/XcodeWayScript.scpt")
         let exists = FileManager.default.fileExists(atPath: path)
         statusLabel.stringValue = exists ? "Yes" : "No"
     }
