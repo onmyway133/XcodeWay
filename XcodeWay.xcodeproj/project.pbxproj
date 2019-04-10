@@ -72,7 +72,7 @@
 		D2B221971F976DA200C45949 /* CodeSnippetFolderNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSnippetFolderNavigator.swift; sourceTree = "<group>"; };
 		D2C329222046EA0A00DB04F0 /* OpenFileInGitHubNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenFileInGitHubNavigator.swift; sourceTree = "<group>"; };
 		D2C329242046EA1C00DB04F0 /* Open Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Open Document.swift"; sourceTree = "<group>"; };
-		D2D07D691F97460400416315 /* XcodeWayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeWayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D07D691F97460400416315 /* XcodeWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D07D6B1F97460400416315 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2D07D6D1F97460400416315 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D2D07D6F1F97460400416315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 		D21062E91D4224620005A1A8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2D07D691F97460400416315 /* XcodeWayApp.app */,
+				D2D07D691F97460400416315 /* XcodeWay.app */,
 				D2D07D7D1F9746AF00416315 /* XcodeWay.appex */,
 			);
 			name = Products;
@@ -216,7 +216,7 @@
 			);
 			name = XcodeWayApp;
 			productName = XcodeWayApp;
-			productReference = D2D07D691F97460400416315 /* XcodeWayApp.app */;
+			productReference = D2D07D691F97460400416315 /* XcodeWay.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D2D07D7C1F9746AF00416315 /* XcodeWayExtensions */ = {
@@ -500,7 +500,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.onmyway133.XcodeWayApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = XcodeWay;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
@@ -523,7 +523,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.onmyway133.XcodeWayApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = XcodeWay;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
