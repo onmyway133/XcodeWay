@@ -646,6 +646,8 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <value key="minSize" type="size" width="480" height="270"/>
+                        <value key="maxSize" type="size" width="480" height="270"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -662,14 +664,63 @@
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="XcodeWay" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                    <view key="view" wantsLayer="YES" misplaced="YES" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="599" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jAm-jF-xVK">
+                                <rect key="frame" x="18" y="233" width="90" height="22"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="XcodeWay" id="Adu-IW-wTh">
+                                    <font key="font" size="18" name=".AppleSystemUIFont"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="10" translatesAutoresizingMaskIntoConstraints="NO" id="2rA-qn-whu">
+                                <rect key="frame" x="18" y="191" width="563" height="34"/>
+                                <textFieldCell key="cell" title="XcodeWay is a host application that embeds an Xcode extension, which is available under Xcode -&gt; Editor -&gt; XcodeWay menu" id="HoJ-7J-LpN">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="10" translatesAutoresizingMaskIntoConstraints="NO" id="jBM-9M-jHf">
+                                <rect key="frame" x="18" y="149" width="563" height="34"/>
+                                <textFieldCell key="cell" id="ha1-8l-PRu">
+                                    <font key="font" metaFont="system"/>
+                                    <string key="title">To enable XcodeWay features, install Applescripts into Application Scripts folder by executing the following installation instruction</string>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SmD-5n-J70">
+                                <rect key="frame" x="20" y="119" width="559" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="curl -fsSL https://raw.githubusercontent.com/onmyway133/XcodeWay/master/install.sh | sh" drawsBackground="YES" id="cly-Ff-JsJ">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="jBM-9M-jHf" firstAttribute="top" secondItem="2rA-qn-whu" secondAttribute="bottom" constant="8" id="5eg-Sm-QUl"/>
+                            <constraint firstItem="2rA-qn-whu" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="61n-Ru-wgq"/>
+                            <constraint firstItem="jAm-jF-xVK" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="15" id="7zE-9Q-AYJ"/>
+                            <constraint firstAttribute="trailing" secondItem="2rA-qn-whu" secondAttribute="trailing" constant="20" id="EQy-Hw-jP8"/>
+                            <constraint firstItem="SmD-5n-J70" firstAttribute="top" secondItem="jBM-9M-jHf" secondAttribute="bottom" constant="8" id="GDb-8n-QgR"/>
+                            <constraint firstAttribute="trailing" secondItem="SmD-5n-J70" secondAttribute="trailing" constant="20" id="Gbj-nj-RLI"/>
+                            <constraint firstItem="2rA-qn-whu" firstAttribute="top" secondItem="jAm-jF-xVK" secondAttribute="bottom" constant="8" id="LaF-qA-hEw"/>
+                            <constraint firstItem="jBM-9M-jHf" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="TDf-2w-BhL"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jAm-jF-xVK" secondAttribute="trailing" constant="20" symbolic="YES" id="duZ-7N-y9d"/>
+                            <constraint firstAttribute="trailing" secondItem="jBM-9M-jHf" secondAttribute="trailing" constant="20" id="fMH-kC-9F9"/>
+                            <constraint firstItem="jAm-jF-xVK" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="pTK-0z-HIp"/>
+                            <constraint firstItem="SmD-5n-J70" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="wX4-be-y9y"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="-180" y="655"/>
         </scene>
     </scenes>
 </document>
