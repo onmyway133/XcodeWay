@@ -11,6 +11,8 @@ import Cocoa
 class ViewController: NSViewController {
     let defaults = UserDefaults(suiteName: "T78DK947F2.group.com.onmyway133.XcodeWay")
 
+    @IBOutlet weak var statusLabel: NSTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,6 +22,12 @@ class ViewController: NSViewController {
     
     @IBAction func onButtonTouch(_ sender: NSButton) {
         NSWorkspace.shared.open(URL(string: "https://github.com/onmyway133/XcodeWay")!)
+    }
+    
+    @IBAction func onCheckTouch(_ sender: NSButton) {
+        let path = NSHomeDirectory().appending("Library/Application Scripts/com.onmyway133.XcodeWayApp.XcodeWayExtensions/XcodeWayScript.scpt")
+        let exists = FileManager.default.fileExists(atPath: path)
+        statusLabel.stringValue = exists ? "Yes" : "No"
     }
 }
 
