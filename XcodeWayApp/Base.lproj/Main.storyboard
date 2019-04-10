@@ -721,17 +721,38 @@
                                     <action selector="onCheckTouch:" target="XfG-lQ-9wD" id="nRF-DU-bhU"/>
                                 </connections>
                             </button>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Avf-7K-JvP">
-                                <rect key="frame" x="213" y="94" width="61" height="17"/>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Avf-7K-JvP">
+                                <rect key="frame" x="213" y="95" width="61" height="17"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Unknown" id="zI1-hB-dQB">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bhh-pk-Z9J">
+                                <rect key="frame" x="19" y="70" width="74" height="18"/>
+                                <buttonCell key="cell" type="radio" title="Terminal" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="SXt-Yw-gan">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="onRadioTouch:" target="XfG-lQ-9wD" id="9Sz-vs-Tu2"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="d0r-mw-hym">
+                                <rect key="frame" x="98" y="70" width="56" height="18"/>
+                                <buttonCell key="cell" type="radio" title="iTerm" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="TdM-tJ-mTt">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="onRadioTouch:" target="XfG-lQ-9wD" id="ON9-IR-5uG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="Haq-KL-zUv" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="0qF-N5-6CG"/>
+                            <constraint firstItem="d0r-mw-hym" firstAttribute="leading" secondItem="bhh-pk-Z9J" secondAttribute="trailing" constant="8" id="402-0S-2VS"/>
                             <constraint firstItem="Haq-KL-zUv" firstAttribute="top" secondItem="SmD-5n-J70" secondAttribute="bottom" constant="8" id="5GU-3U-4Md"/>
                             <constraint firstItem="jBM-9M-jHf" firstAttribute="top" secondItem="2rA-qn-whu" secondAttribute="bottom" constant="8" id="5eg-Sm-QUl"/>
                             <constraint firstItem="2rA-qn-whu" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="61n-Ru-wgq"/>
@@ -739,12 +760,15 @@
                             <constraint firstItem="Avf-7K-JvP" firstAttribute="centerY" secondItem="Haq-KL-zUv" secondAttribute="centerY" id="9jt-Qd-JR3"/>
                             <constraint firstItem="zXH-Rd-aJf" firstAttribute="leading" secondItem="jAm-jF-xVK" secondAttribute="trailing" constant="8" id="AJb-yB-jSx"/>
                             <constraint firstItem="zXH-Rd-aJf" firstAttribute="centerY" secondItem="jAm-jF-xVK" secondAttribute="centerY" id="BQl-dD-Dlj"/>
+                            <constraint firstItem="bhh-pk-Z9J" firstAttribute="top" secondItem="Haq-KL-zUv" secondAttribute="bottom" constant="8" id="CL2-rV-mfT"/>
                             <constraint firstAttribute="trailing" secondItem="2rA-qn-whu" secondAttribute="trailing" constant="20" id="EQy-Hw-jP8"/>
                             <constraint firstItem="SmD-5n-J70" firstAttribute="top" secondItem="jBM-9M-jHf" secondAttribute="bottom" constant="8" id="GDb-8n-QgR"/>
                             <constraint firstAttribute="trailing" secondItem="SmD-5n-J70" secondAttribute="trailing" constant="20" id="Gbj-nj-RLI"/>
                             <constraint firstItem="2rA-qn-whu" firstAttribute="top" secondItem="jAm-jF-xVK" secondAttribute="bottom" constant="8" id="LaF-qA-hEw"/>
                             <constraint firstItem="Avf-7K-JvP" firstAttribute="leading" secondItem="Haq-KL-zUv" secondAttribute="trailing" constant="10" id="NTb-Hg-iJD"/>
+                            <constraint firstItem="d0r-mw-hym" firstAttribute="centerY" secondItem="bhh-pk-Z9J" secondAttribute="centerY" id="NW1-7o-bNJ"/>
                             <constraint firstItem="jBM-9M-jHf" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="TDf-2w-BhL"/>
+                            <constraint firstItem="bhh-pk-Z9J" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="Uaq-nD-N06"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jAm-jF-xVK" secondAttribute="trailing" constant="20" symbolic="YES" id="duZ-7N-y9d"/>
                             <constraint firstAttribute="trailing" secondItem="jBM-9M-jHf" secondAttribute="trailing" constant="20" id="fMH-kC-9F9"/>
                             <constraint firstItem="jAm-jF-xVK" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="pTK-0z-HIp"/>
@@ -752,7 +776,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="itermButton" destination="d0r-mw-hym" id="abP-KD-FDy"/>
                         <outlet property="statusLabel" destination="Avf-7K-JvP" id="6k5-LK-GTQ"/>
+                        <outlet property="terminalButton" destination="bhh-pk-Z9J" id="By6-jM-Xbe"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
