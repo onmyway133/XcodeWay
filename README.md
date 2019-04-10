@@ -8,7 +8,8 @@ XcodeWay
 ## Description
 
 - An Xcode Source Editor Extension that helps navigating to many places easier
-- Available via `Editor -> XcodeWay`
+- Read the story https://medium.freecodecamp.org/how-to-convert-your-xcode-plugins-to-xcode-extensions-ac90f32ae0e3
+- Available via  `Editor -> XcodeWay`
 
 ![](https://user-images.githubusercontent.com/2284279/47280109-101ebb80-d5d5-11e8-854f-b2fb19452769.png)
 ![](Screenshots/demo.gif)
